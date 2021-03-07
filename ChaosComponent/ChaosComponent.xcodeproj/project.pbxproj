@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD00625F4F0EF002E387A /* AppDelegate.m */; };
+		0C6BD00A25F4F0EF002E387A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD00925F4F0EF002E387A /* ViewController.m */; };
+		0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6BD00B25F4F0F2002E387A /* Assets.xcassets */; };
+		0C6BD00F25F4F0F2002E387A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6BD00D25F4F0F2002E387A /* Main.storyboard */; };
+		0C6BD01225F4F0F2002E387A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD01125F4F0F2002E387A /* main.m */; };
+		0C6BD01D25F4F0F2002E387A /* ChaosComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD01C25F4F0F2002E387A /* ChaosComponentTests.m */; };
+		0C6BD02825F4F0F2002E387A /* ChaosComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD02725F4F0F2002E387A /* ChaosComponentUITests.m */; };
+		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C6BD01925F4F0F2002E387A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C6BCFFA25F4F0EF002E387A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6BD00125F4F0EF002E387A;
+			remoteInfo = ChaosComponent;
+		};
+		0C6BD02425F4F0F2002E387A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C6BCFFA25F4F0EF002E387A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6BD00125F4F0EF002E387A;
+			remoteInfo = ChaosComponent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6BD00225F4F0EF002E387A /* ChaosComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6BD00525F4F0EF002E387A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C6BD00625F4F0EF002E387A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C6BD00825F4F0EF002E387A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C6BD00925F4F0EF002E387A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C6BD00B25F4F0F2002E387A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C6BD00E25F4F0F2002E387A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C6BD01025F4F0F2002E387A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6BD01125F4F0F2002E387A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C6BD01325F4F0F2002E387A /* ChaosComponent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChaosComponent.entitlements; sourceTree = "<group>"; };
+		0C6BD01825F4F0F2002E387A /* ChaosComponentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaosComponentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6BD01C25F4F0F2002E387A /* ChaosComponentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosComponentTests.m; sourceTree = "<group>"; };
+		0C6BD01E25F4F0F2002E387A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6BD02325F4F0F2002E387A /* ChaosComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaosComponentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6BD02725F4F0F2002E387A /* ChaosComponentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosComponentUITests.m; sourceTree = "<group>"; };
+		0C6BD02925F4F0F2002E387A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.debug.xcconfig"; sourceTree = "<group>"; };
+		3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.release.xcconfig"; sourceTree = "<group>"; };
+		4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C6BCFFF25F4F0EF002E387A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6BD01525F4F0F2002E387A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6BD02025F4F0F2002E387A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6BCFF925F4F0EF002E387A = {
+			isa = PBXGroup;
+			children = (
+				0C6BD00425F4F0EF002E387A /* ChaosComponent */,
+				0C6BD01B25F4F0F2002E387A /* ChaosComponentTests */,
+				0C6BD02625F4F0F2002E387A /* ChaosComponentUITests */,
+				0C6BD00325F4F0EF002E387A /* Products */,
+				A40A4894C144F60C64F3CAA0 /* Pods */,
+				B6376D4E218B99EB40637EF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C6BD00325F4F0EF002E387A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C6BD00225F4F0EF002E387A /* ChaosComponent.app */,
+				0C6BD01825F4F0F2002E387A /* ChaosComponentTests.xctest */,
+				0C6BD02325F4F0F2002E387A /* ChaosComponentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0C6BD00525F4F0EF002E387A /* AppDelegate.h */,
+				0C6BD00625F4F0EF002E387A /* AppDelegate.m */,
+				0C6BD00825F4F0EF002E387A /* ViewController.h */,
+				0C6BD00925F4F0EF002E387A /* ViewController.m */,
+				0C6BD00B25F4F0F2002E387A /* Assets.xcassets */,
+				0C6BD00D25F4F0F2002E387A /* Main.storyboard */,
+				0C6BD01025F4F0F2002E387A /* Info.plist */,
+				0C6BD01125F4F0F2002E387A /* main.m */,
+				0C6BD01325F4F0F2002E387A /* ChaosComponent.entitlements */,
+			);
+			path = ChaosComponent;
+			sourceTree = "<group>";
+		};
+		0C6BD01B25F4F0F2002E387A /* ChaosComponentTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C6BD01C25F4F0F2002E387A /* ChaosComponentTests.m */,
+				0C6BD01E25F4F0F2002E387A /* Info.plist */,
+			);
+			path = ChaosComponentTests;
+			sourceTree = "<group>";
+		};
+		0C6BD02625F4F0F2002E387A /* ChaosComponentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C6BD02725F4F0F2002E387A /* ChaosComponentUITests.m */,
+				0C6BD02925F4F0F2002E387A /* Info.plist */,
+			);
+			path = ChaosComponentUITests;
+			sourceTree = "<group>";
+		};
+		A40A4894C144F60C64F3CAA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */,
+				3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6376D4E218B99EB40637EF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C6BD00125F4F0EF002E387A /* ChaosComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6BD02C25F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponent" */;
+			buildPhases = (
+				29A19B1CEBDB23EA0135E691 /* [CP] Check Pods Manifest.lock */,
+				0C6BCFFE25F4F0EF002E387A /* Sources */,
+				0C6BCFFF25F4F0EF002E387A /* Frameworks */,
+				0C6BD00025F4F0EF002E387A /* Resources */,
+				9E63E4AD27B3E67B4E104010 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChaosComponent;
+			productName = ChaosComponent;
+			productReference = 0C6BD00225F4F0EF002E387A /* ChaosComponent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C6BD01725F4F0F2002E387A /* ChaosComponentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6BD02F25F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponentTests" */;
+			buildPhases = (
+				0C6BD01425F4F0F2002E387A /* Sources */,
+				0C6BD01525F4F0F2002E387A /* Frameworks */,
+				0C6BD01625F4F0F2002E387A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C6BD01A25F4F0F2002E387A /* PBXTargetDependency */,
+			);
+			name = ChaosComponentTests;
+			productName = ChaosComponentTests;
+			productReference = 0C6BD01825F4F0F2002E387A /* ChaosComponentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C6BD02225F4F0F2002E387A /* ChaosComponentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6BD03225F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponentUITests" */;
+			buildPhases = (
+				0C6BD01F25F4F0F2002E387A /* Sources */,
+				0C6BD02025F4F0F2002E387A /* Frameworks */,
+				0C6BD02125F4F0F2002E387A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C6BD02525F4F0F2002E387A /* PBXTargetDependency */,
+			);
+			name = ChaosComponentUITests;
+			productName = ChaosComponentUITests;
+			productReference = 0C6BD02325F4F0F2002E387A /* ChaosComponentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C6BCFFA25F4F0EF002E387A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0C6BD00125F4F0EF002E387A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0C6BD01725F4F0F2002E387A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0C6BD00125F4F0EF002E387A;
+					};
+					0C6BD02225F4F0F2002E387A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 0C6BD00125F4F0EF002E387A;
+					};
+				};
+			};
+			buildConfigurationList = 0C6BCFFD25F4F0EF002E387A /* Build configuration list for PBXProject "ChaosComponent" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C6BCFF925F4F0EF002E387A;
+			productRefGroup = 0C6BD00325F4F0EF002E387A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C6BD00125F4F0EF002E387A /* ChaosComponent */,
+				0C6BD01725F4F0F2002E387A /* ChaosComponentTests */,
+				0C6BD02225F4F0F2002E387A /* ChaosComponentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C6BD00025F4F0EF002E387A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
+				0C6BD00F25F4F0F2002E387A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6BD01625F4F0F2002E387A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6BD02125F4F0F2002E387A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29A19B1CEBDB23EA0135E691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaosComponent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E63E4AD27B3E67B4E104010 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C6BCFFE25F4F0EF002E387A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6BD00A25F4F0EF002E387A /* ViewController.m in Sources */,
+				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
+				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6BD01425F4F0F2002E387A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6BD01D25F4F0F2002E387A /* ChaosComponentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6BD01F25F4F0F2002E387A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6BD02825F4F0F2002E387A /* ChaosComponentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C6BD01A25F4F0F2002E387A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C6BD00125F4F0EF002E387A /* ChaosComponent */;
+			targetProxy = 0C6BD01925F4F0F2002E387A /* PBXContainerItemProxy */;
+		};
+		0C6BD02525F4F0F2002E387A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C6BD00125F4F0EF002E387A /* ChaosComponent */;
+			targetProxy = 0C6BD02425F4F0F2002E387A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C6BD00D25F4F0F2002E387A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C6BD00E25F4F0F2002E387A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C6BD02A25F4F0F2002E387A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0C6BD02B25F4F0F2002E387A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0C6BD02D25F4F0F2002E387A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChaosComponent/ChaosComponent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaosComponent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C6BD02E25F4F0F2002E387A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChaosComponent/ChaosComponent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaosComponent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0C6BD03025F4F0F2002E387A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaosComponentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaosComponent.app/Contents/MacOS/ChaosComponent";
+			};
+			name = Debug;
+		};
+		0C6BD03125F4F0F2002E387A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaosComponentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaosComponent.app/Contents/MacOS/ChaosComponent";
+			};
+			name = Release;
+		};
+		0C6BD03325F4F0F2002E387A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaosComponentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChaosComponent;
+			};
+			name = Debug;
+		};
+		0C6BD03425F4F0F2002E387A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaosComponentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChaosComponent;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C6BCFFD25F4F0EF002E387A /* Build configuration list for PBXProject "ChaosComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6BD02A25F4F0F2002E387A /* Debug */,
+				0C6BD02B25F4F0F2002E387A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6BD02C25F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6BD02D25F4F0F2002E387A /* Debug */,
+				0C6BD02E25F4F0F2002E387A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6BD02F25F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6BD03025F4F0F2002E387A /* Debug */,
+				0C6BD03125F4F0F2002E387A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6BD03225F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6BD03325F4F0F2002E387A /* Debug */,
+				0C6BD03425F4F0F2002E387A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C6BCFFA25F4F0EF002E387A /* Project object */;
+}
