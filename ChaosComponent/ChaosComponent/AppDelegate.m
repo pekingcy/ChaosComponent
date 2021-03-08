@@ -28,13 +28,8 @@
     [[BeeHive shareInstance] setContext:[BHContext shareInstance]];
    // [[BHTimeProfiler sharedTimeProfiler] recordEventTime:@"BeeHive::super start launch"];
 
-    
     [super application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    
     id<HomeServiceProtocol> homeVc = [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
-    
-
     if ([homeVc isKindOfClass:[UIViewController class]]) {
         UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:(UIViewController*)homeVc];
         
