@@ -5,10 +5,11 @@
 //  Created by 柴志勇 on 2021/3/7.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
+#import "BeeHive.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : BHAppDelegate <UIApplicationDelegate>
 
-
+@property (strong, nonatomic) UIWindow *window;
 @end
 

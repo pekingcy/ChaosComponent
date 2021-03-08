@@ -5,11 +5,12 @@
 //  Created by 柴志勇 on 2021/3/7.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-int main(int argc, const char * argv[]) {
+int main(int argc, char * argv[])
+{
     @autoreleasepool {
-        // Setup code that might create autoreleased objects goes here.
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
-    return NSApplicationMain(argc, argv);
 }

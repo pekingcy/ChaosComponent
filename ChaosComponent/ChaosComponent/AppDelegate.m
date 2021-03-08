@@ -6,7 +6,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BeeHive.h"
+#import "BHService.h"
 @interface AppDelegate ()
 
 
@@ -14,13 +15,46 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+    
+    [BHContext shareInstance].application = application;
+    [BHContext shareInstance].launchOptions = launchOptions;
+    [BHContext shareInstance].moduleConfigName = @"BeeHive.bundle/BeeHive";//可选，默认为BeeHive.bundle/BeeHive.plist
+    [BHContext shareInstance].serviceConfigName = @"BeeHive.bundle/BHService";
+    
+    [BeeHive shareInstance].enableException = YES;
+    [[BeeHive shareInstance] setContext:[BHContext shareInstance]];
+   // [[BHTimeProfiler sharedTimeProfiler] recordEventTime:@"BeeHive::super start launch"];
+
+    
+    [super application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    
+    id<HomeServiceProtocol> homeVc = [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
+    
+
+    if ([homeVc isKindOfClass:[UIViewController class]]) {
+        UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:(UIViewController*)homeVc];
+        
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.rootViewController = navCtrl;
+        
+        [self.window makeKeyAndVisible];
+    }
+    
+    return YES;
+}
+
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
 }
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+   
 }
 
 
