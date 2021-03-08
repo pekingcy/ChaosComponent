@@ -17,6 +17,8 @@
 		E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m */; };
 		E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26DA25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m */; };
 		E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */; };
+		E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B270C25F5EBF500D25381 /* Default-667h@2x.png */; };
+		E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B273125F5F8AB00D25381 /* Default-896h@2x.png */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		E90B26DF25F5CAB200D25381 /* FrameServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameServiceProtocol.h; sourceTree = "<group>"; };
 		E90B26E025F5CB4300D25381 /* ChaosFrameModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosFrameModule.h; sourceTree = "<group>"; };
 		E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosFrameModule.m; sourceTree = "<group>"; };
+		E90B270C25F5EBF500D25381 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		E90B273125F5F8AB00D25381 /* Default-896h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-896h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E90B26FB25F5E79200D25381 /* source */,
 				E90B26D825F5CA4400D25381 /* ChaosFrameKnowledge */,
 				E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */,
 				E90B26BA25F5C53400D25381 /* Home */,
@@ -208,6 +213,23 @@
 				E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */,
 			);
 			path = ChaosFrameKnowledge;
+			sourceTree = "<group>";
+		};
+		E90B26FB25F5E79200D25381 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				E90B272025F5F0CC00D25381 /* Images */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E90B272025F5F0CC00D25381 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E90B273125F5F8AB00D25381 /* Default-896h@2x.png */,
+				E90B270C25F5EBF500D25381 /* Default-667h@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */,
+				E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */,
 				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,7 +570,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9CA5KUE8T7;
 				INFOPLIST_FILE = ChaosComponent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -555,6 +579,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = jingquezhili;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -570,7 +595,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9CA5KUE8T7;
 				INFOPLIST_FILE = ChaosComponent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -579,6 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = jingquezhili;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

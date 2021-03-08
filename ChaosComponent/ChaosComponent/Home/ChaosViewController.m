@@ -38,7 +38,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
+
 -(void)registerViewController:(UIViewController *)vc title:(NSString *)title iconName:(NSString *)iconName
 {
     vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"Home.bundle/%@", iconName]];

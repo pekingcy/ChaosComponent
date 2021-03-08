@@ -40,7 +40,7 @@
         
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         self.window.rootViewController = navCtrl;
-        
+        self.window.backgroundColor = [UIColor whiteColor];
         [self.window makeKeyAndVisible];
     }
     
