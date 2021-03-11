@@ -8,13 +8,22 @@
 #import "ChaosFrameKnowledgeViewController.h"
 
 @interface ChaosFrameKnowledgeViewController ()
-
 @end
 
 @implementation ChaosFrameKnowledgeViewController
 @synthesize itemId=_itemId;
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString* UITableViewCellIdentifier = @"cellIdentifier";
+    UITableViewCell*cell =  [tableView dequeueReusableCellWithIdentifier:UITableViewCellIdentifier];
+    if(cell == nil){
+        
+    }
+    
 }
 
 @end

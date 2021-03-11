@@ -9,7 +9,7 @@
 #import "BHService.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChaosFrameKnowledgeViewController : UIViewController<FrameServiceProtocol>
+@interface ChaosFrameKnowledgeViewController : UITableViewController<FrameServiceProtocol>
 
 @end
 
