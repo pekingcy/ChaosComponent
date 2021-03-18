@@ -98,7 +98,7 @@ template <typename T>void MArray<T>::display(){
 }
 
 template <typename T>bool MArray<T>:: clear(){
-    size = 0;
+    length = 0;
     return true;
 }
 
