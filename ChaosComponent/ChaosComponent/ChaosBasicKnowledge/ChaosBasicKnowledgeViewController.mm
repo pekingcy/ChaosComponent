@@ -26,7 +26,7 @@ using namespace std;
     array.objectAt(1);
     array.clear();
     int value = array.objectAt(0);
-    int a = 0;
+    array.display();
 }
 
 @end
