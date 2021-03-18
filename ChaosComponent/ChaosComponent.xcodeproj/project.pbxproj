@@ -14,11 +14,12 @@
 		0C6BD02825F4F0F2002E387A /* ChaosComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD02725F4F0F2002E387A /* ChaosComponentUITests.m */; };
 		E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26BC25F5C56300D25381 /* ChaosViewController.m */; };
 		E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26C525F5C59200D25381 /* ChaosHomeModule.m */; };
-		E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m */; };
+		E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */; };
 		E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26DA25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m */; };
 		E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */; };
 		E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B270C25F5EBF500D25381 /* Default-667h@2x.png */; };
 		E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B273125F5F8AB00D25381 /* Default-896h@2x.png */; };
+		E927377D2601C502002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +64,7 @@
 		E90B26C525F5C59200D25381 /* ChaosHomeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosHomeModule.m; sourceTree = "<group>"; };
 		E90B26CA25F5C69600D25381 /* BHService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHService.h; sourceTree = "<group>"; };
 		E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicKnowledgeViewController.h; sourceTree = "<group>"; };
-		E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosBasicKnowledgeViewController.m; sourceTree = "<group>"; };
+		E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ChaosBasicKnowledgeViewController.mm; sourceTree = "<group>"; };
 		E90B26D925F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosFrameKnowledgeViewController.h; sourceTree = "<group>"; };
 		E90B26DA25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosFrameKnowledgeViewController.m; sourceTree = "<group>"; };
 		E90B26DF25F5CAB200D25381 /* FrameServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameServiceProtocol.h; sourceTree = "<group>"; };
@@ -71,6 +72,8 @@
 		E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosFrameModule.m; sourceTree = "<group>"; };
 		E90B270C25F5EBF500D25381 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		E90B273125F5F8AB00D25381 /* Default-896h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-896h@2x.png"; sourceTree = "<group>"; };
+		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
+		E927377C2601C502002115D3 /* MArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
-				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m */,
+				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */,
+				E927377B2601C502002115D3 /* MArray.cpp */,
+				E927377C2601C502002115D3 /* MArray.hpp */,
 			);
 			path = ChaosBasicKnowledge;
 			sourceTree = "<group>";
@@ -409,9 +414,10 @@
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
-				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.m in Sources */,
+				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
+				E927377D2601C502002115D3 /* MArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +570,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_ENTITLEMENTS = ChaosComponent/ChaosComponent.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -589,6 +597,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_ENTITLEMENTS = ChaosComponent/ChaosComponent.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;

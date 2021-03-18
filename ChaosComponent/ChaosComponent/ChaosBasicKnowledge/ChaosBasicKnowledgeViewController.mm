@@ -6,6 +6,9 @@
 //
 
 #import "ChaosBasicKnowledgeViewController.h"
+#include "MArray.cpp"
+
+using namespace std;
 
 @interface ChaosBasicKnowledgeViewController ()
 
@@ -16,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    MArray<int> array = *new MArray<int>;
+    array.init();
+    array.add(1);
+    array.insert(1,2);
+    array.objectAt(1);
 }
 
 @end
