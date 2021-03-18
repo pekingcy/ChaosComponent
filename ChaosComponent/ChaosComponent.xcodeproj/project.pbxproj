@@ -130,7 +130,6 @@
 				E90B26FB25F5E79200D25381 /* source */,
 				E90B26D825F5CA4400D25381 /* ChaosFrameKnowledge */,
 				E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */,
-				E90B26BA25F5C53400D25381 /* Home */,
 				E90B26B525F5C48A00D25381 /* Services */,
 				0C6BD00525F4F0EF002E387A /* AppDelegate.h */,
 				0C6BD00625F4F0EF002E387A /* AppDelegate.m */,
@@ -203,8 +202,9 @@
 			children = (
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
 				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */,
-				E927377B2601C502002115D3 /* MArray.cpp */,
 				E927377C2601C502002115D3 /* MArray.hpp */,
+				E927377B2601C502002115D3 /* MArray.cpp */,
+				E90B26BA25F5C53400D25381 /* Home */,
 			);
 			path = ChaosBasicKnowledge;
 			sourceTree = "<group>";

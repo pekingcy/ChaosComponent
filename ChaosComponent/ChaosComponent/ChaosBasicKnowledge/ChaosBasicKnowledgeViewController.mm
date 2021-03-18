@@ -24,6 +24,7 @@ using namespace std;
     array.add(1);
     array.insert(1,2);
     array.objectAt(1);
+    array
 }
 
 @end

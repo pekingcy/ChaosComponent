@@ -97,3 +97,8 @@ template <typename T>void MArray<T>::display(){
     cout << endl;
 }
 
+template <typename T>bool MArray<T>:: clear(){
+    size = 0;
+    return true;
+}
+

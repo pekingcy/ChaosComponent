@@ -28,6 +28,8 @@ public:
     T del(int index);
     //返回指定位置的元素
     T objectAt(int index);
+    //清空所有数据
+    bool clear();
     //打印数组所有元素
     void display();
 };
