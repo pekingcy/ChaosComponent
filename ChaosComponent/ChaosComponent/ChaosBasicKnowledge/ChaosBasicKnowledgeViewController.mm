@@ -24,7 +24,9 @@ using namespace std;
     array.add(1);
     array.insert(1,2);
     array.objectAt(1);
-    array
+    array.clear();
+    int value = array.objectAt(0);
+    int a = 0;
 }
 
 @end
