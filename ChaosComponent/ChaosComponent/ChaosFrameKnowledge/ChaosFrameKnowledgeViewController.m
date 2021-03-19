@@ -18,7 +18,6 @@
     [super viewDidLoad];
 }
 
-
 - (void)viewWillAppear:(BOOL)animated{
     id<HomeServiceProtocol> homeVc =  [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
     [homeVc setNavigationTitle:self.naviTitle];

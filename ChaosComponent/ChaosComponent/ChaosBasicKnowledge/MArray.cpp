@@ -23,7 +23,7 @@ template<typename T> bool MArray<T>::init(){
 
 template<typename T> bool MArray<T>::ensureCapcity(){
     if(length >= size){
-        T *newBase = (T*)realloc(base,10 * sizeof(T) + size);
+        T *newBase = (T*)realloc(base,10 * sizeof(T) + size * sizeof(T));
         if(!newBase){
             return false;
         }
@@ -64,6 +64,19 @@ template<typename T> bool MArray<T>::insert(int index,const T item){
     return true;
 }
 
+
+template<typename T> bool MArray<T>::set(int index,const T item){
+    if(!ensureCapcity()){
+        return false;
+    }
+    if(index < 1 || index > length){
+        return false;
+    }
+    T *p = base + index -1;
+    *p = item;
+    return true;
+}
+  
 template<typename T>T MArray<T>::del(int index){
     if(index<1 || index > length){
         return NULL;

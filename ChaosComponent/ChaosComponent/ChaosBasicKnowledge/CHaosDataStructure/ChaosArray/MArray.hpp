@@ -24,6 +24,8 @@ public:
     bool add(T item);
     //插入元素到数组的具体位置，位置从1开始
     bool insert(int index,T item);
+    //修改下标index的值
+    bool set(int index,T item);
     //删除指定位置的元素并返回，位置从1开始
     T del(int index);
     //返回指定位置的元素
