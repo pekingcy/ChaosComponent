@@ -10,12 +10,17 @@
 
 using namespace std;
 
+ 
+
 @interface ChaosBasicKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView* tableView;
-@property(strong,nonatomic)NSArray* resource;
+@property(copy,  nonatomic)NSArray* resource;
+
 @end
 
 @implementation ChaosBasicKnowledgeViewController
+
+@synthesize naviTitle = _naviTitle;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,16 +33,15 @@ using namespace std;
 //    array.clear();
 //    int value = array.objectAt(0);
 //    array.display();
-    
-    id<HomeServiceProtocol> homeVc = [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
-    if ([homeVc isKindOfClass:[UIViewController class]]) {
-        UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:(UIViewController*)homeVc];
-        navCtrl.title = self.naviTitle;
-    }
-    
+   
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    id<HomeServiceProtocol> homeVc =  [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
+    [homeVc setNavigationTitle:self.naviTitle];
 }
 
 - (NSArray *)resource{

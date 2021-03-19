@@ -13,7 +13,6 @@
 
 @protocol FrameServiceProtocol <NSObject, BHServiceProtocol>
 @property(nonatomic, strong) NSString *naviTitle;
-@property(nonatomic, strong) NSString *itemId;
 
 @end
 

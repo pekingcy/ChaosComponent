@@ -35,11 +35,8 @@
 {
     NSLog(@"模块初始化中");
     NSLog(@"%@",context.moduleConfigName);
-    
-    
     id<FrameServiceProtocol> service = [[BeeHive shareInstance] createService:@protocol(FrameServiceProtocol)];
     
-    service.itemId = @"我是单例";
 }
 
 

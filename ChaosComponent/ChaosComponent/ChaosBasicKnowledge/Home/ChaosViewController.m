@@ -16,6 +16,10 @@
 
 @implementation ChaosViewController
 
++ (BOOL)singleton{
+    return YES;
+}
+
 -(instancetype)init
 {
     self = [super init];
@@ -24,11 +28,13 @@
         
         id<BasicServiceProtocol> v1 = [[BeeHive shareInstance] createService:@protocol(BasicServiceProtocol)];
         if ([v1 isKindOfClass:[UIViewController class]]) {
+            v1.naviTitle = @"基础知识";
             [self registerViewController:(UIViewController *)v1 title:@"基础知识" iconName:nil];
         }
         
         id<FrameServiceProtocol> v4 = [[BeeHive shareInstance] createService:@protocol(FrameServiceProtocol)];
         if ([v4 isKindOfClass:[UIViewController class]]) {
+            v4.naviTitle = @"架构";
             [self registerViewController:(UIViewController *)v4 title:@"架构" iconName:nil];
         }
     }
@@ -39,6 +45,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)setNavigationTitle:(NSString*)title{
+    self.title = title;
 }
 
 -(void)registerViewController:(UIViewController *)vc title:(NSString *)title iconName:(NSString *)iconName
@@ -56,7 +66,6 @@
 {
     id<FrameServiceProtocol> obj = [[BeeHive shareInstance] createService:@protocol(FrameServiceProtocol)];
     if ([obj isKindOfClass:[UIViewController class]]) {
-        obj.itemId = @"12313231231";
         [self.navigationController pushViewController:(UIViewController *)obj animated:YES];
     }
 }

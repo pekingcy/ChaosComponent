@@ -10,6 +10,7 @@
 
 @protocol HomeServiceProtocol <NSObject, BHServiceProtocol>
 
+- (void)setNavigationTitle:(NSString*)title;
 
 -(void)registerViewController:(UIViewController *)vc title:(NSString *)title iconName:(NSString *)iconName;
 

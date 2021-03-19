@@ -36,7 +36,7 @@
     NSLog(@"模块初始化中");
     NSLog(@"%@",context.moduleConfigName);
     id<BasicServiceProtocol> service = [[BeeHive shareInstance] createService:@protocol(BasicServiceProtocol)];
-    service.naviTitle = @"我是单例";
+    
 }
 
 
@@ -44,6 +44,7 @@
 {
     [[BeeHive shareInstance]  registerService:@protocol(BasicServiceProtocol) service:[ChaosBasicKnowledgeViewController class]];
     NSLog(@"TradeModule setup");
+    
 }
 
 - (void)basicModuleLevel
