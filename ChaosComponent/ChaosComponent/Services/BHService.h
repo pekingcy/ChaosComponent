@@ -11,5 +11,6 @@
 #import "BeeHive.h"
 #import "HomeServiceProtocol.h"
 #import "FrameServiceProtocol.h"
+#import "BasicServiceProtocol.h"
 
 #endif /* BHService_h */

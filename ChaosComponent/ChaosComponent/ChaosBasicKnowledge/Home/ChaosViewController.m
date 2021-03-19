@@ -22,9 +22,9 @@
     if (self) {
         self.registerViewControllers = [[NSMutableArray alloc] initWithCapacity:1];
         
-        ChaosBasicKnowledgeViewController *v1 = [[ChaosBasicKnowledgeViewController alloc] init];
+        id<BasicServiceProtocol> v1 = [[BeeHive shareInstance] createService:@protocol(BasicServiceProtocol)];
         if ([v1 isKindOfClass:[UIViewController class]]) {
-            [self registerViewController:v1 title:@"基础知识" iconName:nil];
+            [self registerViewController:(UIViewController *)v1 title:@"基础知识" iconName:nil];
         }
         
         id<FrameServiceProtocol> v4 = [[BeeHive shareInstance] createService:@protocol(FrameServiceProtocol)];

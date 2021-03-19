@@ -19,7 +19,9 @@
 		E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */; };
 		E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B270C25F5EBF500D25381 /* Default-667h@2x.png */; };
 		E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B273125F5F8AB00D25381 /* Default-896h@2x.png */; };
-		E927377D2601C502002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
+		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
+		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
+		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,9 @@
 		E90B273125F5F8AB00D25381 /* Default-896h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-896h@2x.png"; sourceTree = "<group>"; };
 		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
 		E927377C2601C502002115D3 /* MArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MArray.hpp; sourceTree = "<group>"; };
+		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
+		E92738B026047324002115D3 /* ChaosBasicModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosBasicModule.m; sourceTree = "<group>"; };
+		E92738B526047536002115D3 /* BasicServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicServiceProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,7 @@
 				E90B26B625F5C4B900D25381 /* HomeServiceProtocol.h */,
 				E90B26CA25F5C69600D25381 /* BHService.h */,
 				E90B26DF25F5CAB200D25381 /* FrameServiceProtocol.h */,
+				E92738B526047536002115D3 /* BasicServiceProtocol.h */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -200,10 +206,12 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E92738AF26047324002115D3 /* ChaosBasicModule.h */,
+				E92738B026047324002115D3 /* ChaosBasicModule.m */,
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
 				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */,
-				E927377C2601C502002115D3 /* MArray.hpp */,
 				E927377B2601C502002115D3 /* MArray.cpp */,
+				E927387F2604487D002115D3 /* CHaosDataStructure */,
 				E90B26BA25F5C53400D25381 /* Home */,
 			);
 			path = ChaosBasicKnowledge;
@@ -235,6 +243,38 @@
 				E90B270C25F5EBF500D25381 /* Default-667h@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		E927387F2604487D002115D3 /* CHaosDataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				E92738822604494F002115D3 /* ChaosLinks */,
+				E927388126044915002115D3 /* ChaosArray */,
+				E927388026044906002115D3 /* ChaosString */,
+			);
+			path = CHaosDataStructure;
+			sourceTree = "<group>";
+		};
+		E927388026044906002115D3 /* ChaosString */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChaosString;
+			sourceTree = "<group>";
+		};
+		E927388126044915002115D3 /* ChaosArray */ = {
+			isa = PBXGroup;
+			children = (
+				E927377C2601C502002115D3 /* MArray.hpp */,
+			);
+			path = ChaosArray;
+			sourceTree = "<group>";
+		};
+		E92738822604494F002115D3 /* ChaosLinks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChaosLinks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,11 +453,13 @@
 				E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
+				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
-				E927377D2601C502002115D3 /* MArray.cpp in Sources */,
+				E927388D26045164002115D3 /* MArray.hpp in Sources */,
+				E927388926045085002115D3 /* MArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +619,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = ChaosComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -604,6 +647,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = ChaosComponent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

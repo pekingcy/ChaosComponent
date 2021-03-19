@@ -14,6 +14,12 @@
 @synthesize itemId=_itemId;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    id<HomeServiceProtocol> homeVc = [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
+    if ([homeVc isKindOfClass:[UIViewController class]]) {
+        UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:(UIViewController*)homeVc];
+        navCtrl.title = self.naviTitle;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView

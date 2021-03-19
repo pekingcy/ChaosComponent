@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BHService.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChaosBasicKnowledgeViewController : UIViewController
+@interface ChaosBasicKnowledgeViewController : UIViewController<BasicServiceProtocol>
 
 @end
 
