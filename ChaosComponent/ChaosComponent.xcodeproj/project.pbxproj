@@ -22,6 +22,9 @@
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
+		E9B88B542608B30500085A63 /* AList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B522608B30500085A63 /* AList.cpp */; };
+		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
+		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,12 @@
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
 		E92738B026047324002115D3 /* ChaosBasicModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosBasicModule.m; sourceTree = "<group>"; };
 		E92738B526047536002115D3 /* BasicServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicServiceProtocol.h; sourceTree = "<group>"; };
+		E9B88B522608B30500085A63 /* AList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AList.cpp; sourceTree = "<group>"; };
+		E9B88B532608B30500085A63 /* AList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AList.hpp; sourceTree = "<group>"; };
+		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
+		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
+		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		E9B88B5F2608BDAD00085A63 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +222,12 @@
 				E927377B2601C502002115D3 /* MArray.cpp */,
 				E927387F2604487D002115D3 /* CHaosDataStructure */,
 				E90B26BA25F5C53400D25381 /* Home */,
+				E9B88B522608B30500085A63 /* AList.cpp */,
+				E9B88B532608B30500085A63 /* AList.hpp */,
+				E9B88B582608BBB000085A63 /* AbstractList.cpp */,
+				E9B88B592608BBB000085A63 /* AbstractList.hpp */,
+				E9B88B5E2608BDAD00085A63 /* List.cpp */,
+				E9B88B5F2608BDAD00085A63 /* List.hpp */,
 			);
 			path = ChaosBasicKnowledge;
 			sourceTree = "<group>";
@@ -451,9 +466,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */,
+				E9B88B542608B30500085A63 /* AList.cpp in Sources */,
+				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
 				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
+				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
