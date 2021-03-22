@@ -11,12 +11,12 @@
 using namespace std;
 
 template<typename T> void linkedList<T>:: clear(){
-    size = 0;
+    this->size = 0;
     first = NULL;
 }
 
 template<typename T> T linkedList<T>:: get(int index){
-    if (index < size) {
+    if (index < this->size) {
         
     }
 }

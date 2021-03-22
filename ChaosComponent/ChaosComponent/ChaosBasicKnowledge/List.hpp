@@ -24,7 +24,7 @@ public:
     * 元素的数量
     * @return
     */
-    virtual int size();
+    virtual int listSize();
 
    /**
     * 是否为空
