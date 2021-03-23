@@ -36,45 +36,10 @@ public:
     T set(int index,T element);
     void add(int index, T element);
     T remove(int index);
+    int indexOf(T element);
+    string toString();
 private:
     Node<T> node(int index);
-public:
-    
-    int indexOf(T element) {
-        if (element == NULL) {
-            Node<T> node = first;
-            for (int i = 0; i < this->size; i++) {
-                if (node.element == NULL) return i;
-                
-                node = node.next;
-            }
-        } else {
-            Node<T> node = first;
-            for (int i = 0; i < this->size; i++) {
-                if (element.equals(node.element)) return i;
-                node = node.next;
-            }
-        }
-        return ELEMENT_NOT_FOUND;
-    }
-    
-private:
-    
-Node<T> listNode(int index) {
-       this.rangeCheck(index);
-       if (index < (this->size >> 1)) {
-           Node<T> node = first;
-           for (int i = 0; i < index; i++) {
-               node = node.next;
-           }
-           return node;
-       } else {
-           Node<T> node = last;
-           for (int i = this->size - 1; i > index; i--) {
-               node = node.prev;
-           }
-           return node;
-       }
-   }
+    Node<T> listNode(int index);
 };
 #endif /* AList_hpp */
