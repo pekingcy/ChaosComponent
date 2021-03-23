@@ -62,6 +62,4 @@ public:
     }
 };
 
-
-
 #endif /* AbstractList_hpp */

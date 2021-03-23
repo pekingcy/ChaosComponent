@@ -14,10 +14,12 @@
 template <class T>
 class Node{
 public:
-    T data; /*数据成员可以是多个不同类型的数据*/
-    Node *next;/*指针变量成员只能是-个*/
+    T element; /*数据成员可以是多个不同类型的数据*/
+    Node<T> *prev;
+    Node<T> *next;/*指针变量成员只能是-个*/
 public:
-    Node(T element,Node<T> next){
+    Node(Node<T> prev,T element,Node<T> next){
+        this->prev = prev;
         this->data = element;
         this->next = next;
     }
@@ -27,10 +29,13 @@ class linkedList:public AbstractList<T>{
 private:
     Node<T> *first;
     Node<T> *last;
+    
 public:
     void clear();
     T get(int index);
     T set(int index,T element);
+    void add(int index, T element);
+    T remove(int index);
 private:
     Node<T> node(int index);
 public:
