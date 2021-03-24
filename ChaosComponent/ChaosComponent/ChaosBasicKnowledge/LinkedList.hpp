@@ -25,7 +25,7 @@ public:
     }
 };
 template<class T>
-class linkedList:public AbstractList<T>{
+class LinkedList:public AbstractList<T>{
 private:
     Node<T> *first;
     Node<T> *last;
