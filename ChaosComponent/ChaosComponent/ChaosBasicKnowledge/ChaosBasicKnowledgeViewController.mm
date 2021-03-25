@@ -7,10 +7,9 @@
 
 #import "ChaosBasicKnowledgeViewController.h"
 #include "MArray.cpp"
+#include "LinkedList.cpp"
 
 using namespace std;
-
- 
 
 @interface ChaosBasicKnowledgeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView* tableView;
@@ -25,15 +24,10 @@ using namespace std;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    MArray<int> array = *new MArray<int>;
-//    array.init();
-//    array.add(1);
-//    array.insert(1,2);
-//    array.objectAt(1);
-//    array.clear();
-//    int value = array.objectAt(0);
-//    array.display();
-   
+    LinkedList<int> *list = new LinkedList<int>;
+    list->add(0, 10);
+    cout << list->toString()<<endl;
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];

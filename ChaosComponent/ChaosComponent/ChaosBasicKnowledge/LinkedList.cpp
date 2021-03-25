@@ -7,15 +7,19 @@
 
 #include "LinkedList.hpp"
 #include <iostream>
-
 using namespace std;
+
+template<typename T> LinkedList(){
+    this->first = nullptr;
+    this->last = nullptr;
+};
 
 template<typename T> void LinkedList<T>:: clear(){
     this->size = 0;
     while (this->first != NULL) {
-        LinkedList<T>* deleteNextNode =  this->first->next;
+        Node<T>* deleteNextNode =  this->first->next;
         delete this->first;
-        this-first = deleteNextNode;
+        this->first = deleteNextNode;
     }
     this->first = NULL;
     this->last = NULL;
@@ -26,7 +30,7 @@ template<typename T> T LinkedList<T>:: get(int index){
 }
 
 template<typename T>T LinkedList<T>:: set(int index, T element){
-    Node<T> *node = node(index);
+    Node<T> *node = this->node(index);
     T old = node->element;
     node->element = element;
     return old;
@@ -59,7 +63,7 @@ template<typename T>void LinkedList<T>:: add(int index, T element){
 template<typename T>T LinkedList<T>:: remove(int index){
     
     this->rangeCheck(index);
-    Node<T>* node = node(index);
+    Node<T>* node = this->node(index);
     Node<T>* prev = node->prev;
     Node<T>* next = node->next;
     
@@ -77,7 +81,7 @@ template<typename T>T LinkedList<T>:: remove(int index){
     return node->element;
 }
 
-template<typename T> Node<T> LinkedList<T>:: node(int index){
+template<typename T> Node<T>* LinkedList<T>:: node(int index){
     this->rangeCheck(index);
     if (index < (this->size >> 1)) {
         Node<T> *node = this->first;
@@ -112,7 +116,7 @@ template<typename T> int LinkedList<T>::indexOf(T element) {
     return ELEMENT_NOT_FOUND;
 }
 
-template<typename T> Node<T>LinkedList<T>:: listNode(int index) {
+template<typename T> Node<T>* LinkedList<T>:: listNode(int index) {
    this.rangeCheck(index);
    if (index < (this->size >> 1)) {
        Node<T>* node = first;
@@ -131,13 +135,15 @@ template<typename T> Node<T>LinkedList<T>:: listNode(int index) {
 
 template<typename T> string LinkedList<T>:: toString() {
         string str1 = "";
-        str1.append("size=").append(this->size).append(", [");
+        str1 = str1.append("size=");
+        str1 = str1.append(to_string(this->size));
+        str1 = str1.append(", [");
         Node<T>* node = first;
         for (int i = 0; i < this->size; i++) {
             if (i != 0) {
                 str1.append(", ");
             }
-            str1.append(node);
+            str1.append(to_string(node->element));
             node = node->next;
         }
         str1.append("]");

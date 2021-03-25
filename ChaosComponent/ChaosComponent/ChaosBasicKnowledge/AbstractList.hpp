@@ -13,7 +13,7 @@
 #include <iostream>
 using namespace std;
 
-template <class T>
+template <typename T>
 class AbstractList:List<T>{
 public:
     int size;
@@ -21,31 +21,24 @@ public:
     int listSize(){
         return size;
     }
-    /**
-     * 是否为空
-     * @return
-    */
     bool isEmpty() {
         return size == 0;
     }
-    /**
-     * 是否包含某个元素
-     * @param element
-     * @return
-     */
-   bool contains(T element) {
-        return indexOf(element) != ELEMENT_NOT_FOUND;
-    }
 
-    /**
-     * 添加元素到尾部
-     * @param element
-     */
-    void add(T element) {
-        add(size, element);
+    bool contains(T element) {
+        return this->indexOf(element) != ELEMENT_NOT_FOUND;
     }
-public:
-     void outOfBounds(int index) {
+    
+    void add(int index, T element){
+        
+    }
+ 
+    void add(T element) {
+         this->add(size, element);
+    }
+    
+    
+    void outOfBounds(int index) {
         cout << "Index:" << index << ", Size:" << size << endl;
     }
     
