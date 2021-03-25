@@ -37,7 +37,6 @@ public:
          this->add(size, element);
     }
     
-    
     void outOfBounds(int index) {
         cout << "Index:" << index << ", Size:" << size << endl;
     }

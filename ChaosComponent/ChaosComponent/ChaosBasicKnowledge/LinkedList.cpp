@@ -9,10 +9,7 @@
 #include <iostream>
 using namespace std;
 
-template<typename T> LinkedList(){
-    this->first = nullptr;
-    this->last = nullptr;
-};
+
 
 template<typename T> void LinkedList<T>:: clear(){
     this->size = 0;

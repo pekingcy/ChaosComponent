@@ -32,7 +32,11 @@ private:
     Node<T> *last;
     
 public:
-    LinkedList();
+    LinkedList(){
+        this->size = 0;
+        this->first = nullptr;
+        this->last = nullptr;
+    };
     void clear();
     T get(int index);
     T set(int index,T element);
