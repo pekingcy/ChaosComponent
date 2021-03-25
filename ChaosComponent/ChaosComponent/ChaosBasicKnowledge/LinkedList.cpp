@@ -144,7 +144,7 @@ template<typename T> string LinkedList<T>:: toString() {
             if (i != 0) {
                 str1.append(", ");
             }
-            str1.append(to_string(node->element));
+            str1.append(node->toString());
             node = node->next;
         }
         str1.append("]");

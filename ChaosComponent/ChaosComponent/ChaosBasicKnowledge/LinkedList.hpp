@@ -23,6 +23,23 @@ public:
         this->element = element;
         this->next = next;
     }
+    string toString() {
+        string nodeStr = "";
+        if (prev != NULL) {
+            nodeStr.append(to_string(prev->element));
+        } else {
+            nodeStr.append("null");
+        }
+        nodeStr.append("_");
+        nodeStr.append(to_string(element));
+        nodeStr.append("_");
+        if (next != NULL) {
+            nodeStr.append(to_string(next->element));
+        } else {
+            nodeStr.append("null");
+        }
+        return nodeStr;
+    }
 };
 
 template<typename T>
