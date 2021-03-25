@@ -150,6 +150,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E9F2E595260CAEE00098F40C /* LeetCode */,
 				E90B26FB25F5E79200D25381 /* source */,
 				E90B26D825F5CA4400D25381 /* ChaosFrameKnowledge */,
 				E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */,
@@ -160,9 +161,6 @@
 				0C6BD01025F4F0F2002E387A /* Info.plist */,
 				0C6BD01125F4F0F2002E387A /* main.m */,
 				0C6BD01325F4F0F2002E387A /* ChaosComponent.entitlements */,
-				E990F202260ACC020083D6DB /* 206_反转链表.cpp */,
-				E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */,
-				E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */,
 			);
 			path = ChaosComponent;
 			sourceTree = "<group>";
@@ -304,6 +302,16 @@
 			children = (
 			);
 			path = ChaosLinks;
+			sourceTree = "<group>";
+		};
+		E9F2E595260CAEE00098F40C /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				E990F202260ACC020083D6DB /* 206_反转链表.cpp */,
+				E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */,
+				E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
