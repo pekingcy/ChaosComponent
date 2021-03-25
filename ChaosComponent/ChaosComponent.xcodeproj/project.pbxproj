@@ -25,7 +25,8 @@
 		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
 		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
 		E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */; };
-		E9B88B542608B30500085A63 /* AList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B522608B30500085A63 /* AList.cpp */; };
+		E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */; };
+		E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D9260C22F20083D6DB /* LinkedList.cpp */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
@@ -88,8 +89,10 @@
 		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
 		E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "141_环型链表.cpp"; sourceTree = "<group>"; };
 		E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "237_删除链表节点.cpp"; sourceTree = "<group>"; };
-		E9B88B522608B30500085A63 /* AList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AList.cpp; sourceTree = "<group>"; };
-		E9B88B532608B30500085A63 /* AList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AList.hpp; sourceTree = "<group>"; };
+		E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleLinkedList.cpp; sourceTree = "<group>"; };
+		E990F2D7260C22F20083D6DB /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		E990F2D8260C22F20083D6DB /* SingleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedList.hpp; sourceTree = "<group>"; };
+		E990F2D9260C22F20083D6DB /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
@@ -224,6 +227,10 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E990F2D9260C22F20083D6DB /* LinkedList.cpp */,
+				E990F2D7260C22F20083D6DB /* LinkedList.hpp */,
+				E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */,
+				E990F2D8260C22F20083D6DB /* SingleLinkedList.hpp */,
 				E92738AF26047324002115D3 /* ChaosBasicModule.h */,
 				E92738B026047324002115D3 /* ChaosBasicModule.m */,
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
@@ -231,8 +238,6 @@
 				E927377B2601C502002115D3 /* MArray.cpp */,
 				E927387F2604487D002115D3 /* CHaosDataStructure */,
 				E90B26BA25F5C53400D25381 /* Home */,
-				E9B88B522608B30500085A63 /* AList.cpp */,
-				E9B88B532608B30500085A63 /* AList.hpp */,
 				E9B88B582608BBB000085A63 /* AbstractList.cpp */,
 				E9B88B592608BBB000085A63 /* AbstractList.hpp */,
 				E9B88B5E2608BDAD00085A63 /* List.cpp */,
@@ -475,7 +480,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */,
-				E9B88B542608B30500085A63 /* AList.cpp in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
@@ -485,9 +489,11 @@
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
+				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
 				E927388D26045164002115D3 /* MArray.hpp in Sources */,
 				E927388926045085002115D3 /* MArray.cpp in Sources */,
+				E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */,
 				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 			);
