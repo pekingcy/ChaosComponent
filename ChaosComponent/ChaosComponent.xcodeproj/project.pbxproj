@@ -22,6 +22,9 @@
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
+		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
+		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
+		E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */; };
 		E9B88B542608B30500085A63 /* AList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B522608B30500085A63 /* AList.cpp */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
@@ -82,6 +85,9 @@
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
 		E92738B026047324002115D3 /* ChaosBasicModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosBasicModule.m; sourceTree = "<group>"; };
 		E92738B526047536002115D3 /* BasicServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicServiceProtocol.h; sourceTree = "<group>"; };
+		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
+		E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "141_环型链表.cpp"; sourceTree = "<group>"; };
+		E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "237_删除链表节点.cpp"; sourceTree = "<group>"; };
 		E9B88B522608B30500085A63 /* AList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AList.cpp; sourceTree = "<group>"; };
 		E9B88B532608B30500085A63 /* AList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AList.hpp; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
@@ -151,6 +157,9 @@
 				0C6BD01025F4F0F2002E387A /* Info.plist */,
 				0C6BD01125F4F0F2002E387A /* main.m */,
 				0C6BD01325F4F0F2002E387A /* ChaosComponent.entitlements */,
+				E990F202260ACC020083D6DB /* 206_反转链表.cpp */,
+				E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */,
+				E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */,
 			);
 			path = ChaosComponent;
 			sourceTree = "<group>";
@@ -471,6 +480,7 @@
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
 				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
+				E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
@@ -478,6 +488,8 @@
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
 				E927388D26045164002115D3 /* MArray.hpp in Sources */,
 				E927388926045085002115D3 /* MArray.cpp in Sources */,
+				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
+				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
