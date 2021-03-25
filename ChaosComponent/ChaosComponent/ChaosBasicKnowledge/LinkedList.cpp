@@ -5,29 +5,29 @@
 //  Created by jh on 2021/3/22.
 //
 
-#include "AList.hpp"
+#include "LinkedList.hpp"
 #include <iostream>
 
 using namespace std;
 
-template<typename T> void linkedList<T>:: clear(){
+template<typename T> void LinkedList<T>:: clear(){
     this->size = 0;
     first = NULL;
     last = NULL;
 }
 
-template<typename T> T linkedList<T>:: get(int index){
+template<typename T> T LinkedList<T>:: get(int index){
     return node(index).element;
 }
 
-template<typename T>T linkedList<T>:: set(int index, T element){
+template<typename T>T LinkedList<T>:: set(int index, T element){
     Node<T> node = node(index);
     T old = node.element;
     node.element = element;
     return old;
 }
 
-template<typename T>void linkedList<T>:: add(int index, T element){
+template<typename T>void LinkedList<T>:: add(int index, T element){
     this->rangeCheckForAdd(index);
     if(index == this->size){
         Node<T> oldLast = last;
@@ -51,7 +51,7 @@ template<typename T>void linkedList<T>:: add(int index, T element){
     this->size++;
 }
 
-template<typename T>T linkedList<T>:: remove(int index){
+template<typename T>T LinkedList<T>:: remove(int index){
     
     this->rangeCheck(index);
     Node<T> node = node(index);
@@ -72,7 +72,7 @@ template<typename T>T linkedList<T>:: remove(int index){
     return node.element;
 }
 
-template<typename T> Node<T> linkedList<T>:: node(int index){
+template<typename T> Node<T> LinkedList<T>:: node(int index){
     this->rangeCheck(index);
     if (index < (this->size >> 1)) {
         Node<T> node = this->first;
@@ -90,7 +90,7 @@ template<typename T> Node<T> linkedList<T>:: node(int index){
     return NULL;
 }
 
-template<typename T> int linkedList<T>::indexOf(T element) {
+template<typename T> int LinkedList<T>::indexOf(T element) {
     if (element == NULL) {
         Node<T> node = first;
         for (int i = 0; i < this->size; i++) {
@@ -107,7 +107,7 @@ template<typename T> int linkedList<T>::indexOf(T element) {
     return ELEMENT_NOT_FOUND;
 }
 
-template<typename T> Node<T>linkedList<T>:: listNode(int index) {
+template<typename T> Node<T>LinkedList<T>:: listNode(int index) {
    this.rangeCheck(index);
    if (index < (this->size >> 1)) {
        Node<T> node = first;
@@ -124,7 +124,7 @@ template<typename T> Node<T>linkedList<T>:: listNode(int index) {
    }
 }
 
-template<typename T> string linkedList<T>:: toString() {
+template<typename T> string LinkedList<T>:: toString() {
         string str1 = "";
         str1.append("size=").append(this->size).append(", [");
         Node<T> node = first;
