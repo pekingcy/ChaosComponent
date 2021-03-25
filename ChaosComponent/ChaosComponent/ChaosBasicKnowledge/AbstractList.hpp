@@ -32,10 +32,6 @@ public:
     void add(int index, T element){
         
     }
- 
-    void add(T element) {
-         this->add(size, element);
-    }
     
     void outOfBounds(int index) {
         cout << "Index:" << index << ", Size:" << size << endl;

@@ -9,8 +9,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 template<typename T> void LinkedList<T>:: clear(){
     this->size = 0;
     while (this->first != NULL) {
@@ -31,6 +29,10 @@ template<typename T>T LinkedList<T>:: set(int index, T element){
     T old = node->element;
     node->element = element;
     return old;
+}
+
+template<typename T> void LinkedList<T>:: add(T element) {
+     this->add(this->size,element);
 }
 
 template<typename T>void LinkedList<T>:: add(int index, T element){
@@ -75,7 +77,9 @@ template<typename T>T LinkedList<T>:: remove(int index){
         next->prev = prev;
     }
     this->size --;
-    return node->element;
+    T temp = node->element;
+    delete node;
+    return temp;
 }
 
 template<typename T> Node<T>* LinkedList<T>:: node(int index){
@@ -89,7 +93,7 @@ template<typename T> Node<T>* LinkedList<T>:: node(int index){
     }else{
         Node<T>* node = this->last;
         for (int i = this->size -1; i > index; i--) {
-            node = node->next;
+            node = node->prev;
         }
         return node;
     }

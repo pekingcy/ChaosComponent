@@ -25,7 +25,16 @@ using namespace std;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     LinkedList<int> *list = new LinkedList<int>;
-    list->add(0, 10);
+    list->add(10);
+    list->add(11);
+    list->add(13);
+    list->add(15);
+    list->add(17);
+    list->add(19);
+    cout << list->toString()<<endl;
+    list->remove(0);
+    cout << list->toString()<<endl;
+    list->remove(3);
     cout << list->toString()<<endl;
     
     self.tableView.delegate = self;
