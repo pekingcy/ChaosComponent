@@ -29,6 +29,7 @@
 		E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D9260C22F20083D6DB /* LinkedList.cpp */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
+		E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,8 @@
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		E9B88B5F2608BDAD00085A63 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleCircleLinkedList.cpp; sourceTree = "<group>"; };
+		E9F2E59A260CBC5D0098F40C /* SingleCircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SingleCircleLinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,8 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */,
+				E9F2E59A260CBC5D0098F40C /* SingleCircleLinkedList.hpp */,
 				E990F2D9260C22F20083D6DB /* LinkedList.cpp */,
 				E990F2D7260C22F20083D6DB /* LinkedList.hpp */,
 				E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */,
@@ -487,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */,
 				E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
