@@ -38,10 +38,13 @@ template<typename T>void SingleLinkedList<T>::  add(T element){
 template<typename T>void SingleLinkedList<T>:: add(int index, T element){
     this->rangeCheckForAdd(index);
     if(index == 0){
-        first = new Node<T>(element,first);
+        Node<T>* newFirst = new Node<T>(element,first);
+        Node<T>* last = (this->size == 0)?newFirst:node(this->size - 1);
+        last->next = newFirst;
+        first = newFirst;
     }else{
         Node<T>* prev = node(index - 1);
-        Node<T>* node = new Node<T>(element, prev->next);
+        prev->next = new Node<T>(element, prev->next);
     }
     this->size++;
 }
@@ -51,7 +54,13 @@ template<typename T>T SingleLinkedList<T>:: remove(int index){
     this->rangeCheck(index);
     Node<T>* node = first;
     if(index == 0){
-        first = first->next;
+        if(this->size == 0){
+            first = nullptr;
+        }else{
+            Node<T>* last = node(this->size-1);
+            first = first->next;
+            last->next = first;
+        }
     }else{
         Node<T>* prev = node(index - 1);
         node = prev->next;
