@@ -11,10 +11,11 @@
 
 template <class T>
 class MArray{
+public:
+    int size;       //数组大小,以数组中元素的大小为单位
 private:
     T *base;        //数组首地址
     int length;     //数组中元素
-    int size;       //数组大小,以数组中元素的大小为单位
 public:
     //初始化数组，分配内存
     bool init();
@@ -32,6 +33,8 @@ public:
     T objectAt(int index);
     //清空所有数据
     bool clear();
+    //是否是空
+    bool isEmpty();
     //打印数组所有元素
     void display();
 };

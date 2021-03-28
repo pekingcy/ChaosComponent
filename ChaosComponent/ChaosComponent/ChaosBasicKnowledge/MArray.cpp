@@ -115,3 +115,11 @@ template <typename T>bool MArray<T>:: clear(){
     return true;
 }
 
+template <typename T>bool MArray<T>:: isEmpty(){
+    if (length == 0) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
