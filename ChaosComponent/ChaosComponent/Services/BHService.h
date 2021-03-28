@@ -12,5 +12,6 @@
 #import "HomeServiceProtocol.h"
 #import "FrameServiceProtocol.h"
 #import "BasicServiceProtocol.h"
+#import "DataStructureServiceProtocol.h"
 
 #endif /* BHService_h */

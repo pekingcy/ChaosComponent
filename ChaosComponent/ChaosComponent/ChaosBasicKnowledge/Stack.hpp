@@ -26,7 +26,7 @@ public:
     }
     
     bool isEmpty(){
-        return array->isEmpty;
+        return array->isEmpty();
     }
     
     void push(T element){
@@ -34,11 +34,11 @@ public:
     }
     
     T pop(){
-        return array->objectAt(array->size - 1);
+        return array->del(array->length);
     }
     
     T top(){
-        return array->get(array->size - 1);
+        return array->objectAt(array->length);
     }
 };
 

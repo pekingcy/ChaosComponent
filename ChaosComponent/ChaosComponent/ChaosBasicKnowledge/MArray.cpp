@@ -11,16 +11,6 @@
 
 using namespace std;
 
-template<typename T> bool MArray<T>::init(){
-    base = (T *)malloc(10*sizeof(T));
-    if(!base){
-        return false;
-    }
-    size = 10;
-    length = 0;
-    return true;
-}
-
 template<typename T> bool MArray<T>::ensureCapcity(){
     if(length >= size){
         T *newBase = (T*)realloc(base,10 * sizeof(T) + size * sizeof(T));

@@ -14,6 +14,8 @@
 		0C6BD02825F4F0F2002E387A /* ChaosComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD02725F4F0F2002E387A /* ChaosComponentUITests.m */; };
 		0C82BEC42610128A0026D471 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEC22610128A0026D471 /* Stack.cpp */; };
 		0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEC8261014B30026D471 /* ArrayList.cpp */; };
+		0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */; };
+		0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */; };
 		E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26BC25F5C56300D25381 /* ChaosViewController.m */; };
 		E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26C525F5C59200D25381 /* ChaosHomeModule.m */; };
 		E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */; };
@@ -71,6 +73,11 @@
 		0C82BEC32610128A0026D471 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		0C82BEC8261014B30026D471 /* ArrayList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayList.cpp; sourceTree = "<group>"; };
 		0C82BEC9261014B30026D471 /* ArrayList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayList.hpp; sourceTree = "<group>"; };
+		0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosDataStructureViewController.h; sourceTree = "<group>"; };
+		0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosDataStructureViewController.m; sourceTree = "<group>"; };
+		0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaosDataStructureModule.m; sourceTree = "<group>"; };
+		0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaosDataStructureModule.h; sourceTree = "<group>"; };
+		0C82BEDD26101ECB0026D471 /* DataStructureServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureServiceProtocol.h; sourceTree = "<group>"; };
 		2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.debug.xcconfig"; sourceTree = "<group>"; };
 		3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.release.xcconfig"; sourceTree = "<group>"; };
 		4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +222,7 @@
 		E90B26B525F5C48A00D25381 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0C82BEDD26101ECB0026D471 /* DataStructureServiceProtocol.h */,
 				E90B26B625F5C4B900D25381 /* HomeServiceProtocol.h */,
 				E90B26CA25F5C69600D25381 /* BHService.h */,
 				E90B26DF25F5CAB200D25381 /* FrameServiceProtocol.h */,
@@ -237,6 +245,8 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */,
+				0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */,
 				E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */,
 				E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */,
 				E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */,
@@ -261,6 +271,8 @@
 				0C82BEC32610128A0026D471 /* Stack.hpp */,
 				0C82BEC8261014B30026D471 /* ArrayList.cpp */,
 				0C82BEC9261014B30026D471 /* ArrayList.hpp */,
+				0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */,
+				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */,
 			);
 			path = ChaosBasicKnowledge;
 			sourceTree = "<group>";
@@ -516,8 +528,10 @@
 				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
 				E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
+				0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.m in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
+				0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,

@@ -8,17 +8,22 @@
 #ifndef MArray_hpp
 #define MArray_hpp
 #include <stdio.h>
-
+#include <stdlib.h>
 template <class T>
 class MArray{
 public:
     int size;       //数组大小,以数组中元素的大小为单位
+    int length;     //数组中元素
 private:
     T *base;        //数组首地址
-    int length;     //数组中元素
+    
 public:
     //初始化数组，分配内存
-    bool init();
+    MArray(){
+        base = (T *)malloc(10*sizeof(T));
+        size = 10;
+        length = 0;
+    }
     //检查内存是否够用，不够用就增加
     bool ensureCapcity();
     //添加元素到数组尾

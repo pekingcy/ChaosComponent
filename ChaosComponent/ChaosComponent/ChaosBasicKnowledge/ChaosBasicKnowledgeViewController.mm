@@ -6,8 +6,7 @@
 //
 
 #import "ChaosBasicKnowledgeViewController.h"
-#include "MArray.cpp"
-#include "LinkedList.cpp"
+
 
 using namespace std;
 
@@ -24,18 +23,7 @@ using namespace std;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    LinkedList<int> *list = new LinkedList<int>;
-    list->add(10);
-    list->add(11);
-    list->add(13);
-    list->add(15);
-    list->add(17);
-    list->add(19);
-    cout << list->toString()<<endl;
-    list->remove(0);
-    cout << list->toString()<<endl;
-    list->remove(3);
-    cout << list->toString()<<endl;
+   
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -66,9 +54,12 @@ using namespace std;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-             
+        {
+            id<BasicServiceProtocol> service = [[BeeHive shareInstance] createService:@protocol(DataStructureServiceProtocol)];
+            service.naviTitle = @"数据结构";
+            [self.navigationController pushViewController:(UIViewController*)service animated:YES];
+        }
             break;
-            
         default:
             break;
     }
