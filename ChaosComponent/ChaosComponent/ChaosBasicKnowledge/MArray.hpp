@@ -24,6 +24,9 @@ public:
         size = 10;
         length = 0;
     }
+    ~MArray(){
+        delete base;
+    }
     //检查内存是否够用，不够用就增加
     bool ensureCapcity();
     //添加元素到数组尾

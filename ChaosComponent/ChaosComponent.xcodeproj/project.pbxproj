@@ -16,6 +16,7 @@
 		0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEC8261014B30026D471 /* ArrayList.cpp */; };
 		0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */; };
 		0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */; };
+		0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE1261060410026D471 /* 20_有效的括号.cpp */; };
 		E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26BC25F5C56300D25381 /* ChaosViewController.m */; };
 		E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26C525F5C59200D25381 /* ChaosHomeModule.m */; };
 		E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */; };
@@ -78,6 +79,7 @@
 		0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaosDataStructureModule.m; sourceTree = "<group>"; };
 		0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaosDataStructureModule.h; sourceTree = "<group>"; };
 		0C82BEDD26101ECB0026D471 /* DataStructureServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureServiceProtocol.h; sourceTree = "<group>"; };
+		0C82BEE1261060410026D471 /* 20_有效的括号.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "20_有效的括号.cpp"; sourceTree = "<group>"; };
 		2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.debug.xcconfig"; sourceTree = "<group>"; };
 		3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.release.xcconfig"; sourceTree = "<group>"; };
 		4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +344,7 @@
 				E990F202260ACC020083D6DB /* 206_反转链表.cpp */,
 				E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */,
 				E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */,
+				0C82BEE1261060410026D471 /* 20_有效的括号.cpp */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
 				0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */,
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
+				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
