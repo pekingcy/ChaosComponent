@@ -42,18 +42,20 @@ template<typename T>void CircleLinkedList<T>:: add(int index, T element){
         last = new Node<T>(oldLast,element,NULL);
         if (oldLast == NULL) { // 这是链表添加的第一个元素
             first = last;
+            first->next = first;
+            first->prev = first;
         } else {
             oldLast->next = last;
+            first->prev = last;
         }
     }else{
         Node<T> *next = node(index);
         Node<T> *prev = next->prev;
         Node<T> *node = new Node<T>(prev, element, next);
         next->prev = node;
-        if (prev == NULL) { // index == 0
+        prev->next = node;
+        if (first == next) { // index == 0
             first = node;
-        } else {
-            prev->next = node;
         }
     }
     this->size++;
@@ -63,18 +65,21 @@ template<typename T>T CircleLinkedList<T>:: remove(int index){
     
     this->rangeCheck(index);
     Node<T>* node = this->node(index);
-    Node<T>* prev = node->prev;
-    Node<T>* next = node->next;
     
-    if (prev == NULL) {
-        first = node->next;
+    if (this->size == 0) {
+        first = nullptr;
+        last = nullptr;
     }else{
+        Node<T>* prev = node->prev;
+        Node<T>* next = node->next;
         prev->next = next;
-    }
-    if (next == NULL) {
-        last = prev;
-    }else{
         next->prev = prev;
+        if (node == first) { //index = 0
+            first = node;
+        }
+        if (node == last) {
+            last = prev;
+        }
     }
     this->size --;
     T temp = node->element;
