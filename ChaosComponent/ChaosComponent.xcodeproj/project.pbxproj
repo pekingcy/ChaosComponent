@@ -37,6 +37,7 @@
 		E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D9260C22F20083D6DB /* LinkedList.cpp */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
+		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
 		E9E673492611AB0A00373880 /* Deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673472611AB0A00373880 /* Deque.cpp */; };
 		E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673CE2611E89700373880 /* CircleQueue.cpp */; };
 		E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */; };
@@ -123,6 +124,8 @@
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		E9B88B5F2608BDAD00085A63 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleDeque.hpp; sourceTree = "<group>"; };
+		E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleDeque.cpp; sourceTree = "<group>"; };
 		E9E673472611AB0A00373880 /* Deque.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deque.cpp; sourceTree = "<group>"; };
 		E9E673482611AB0A00373880 /* Deque.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deque.hpp; sourceTree = "<group>"; };
 		E9E673CE2611E89700373880 /* CircleQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircleQueue.cpp; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */,
+				E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */,
 				0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */,
 				0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */,
 				E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */,
@@ -524,6 +529,7 @@
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
+				E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */,
 				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
 				E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,

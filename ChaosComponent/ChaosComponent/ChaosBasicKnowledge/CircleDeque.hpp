@@ -1,19 +1,21 @@
 //
-//  CircleQueue.hpp
+//  Deque.hpp
 //  ChaosComponent
 //
 //  Created by jh on 2021/3/29.
 //
 
-#ifndef CircleQueue_hpp
-#define CircleQueue_hpp
+#ifndef Deque_hpp
+#define Deque_hpp
 
 #include <stdio.h>
+#include "LinkedList.cpp"
 #include <string>
 
 using namespace std;
-template<typename T >
-class CircleQueue{
+template <typename T>
+
+class CircleDeque{
 private:
     int _front;
     int _size;
@@ -21,45 +23,65 @@ private:
     int length = 10;
     int DEFAULT_CAPACITY = 10;
 public:
-    CircleQueue(){
+    CircleDeque(){
         elements = new T[DEFAULT_CAPACITY];
     }
-    
     int size(){
         return _size;
     }
     
     bool isEmpty(){
-        return _size == 0;
+        return  _size == 0;
     }
     
     void clear(){
         for (int i = 0; i < _size; i++) {
-            for (int i = 0; i < _size; i++) {
-                     elements[index(i)] = NULL;
-             }
-            _front = 0;
-            _size = 0;
+             
         }
     }
-    
-    void enQueue(T element) {
+    /**
+     * 从尾部入队
+     * @param element
+     */
+    void enQueueRear(T element){
         ensureCapacity(_size + 1);
-        
         elements[index(_size)] = element;
         _size++;
     }
-
-    T deQueue() {
+    
+    T deQueueFront(T element) {
         T frontElement = elements[_front];
         elements[_front] = NULL;
         _front = index(1);
         _size--;
         return frontElement;
     }
+    
+    void enQueueFront(T element) {
+        ensureCapacity(_size + 1);
+        front = index(-1);
+        elements[front] = element;
+        _size++;
+    }
+
+    /**
+         * 从尾部出队
+         * @param element
+         */
+    T deQueueRear() {
+        int rearIndex = index(_size - 1);
+        T rear = elements[rearIndex];
+        elements[rearIndex] = null;
+        _size--;
+        return rear;
+    }
 
     T front() {
         return elements[_front];
+    }
+    
+    T rear() {
+        return elements[index(_size - 1)];
     }
     
     int index(int index){
@@ -106,4 +128,4 @@ public:
     
 };
 
-#endif /* CircleQueue_hpp */
+#endif /* Deque_hpp */
