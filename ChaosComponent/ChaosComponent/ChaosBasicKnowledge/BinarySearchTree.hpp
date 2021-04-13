@@ -14,8 +14,8 @@
 template<typename T>
 class Node{
     T element;
-    Node<T> left;
-    Node<T> right;
+    Node<T> _left;
+    Node<T> _right;
     Node<T> parent;
 public:
     Node(T element, Node<T> parent) {
@@ -24,13 +24,12 @@ public:
     }
     
     bool isLeaf(){
-        return left == nullptr && right == nullptr;
+        return _left == nullptr && _right == nullptr;
     }
     
     bool hasTwoChildren(){
-        return left != nullptr && right != nullptr;
+        return _left != nullptr && _right != nullptr;
     }
-    
   
 };
 
@@ -50,15 +49,82 @@ class BinarySearchTree:BinaryTreeInfo{
     
     void clear(){}
     
-    Node* root(){
-        reture _root;
+    Node<T>* root(){
+        return _root;
     }
-  
-    Node* left(Node* node){
+    //添加节点
+    void add(T element){
+        elementNotNullCheck(element);
+        if (root() == nullptr) {
+            _root = new Node<T>(element,nullptr);
+            _size ++;
+        }else{
+            Node<T>* parent = root();
+            Node<T>* node  =  root();
+            int cmp = 0;
+            do{
+                parent = node;
+                cmp = compare(element,node->element);
+                if (cmp > 0) {
+                    node = node->right;
+                }else if(cmp < 0){
+                    node = node->left;
+                }else{
+                    node->element = element;
+                };
+                 
+            }while (node != nullptr);
+            
+            Node<T> newNode = Node<T>(element,parent);
+            if (cmp > 0) {
+                parent->right = newNode;
+            }else{
+                parent->left = newNode;
+            }
+            _size ++;
+        }
+    }
+    
+    void remove(T element){
+        remove(node(element));
+    }
+
+    void remove(Node<T> node){
+        if (node == nullptr) {
+             
+        }
+    }
+    
+    void elementNotNullCheck(T element) {
+         if (element == nullptr) {
+             throw ("element must not be null");
+        }
+    }
+    
+    int compare(T e1, T e2) {
+        
+        return 1;
+    }
+    
+    Node<T> node(T element) {
+        Node<T> node = root();
+        while (node != nullptr) {
+            int cmp = compare(element, node.element);
+            if (cmp == 0) return node;
+            if (cmp > 0) {
+                node = node.right;
+            } else { // cmp < 0
+                node = node.left;
+            }
+        }
+        return nullptr;
+    }
+    
+    Node<T>* left(Node<T>* node){
         
     }
     
-    Node* right(Node* node){
+    Node<T>* right(Node<T>* node){
         
     }
 };
