@@ -11,13 +11,18 @@
 #include <stdio.h>
 #include "BinaryTreeInfo.cpp"
 #include "Queue.hpp"
-#include "BTNode.hpp"
+
 
 template<typename T>
-class BinarySearchTree:BinaryTreeInfo{
+class BinarySearchTree:BinaryTreeInfo<T>{
     private:
     int _size;
-    BTNode<T> _root;
+    BTNode<T>* _root;
+public:
+
+    BinarySearchTree<T>(BTNode<T>* header){
+        _root = header;
+    }
     
     int size(){
         return _size;
@@ -26,7 +31,7 @@ class BinarySearchTree:BinaryTreeInfo{
     bool isEmpty(){
         return _size == 0;
     }
-    
+
     void clear(){}
     
     BTNode<T>* root(){
@@ -46,20 +51,20 @@ class BinarySearchTree:BinaryTreeInfo{
                 parent = node;
                 cmp = compare(element,node->element);
                 if (cmp > 0) {
-                    node = node->right;
+                    node = node->_right;
                 }else if(cmp < 0){
-                    node = node->left;
+                    node = node->_left;
                 }else{
                     node->element = element;
                 };
                  
             }while (node != nullptr);
             
-            BTNode<T> newNode = BTNode<T>(element,parent);
+            BTNode<T>* newNode = new BTNode<T>(element,parent);
             if (cmp > 0) {
-                parent->right = newNode;
+                parent->_right = newNode;
             }else{
-                parent->left = newNode;
+                parent->_left = newNode;
             }
             _size ++;
         }
@@ -102,7 +107,7 @@ class BinarySearchTree:BinaryTreeInfo{
         }
     }
     void elementNotNullCheck(T element) {
-         if (element == nullptr) {
+         if (element == NULL) {
              throw ("element must not be null");
         }
     }
@@ -151,13 +156,6 @@ class BinarySearchTree:BinaryTreeInfo{
         return true;
     }
     
-    BTNode<T>* left(BTNode<T>* node){
-        
-    }
-    
-    BTNode<T>* right(BTNode<T>* node){
-        
-    }
     //查找前驱节点
     BTNode<T>* predecessor(BTNode<T>* node){
         if (node == nullptr) return nullptr;

@@ -47,6 +47,7 @@
 //    }
 //    delete chasStack;chasStack = nullptr;
  //   test2();
+    test3();
 }
 
 //static void test2() {
@@ -68,5 +69,17 @@
 ////    }
 //    cout << queue->toString() <<endl;
 //}
+
+void test3(){
+    BinarySearchTree<int>* bTree = new BinarySearchTree<int>(nullptr);
+    bTree->add(23);
+    bTree->add(17);
+    bTree->add(15);
+    bTree->add(22);
+    bTree->add(20);
+    bTree->add(14);
+    bTree->add(6);
+    delete bTree;
+}
 
 @end

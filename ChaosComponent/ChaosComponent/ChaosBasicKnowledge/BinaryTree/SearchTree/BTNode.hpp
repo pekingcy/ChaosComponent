@@ -12,15 +12,19 @@
 
 template<typename T>
 class BTNode{
-    T element;
-    BTNode<T> _left;
-    BTNode<T> _right;
-    BTNode<T>*_parent;
-    
-    BTNode();
-protected:
-    BTNode(T element, BTNode<T>* parent);
 public:
+    T element;
+    BTNode<T>* _left;
+    BTNode<T>* _right;
+    BTNode<T>* _parent;
+    BTNode();
+    BTNode(T element, BTNode<T>* parent);
+    
+//    BTNode(){}
+//    BTNode(T element, BTNode<T>* parent){
+//       this->element = element;
+//       this->_parent = parent;
+//    }
     bool isLeaf();
     bool hasTwoChildren();
     bool isLeftChild();

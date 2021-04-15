@@ -6,10 +6,8 @@
 //
 
 #include <stdio.h>
-
+#include "BTNode.cpp"
+template<typename T>
 class BinaryTreeInfo{
-    virtual void* root() = 0;
-    virtual void* left(void* node) = 0;
-    virtual void* right(void* node) = 0;
-    
+    virtual BTNode<T>* root() = 0;
 };

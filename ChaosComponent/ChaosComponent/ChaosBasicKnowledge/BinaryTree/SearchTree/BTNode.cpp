@@ -7,14 +7,14 @@
 
 #include "BTNode.hpp"
 
-template<typename T> BTNode<T>:: BTNode(){}
+template<typename T> BTNode<T>::BTNode(){}
  
 template<typename T> BTNode<T>::BTNode(T element, BTNode<T>* parent){
-  this.element = element;
-  this._parent = parent;
+   this->element = element;
+   this->_parent = parent;
 }
  
-template<typename T>bool BTNode<T>::isLeaf(){
+template<typename T> bool BTNode<T>::isLeaf(){
     return _left == nullptr && _right == nullptr;
 }
 
