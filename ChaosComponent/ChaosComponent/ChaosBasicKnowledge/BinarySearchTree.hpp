@@ -17,19 +17,29 @@ class BTNode{
     T element;
     BTNode<T> _left;
     BTNode<T> _right;
-    BTNode<T>* parent;
-public:
-    BTNode(T element, BTNode<T>* parent) {
-      this.element = element;
-      this.parent = parent;
-    }
+    BTNode<T>*_parent;
     
+    BTNode(){}
+protected:
+    BTNode(T element, BTNode<T>* parent){
+      this.element = element;
+      this._parent = parent;
+    }
+public:
     bool isLeaf(){
         return _left == nullptr && _right == nullptr;
     }
     
     bool hasTwoChildren(){
         return _left != nullptr && _right != nullptr;
+    }
+    
+    bool isLeftChild() {
+        return _parent != nullptr && this == _parent->_left;
+    }
+    
+    bool isRightChild() {
+         return _parent != nullptr && this == _parent->_right;
     }
 };
 

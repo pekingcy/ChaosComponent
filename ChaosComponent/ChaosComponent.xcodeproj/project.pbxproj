@@ -28,6 +28,7 @@
 		E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */; };
 		E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B270C25F5EBF500D25381 /* Default-667h@2x.png */; };
 		E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E90B273125F5F8AB00D25381 /* Default-896h@2x.png */; };
+		E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0AF62627D9BB00FA120B /* AVLBinaryTree.cpp */; };
 		E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */; };
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
@@ -111,6 +112,8 @@
 		E90B26E125F5CB4300D25381 /* ChaosFrameModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosFrameModule.m; sourceTree = "<group>"; };
 		E90B270C25F5EBF500D25381 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		E90B273125F5F8AB00D25381 /* Default-896h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-896h@2x.png"; sourceTree = "<group>"; };
+		E90F0AF62627D9BB00FA120B /* AVLBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLBinaryTree.cpp; sourceTree = "<group>"; };
+		E90F0AF72627D9BB00FA120B /* AVLBinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLBinaryTree.hpp; sourceTree = "<group>"; };
 		E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleLinkedList.hpp; sourceTree = "<group>"; };
 		E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleLinkedList.cpp; sourceTree = "<group>"; };
 		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				E9028F20261ED3920033D908 /* BinarySearchTree.cpp */,
 				E9028F21261ED3920033D908 /* BinarySearchTree.hpp */,
 				E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */,
+				E90F0AF62627D9BB00FA120B /* AVLBinaryTree.cpp */,
+				E90F0AF72627D9BB00FA120B /* AVLBinaryTree.hpp */,
 			);
 			path = ChaosBasicKnowledge;
 			sourceTree = "<group>";
@@ -555,6 +560,7 @@
 				E927388926045085002115D3 /* MArray.cpp in Sources */,
 				E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */,
 				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
+				E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */,
 				0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */,
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
