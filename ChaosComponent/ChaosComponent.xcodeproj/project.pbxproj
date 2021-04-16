@@ -14,7 +14,7 @@
 		0C6BD02825F4F0F2002E387A /* ChaosComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6BD02725F4F0F2002E387A /* ChaosComponentUITests.m */; };
 		0C82BEC42610128A0026D471 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEC22610128A0026D471 /* Stack.cpp */; };
 		0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEC8261014B30026D471 /* ArrayList.cpp */; };
-		0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */; };
+		0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */; };
 		0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */; };
 		0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE1261060410026D471 /* 20_有效的括号.cpp */; };
 		0C82BEE82610B7180026D471 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE62610B7180026D471 /* Queue.cpp */; };
@@ -31,6 +31,7 @@
 		E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0AF62627D9BB00FA120B /* AVLBinaryTree.cpp */; };
 		E90F0B152628400900FA120B /* BTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B132628400900FA120B /* BTNode.cpp */; };
 		E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B1A262840B200FA120B /* AVLNode.cpp */; };
+		E90F0C002629AC9D00FA120B /* tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0BFE2629AC9D00FA120B /* tools.cpp */; };
 		E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */; };
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
@@ -85,7 +86,7 @@
 		0C82BEC8261014B30026D471 /* ArrayList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayList.cpp; sourceTree = "<group>"; };
 		0C82BEC9261014B30026D471 /* ArrayList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayList.hpp; sourceTree = "<group>"; };
 		0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosDataStructureViewController.h; sourceTree = "<group>"; };
-		0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosDataStructureViewController.m; sourceTree = "<group>"; };
+		0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ChaosDataStructureViewController.mm; sourceTree = "<group>"; };
 		0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaosDataStructureModule.m; sourceTree = "<group>"; };
 		0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaosDataStructureModule.h; sourceTree = "<group>"; };
 		0C82BEDD26101ECB0026D471 /* DataStructureServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureServiceProtocol.h; sourceTree = "<group>"; };
@@ -120,6 +121,8 @@
 		E90F0B142628400900FA120B /* BTNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BTNode.hpp; sourceTree = "<group>"; };
 		E90F0B1A262840B200FA120B /* AVLNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLNode.cpp; sourceTree = "<group>"; };
 		E90F0B1B262840B200FA120B /* AVLNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLNode.hpp; sourceTree = "<group>"; };
+		E90F0BFE2629AC9D00FA120B /* tools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tools.cpp; sourceTree = "<group>"; };
+		E90F0BFF2629AC9D00FA120B /* tools.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tools.hpp; sourceTree = "<group>"; };
 		E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleLinkedList.hpp; sourceTree = "<group>"; };
 		E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleLinkedList.cpp; sourceTree = "<group>"; };
 		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
@@ -304,7 +307,9 @@
 				0C82BEC8261014B30026D471 /* ArrayList.cpp */,
 				0C82BEC9261014B30026D471 /* ArrayList.hpp */,
 				0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */,
-				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.m */,
+				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */,
+				E90F0BFE2629AC9D00FA120B /* tools.cpp */,
+				E90F0BFF2629AC9D00FA120B /* tools.hpp */,
 				0C82BEE62610B7180026D471 /* Queue.cpp */,
 				0C82BEE72610B7180026D471 /* Queue.hpp */,
 				E9E673472611AB0A00373880 /* Deque.cpp */,
@@ -584,7 +589,7 @@
 				E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
 				E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */,
-				0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.m in Sources */,
+				0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.mm in Sources */,
 				E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
@@ -602,6 +607,7 @@
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 				0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */,
+				E90F0C002629AC9D00FA120B /* tools.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

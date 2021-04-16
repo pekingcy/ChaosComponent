@@ -8,11 +8,11 @@
 #import "ChaosDataStructureViewController.h"
 //#include "LinkedList.cpp"
 //#include "Stack.cpp"
-#include <map>
-#include <stack>
+//#include <map>
+//#include <stack>
 //#include "CircleQueue.hpp"
-#include "BinarySearchTree.hpp"
-
+//#include "BinarySearchTree.hpp"
+#include "tools.cpp"
 @interface ChaosDataStructureViewController ()
 
 @end
@@ -71,15 +71,17 @@
 //}
 
 void test3(){
-    BinarySearchTree<int>* bTree = new BinarySearchTree<int>(nullptr);
-    bTree->add(23);
-    bTree->add(17);
-    bTree->add(15);
-    bTree->add(22);
-    bTree->add(20);
-    bTree->add(14);
-    bTree->add(6);
-    delete bTree;
+//    BinarySearchTree<int>* bTree = new BinarySearchTree<int>(nullptr);
+//    bTree->add(23);
+//    bTree->add(17);
+//    bTree->add(15);
+//    bTree->add(22);
+//    bTree->add(20);
+//    bTree->add(14);
+//    bTree->add(6);
+//    delete bTree;
+    
+    tools::printTree(tools::stringToTreeNode("[1,1,1,1,1,1,1,11,3,213,21,13,21,31,321,321,654,684,1,87,94,1,1687,941,4,984,21,65,4987]"));
 }
 
 @end
