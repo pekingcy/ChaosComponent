@@ -22,7 +22,7 @@
 #include "unordered_set"
 #include "stack"
 
-using namespace std;
+
 //Definition for a binary tree node.
 struct TreeNode {
     int val;
@@ -36,7 +36,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-namespace printTools {
+namespace tools {
 // Binary tree*********************************************************
     /**
      * 中序遍历返回节点数组
