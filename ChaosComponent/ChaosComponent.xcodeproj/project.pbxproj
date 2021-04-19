@@ -277,42 +277,17 @@
 			isa = PBXGroup;
 			children = (
 				E993E236262D68DF00618FEA /* tools.hpp */,
-				E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */,
-				E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */,
 				0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */,
 				0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */,
-				E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */,
-				E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */,
-				E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */,
-				E9F2E59A260CBC5D0098F40C /* SingleCircleLinkedList.hpp */,
-				E990F2D9260C22F20083D6DB /* LinkedList.cpp */,
-				E990F2D7260C22F20083D6DB /* LinkedList.hpp */,
-				E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */,
-				E990F2D8260C22F20083D6DB /* SingleLinkedList.hpp */,
 				E92738AF26047324002115D3 /* ChaosBasicModule.h */,
 				E92738B026047324002115D3 /* ChaosBasicModule.m */,
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
 				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */,
-				E927377B2601C502002115D3 /* MArray.cpp */,
-				E927377C2601C502002115D3 /* MArray.hpp */,
 				E927387F2604487D002115D3 /* CHaosDataStructure */,
 				E90B26BA25F5C53400D25381 /* Home */,
-				E9B88B582608BBB000085A63 /* AbstractList.cpp */,
-				E9B88B592608BBB000085A63 /* AbstractList.hpp */,
-				E9B88B5E2608BDAD00085A63 /* List.cpp */,
-				E9B88B5F2608BDAD00085A63 /* List.hpp */,
-				0C82BEC22610128A0026D471 /* Stack.cpp */,
-				0C82BEC32610128A0026D471 /* Stack.hpp */,
-				0C82BEC8261014B30026D471 /* ArrayList.cpp */,
-				0C82BEC9261014B30026D471 /* ArrayList.hpp */,
 				0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */,
 				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */,
-				0C82BEE62610B7180026D471 /* Queue.cpp */,
-				0C82BEE72610B7180026D471 /* Queue.hpp */,
-				E9E673472611AB0A00373880 /* Deque.cpp */,
-				E9E673482611AB0A00373880 /* Deque.hpp */,
-				E9E673CE2611E89700373880 /* CircleQueue.cpp */,
-				E9E673CF2611E89700373880 /* CircleQueue.hpp */,
+				E993E242262D792B00618FEA /*  LinearStructure */,
 				E90F0B0E262836C300FA120B /* BinaryTree */,
 			);
 			path = ChaosBasicKnowledge;
@@ -383,6 +358,39 @@
 			children = (
 			);
 			path = CHaosDataStructure;
+			sourceTree = "<group>";
+		};
+		E993E242262D792B00618FEA /*  LinearStructure */ = {
+			isa = PBXGroup;
+			children = (
+				E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */,
+				E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */,
+				E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */,
+				E9F2E59A260CBC5D0098F40C /* SingleCircleLinkedList.hpp */,
+				E990F2D9260C22F20083D6DB /* LinkedList.cpp */,
+				E990F2D7260C22F20083D6DB /* LinkedList.hpp */,
+				E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */,
+				E990F2D8260C22F20083D6DB /* SingleLinkedList.hpp */,
+				E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */,
+				E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */,
+				E927377B2601C502002115D3 /* MArray.cpp */,
+				E927377C2601C502002115D3 /* MArray.hpp */,
+				E9B88B582608BBB000085A63 /* AbstractList.cpp */,
+				E9B88B592608BBB000085A63 /* AbstractList.hpp */,
+				E9B88B5E2608BDAD00085A63 /* List.cpp */,
+				E9B88B5F2608BDAD00085A63 /* List.hpp */,
+				0C82BEC22610128A0026D471 /* Stack.cpp */,
+				0C82BEC32610128A0026D471 /* Stack.hpp */,
+				0C82BEC8261014B30026D471 /* ArrayList.cpp */,
+				0C82BEC9261014B30026D471 /* ArrayList.hpp */,
+				0C82BEE62610B7180026D471 /* Queue.cpp */,
+				0C82BEE72610B7180026D471 /* Queue.hpp */,
+				E9E673472611AB0A00373880 /* Deque.cpp */,
+				E9E673482611AB0A00373880 /* Deque.hpp */,
+				E9E673CE2611E89700373880 /* CircleQueue.cpp */,
+				E9E673CF2611E89700373880 /* CircleQueue.hpp */,
+			);
+			path = " LinearStructure";
 			sourceTree = "<group>";
 		};
 		E9F2E595260CAEE00098F40C /* LeetCode */ = {

@@ -78,15 +78,14 @@ using  namespace std;
 void test3(){
     BinarySearchTree<int>* bTree = new BinarySearchTree<int>(nullptr);
     bTree->add(23);
-    bTree->add(17);
     bTree->add(15);
     bTree->add(22);
     bTree->add(20);
-    bTree->add(14);
     bTree->add(6);
+    bTree->add(17);
+    bTree->add(14);
     delete bTree;
     tools::printTree(bTree->_root);
-    
 }
 
 @end
