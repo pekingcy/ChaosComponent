@@ -276,7 +276,6 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				E993E236262D68DF00618FEA /* tools.hpp */,
 				0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */,
 				0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */,
 				E92738AF26047324002115D3 /* ChaosBasicModule.h */,
@@ -363,6 +362,7 @@
 		E993E242262D792B00618FEA /*  LinearStructure */ = {
 			isa = PBXGroup;
 			children = (
+				E993E236262D68DF00618FEA /* tools.hpp */,
 				E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */,
 				E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */,
 				E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */,
