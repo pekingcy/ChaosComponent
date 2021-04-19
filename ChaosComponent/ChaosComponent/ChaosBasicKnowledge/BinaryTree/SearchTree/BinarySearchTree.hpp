@@ -15,7 +15,7 @@
 
 template<typename T>
 class BinarySearchTree:BinaryTreeInfo<T>{
-    private:
+public:
     int _size;
     BTNode<T>* _root;
 public:
@@ -113,7 +113,7 @@ public:
     }
     
     int compare(T e1, T e2) {
-        return 1;
+        return e1 - e2;
     }
     
     BTNode<T>* node(T element) {

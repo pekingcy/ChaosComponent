@@ -134,6 +134,7 @@
 		E990F2D7260C22F20083D6DB /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		E990F2D8260C22F20083D6DB /* SingleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedList.hpp; sourceTree = "<group>"; };
 		E990F2D9260C22F20083D6DB /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		E993E236262D68DF00618FEA /* tools.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools.hpp; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
@@ -275,6 +276,7 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E993E236262D68DF00618FEA /* tools.hpp */,
 				E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */,
 				E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */,
 				0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */,
