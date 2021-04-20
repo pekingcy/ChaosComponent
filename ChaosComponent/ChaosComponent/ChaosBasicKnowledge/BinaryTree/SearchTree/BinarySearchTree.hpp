@@ -21,13 +21,6 @@ public:
 
     BinarySearchTree<T>(): BinaryTree<T>(){
     }
-    
-    BTNode<T>* root(){
-        return this->_root;
-    }
-    int size(){
-        return this->_size ;
-    }
     //添加节点
     void add(T element){
         elementNotNullCheck(element);

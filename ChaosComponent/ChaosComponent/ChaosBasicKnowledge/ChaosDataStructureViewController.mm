@@ -84,10 +84,9 @@ void test3(){
     bTree->add(6);
     bTree->add(17);
     bTree->add(14);
-    delete bTree;
-    
     BTNode<int>* root =  bTree->root();
     tools::printTree(root);
+    delete bTree;
     
 }
 
