@@ -76,7 +76,7 @@ using  namespace std;
 //}
 
 void test3(){
-    BinarySearchTree<int>* bTree = new BinarySearchTree<int>(nullptr);
+    BinarySearchTree<int>* bTree = new BinarySearchTree<int>();
     bTree->add(23);
     bTree->add(15);
     bTree->add(22);
@@ -85,7 +85,10 @@ void test3(){
     bTree->add(17);
     bTree->add(14);
     delete bTree;
-    tools::printTree(bTree->_root);
+    
+    BTNode<int>* root =  bTree->root();
+    tools::printTree(root);
+    
 }
 
 @end

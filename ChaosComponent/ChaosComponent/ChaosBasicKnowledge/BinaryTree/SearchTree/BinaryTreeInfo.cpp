@@ -9,5 +9,6 @@
 #include "BTNode.cpp"
 template<typename T>
 class BinaryTreeInfo{
+public:
     virtual BTNode<T>* root() = 0;
 };

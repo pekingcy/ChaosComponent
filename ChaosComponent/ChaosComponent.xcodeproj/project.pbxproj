@@ -35,6 +35,7 @@
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
+		E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96FD27E262EE35900C2A567 /* BinaryTree.cpp */; };
 		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
 		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
 		E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */; };
@@ -127,6 +128,8 @@
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
 		E92738B026047324002115D3 /* ChaosBasicModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosBasicModule.m; sourceTree = "<group>"; };
 		E92738B526047536002115D3 /* BasicServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicServiceProtocol.h; sourceTree = "<group>"; };
+		E96FD27E262EE35900C2A567 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		E96FD27F262EE35900C2A567 /* BinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
 		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
 		E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "141_环型链表.cpp"; sourceTree = "<group>"; };
 		E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "237_删除链表节点.cpp"; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */,
 				E90F0B132628400900FA120B /* BTNode.cpp */,
 				E90F0B142628400900FA120B /* BTNode.hpp */,
+				E96FD27E262EE35900C2A567 /* BinaryTree.cpp */,
+				E96FD27F262EE35900C2A567 /* BinaryTree.hpp */,
 			);
 			path = SearchTree;
 			sourceTree = "<group>";
@@ -602,6 +607,7 @@
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
+				E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */,
 				E927388D26045164002115D3 /* MArray.hpp in Sources */,
 				E927388926045085002115D3 /* MArray.cpp in Sources */,
 				E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */,

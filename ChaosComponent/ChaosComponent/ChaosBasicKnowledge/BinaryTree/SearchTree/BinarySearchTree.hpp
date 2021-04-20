@@ -5,47 +5,38 @@
 //  Created by jh on 2021/4/8.
 //
 
-#ifndef BinaryTree_hpp
-#define BinaryTree_hpp
+
+
+#ifndef BinarySearchTree_hpp
+#define BinarySearchTree_hpp
 
 #include <stdio.h>
-#include "BinaryTreeInfo.cpp"
-#include "Queue.hpp"
+#include "BTNode.cpp"
+#include "BinaryTree.hpp"
 
+template <typename T>
+class BinarySearchTree:public BinaryTree<T>{
 
-template<typename T>
-class BinarySearchTree:BinaryTreeInfo<T>{
-public:
-    int _size;
-    BTNode<T>* _root;
 public:
 
-    BinarySearchTree<T>(BTNode<T>* header){
-        _root = header;
+    BinarySearchTree<T>(): BinaryTree<T>(){
     }
-    
-    int size(){
-        return _size;
-    }
-    
-    bool isEmpty(){
-        return _size == 0;
-    }
-
-    void clear(){}
     
     BTNode<T>* root(){
-        return _root;
+        return this->_root;
+    }
+    int size(){
+        return this->_size ;
     }
     //添加节点
     void add(T element){
         elementNotNullCheck(element);
-        if (_root == nullptr) {
-            _root = new BTNode<T>(element,nullptr);
-            _size ++;
+        if (this->_root == nullptr) {
+            this->_root = new BTNode<T>(element,nullptr);
+            this->_size ++;
         }else{
-            BTNode<T>* parent = root();
-            BTNode<T>* node  =  root();
+            BTNode<T>* parent = this->root();
+            BTNode<T>* node  =  this->root();
             int cmp = 0;
             do{
                 parent = node;
@@ -66,7 +57,7 @@ public:
             }else{
                 parent->_left = newNode;
             }
-            _size ++;
+            this->_size ++;
         }
     }
     
@@ -76,10 +67,10 @@ public:
 
     void remove(BTNode<T>* node){
         if (node == nullptr) return;
-        _size --;
+        this->_size --;
         if (node->hasTwoChildren()) {// 度为2的节点
             // 找到后继节点
-            Node<T> s = successor(node);
+            BTNode<T> s = successor(node);
             // 用后继节点的值覆盖度为2的节点的值
             node->element = s->element;
             // 删除后继节点
@@ -90,14 +81,14 @@ public:
         if (replaceNode != nullptr ) { //node是度为1的节点
             replaceNode->parent = node->parent;
             if (node->parent == nullptr) {
-                _root = replaceNode;
+                this->_root = replaceNode;
             }else if(node == node->parent->_left){
                 node->parent->left = replaceNode;
             }else if(node == node->parent->_right){
                 node->parent->_right = replaceNode;
             }
         }else if(node->parent == nullptr){// node是叶子节点并且是根节点
-            _root = nullptr;
+            this->_root = nullptr;
         }else{
             if (node == node->parent->_left) {
                 node->parent->_left = nullptr;
@@ -117,7 +108,7 @@ public:
     }
     
     BTNode<T>* node(T element) {
-        BTNode<T>* node = root();
+        BTNode<T>* node = this->root();
         while (node != nullptr) {
             int cmp = compare(element, node->element);
             if (cmp == 0) return node;
@@ -128,67 +119,7 @@ public:
             }
         }
         return nullptr;
-    }
-    
-    bool contains(T element) {
-        return node(element) != nullptr;
-    }
-    
-    bool isCompleteBinaryTree(){
-        if (_root == nullptr) return false;
-        Queue<BTNode<T>>* queue = new Queue<BTNode<T>>();
-        queue->enQueue(_root);
-        bool leaf = false;
-        while (!queue.isEmpty()) {
-            BTNode<T>* node = queue->deQueue();
-            if (leaf && !node->isLeaf()) return false;
-            if (node->_left != nullptr) {
-                queue.enQueue(node->_left);
-            } else if (node->_right != nullptr) {
-                return false;
-            }
-            if (node->right != nullptr) {
-                queue->enQueue(node->_right);
-            } else {
-                leaf = true;
-            }
-        }
-        return true;
-    }
-    
-    //查找前驱节点
-    BTNode<T>* predecessor(BTNode<T>* node){
-        if (node == nullptr) return nullptr;
-        BTNode<T>* p = node->_left;
-        if (p != nullptr) {
-            while (p->_right != nullptr) {
-                p = p->_right;
-            }
-            return p;
-        }
-        
-        if (node->parent != nullptr && node == node->parent->_left) {
-            node = node->parent;
-        }
-        return node->parent;
-    }
-    //查找后续节点
-    BTNode<T>* successor(BTNode<T>* node){
-        if (node == nullptr) return nullptr;
-        BTNode<T>* p = node->_right;
-        if (p != nullptr) {
-            while (p->_left != nullptr) {
-                p = p->_left;
-            }
-            return p;
-        }
-        
-        if (node->parent != nullptr && node == node->parent->_right) {
-            node = node->parent;
-        }
-        return node->parent;
-    }
-    
+    } 
 };
 
 #endif /* BinaryTree_hpp */
