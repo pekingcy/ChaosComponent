@@ -7,4 +7,5 @@ inhibit_all_warnings!
 target 'ChaosComponent' do
    pod 'AFNetworking', '>3.0'
    pod "BeeHive"
+   pod 'KJExtensionHandler'
 end
