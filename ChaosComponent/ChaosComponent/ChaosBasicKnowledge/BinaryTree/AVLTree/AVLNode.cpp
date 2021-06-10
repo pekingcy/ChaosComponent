@@ -7,7 +7,7 @@
 
 #include "AVLNode.hpp"
 
-template<typename T> AVLNode<T>:: AVLNode(T element, BTNode<T>* parent):BTNode<T>(element,parent){}
+
 template<typename T> int AVLNode<T>:: balanceFactor() {
     int leftHeight = this->_left == nullptr ? 0 : ((AVLNode<T>*)this->_left)->height;
     int rightHeight = this->_right == nullptr ? 0 : ((AVLNode<T>*)this->_right)->height;

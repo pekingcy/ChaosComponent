@@ -44,7 +44,7 @@ public:
                  
             }while (node != nullptr);
             
-            BTNode<T>* newNode = new BTNode<T>(element,parent);
+            BTNode<T>* newNode = this->createNode(element,parent);
             if (cmp > 0) {
                 parent->_right = newNode;
             }else{

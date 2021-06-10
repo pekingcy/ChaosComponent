@@ -16,9 +16,11 @@ template<typename T>
 class AVLNode:public BTNode<T> {
         int height = 1;
 public:
-    AVLNode(T element, BTNode<T>* parent);
+    AVLNode(T element, BTNode<T>* parent):BTNode<T>(element,parent){
+        height = 1;
+    };
     int balanceFactor();
-    void updateHeight() ;
+    void updateHeight();
     BTNode<T>* tallerChild();
 };
 

@@ -21,9 +21,9 @@ public:
             if (isBalanced(node)){
                 // 更新高度
                 updateHeight(node);
-            }else{
-                
+                continue;
             }
+            reBalanced(node);
         }
     }
     
@@ -74,7 +74,7 @@ public:
         }
     }
     
-    virtual  AVLNode<T>* createNode(T element, AVLNode<T>* parent) {
+    virtual  BTNode<T>* createNode(T element, BTNode<T>* parent)  {
         return new AVLNode<T>(element, parent);
     }
 };
