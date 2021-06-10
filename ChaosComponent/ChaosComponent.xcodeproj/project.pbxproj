@@ -285,7 +285,6 @@
 				E92738B026047324002115D3 /* ChaosBasicModule.m */,
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
 				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */,
-				E927387F2604487D002115D3 /* CHaosDataStructure */,
 				E90B26BA25F5C53400D25381 /* Home */,
 				0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */,
 				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */,
@@ -355,13 +354,6 @@
 				E90F0B1B262840B200FA120B /* AVLNode.hpp */,
 			);
 			path = AVLTree;
-			sourceTree = "<group>";
-		};
-		E927387F2604487D002115D3 /* CHaosDataStructure */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CHaosDataStructure;
 			sourceTree = "<group>";
 		};
 		E993E242262D792B00618FEA /*  LinearStructure */ = {

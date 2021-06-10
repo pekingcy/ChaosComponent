@@ -71,7 +71,7 @@ public:
             return p;
         }
         
-        if (node->parent != nullptr && node == node->parent->_left) {
+        while (node->parent != nullptr && node == node->parent->_left) {
             node = node->parent;
         }
         return node->parent;
@@ -87,7 +87,7 @@ public:
             return p;
         }
         
-        if (node->parent != nullptr && node == node->parent->_right) {
+        while (node->parent != nullptr && node == node->parent->_right) {
             node = node->parent;
         }
         return node->parent;

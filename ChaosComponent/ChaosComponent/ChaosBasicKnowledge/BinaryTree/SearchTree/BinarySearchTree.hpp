@@ -51,8 +51,21 @@ public:
                 parent->_left = newNode;
             }
             this->_size ++;
+            // 新添加节点之后的处理
+            afterAdd(newNode);
         }
+     
     }
+    /**
+     * 添加node之后的调整
+     * @param node 新添加的节点
+     */
+    void afterAdd(BTNode<T>* node) { }
+    /**
+     * 删除node之后的调整
+     * @param node 被删除的节点 或者 用以取代被删除节点的子节点（当被删除节点的度为1）
+     */
+    void afterRemove(BTNode<T>* node) { }
     
     void remove(T element){
         remove(node(element));
@@ -80,14 +93,20 @@ public:
             }else if(node == node->parent->_right){
                 node->parent->_right = replaceNode;
             }
+            // 删除节点之后的处理
+            afterRemove(replaceNode);
         }else if(node->parent == nullptr){// node是叶子节点并且是根节点
             this->_root = nullptr;
+            // 删除节点之后的处理
+            afterRemove(node);
         }else{
             if (node == node->parent->_left) {
                 node->parent->_left = nullptr;
             }else{
                 node->parent->_right = nullptr;
             }
+            // 删除节点之后的处理
+            afterRemove(node);
         }
     }
     void elementNotNullCheck(T element) {
