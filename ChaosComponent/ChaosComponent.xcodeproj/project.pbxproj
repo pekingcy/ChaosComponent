@@ -46,6 +46,7 @@
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
 		E9E673492611AB0A00373880 /* Deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673472611AB0A00373880 /* Deque.cpp */; };
 		E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673CE2611E89700373880 /* CircleQueue.cpp */; };
+		E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */; };
 		E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
 /* End PBXBuildFile section */
@@ -148,6 +149,8 @@
 		E9E673482611AB0A00373880 /* Deque.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deque.hpp; sourceTree = "<group>"; };
 		E9E673CE2611E89700373880 /* CircleQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircleQueue.cpp; sourceTree = "<group>"; };
 		E9E673CF2611E89700373880 /* CircleQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircleQueue.hpp; sourceTree = "<group>"; };
+		E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BBSTree.cpp; sourceTree = "<group>"; };
+		E9F0D6DA2671ED0E004881E2 /* BBSTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BBSTree.hpp; sourceTree = "<group>"; };
 		E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleCircleLinkedList.cpp; sourceTree = "<group>"; };
 		E9F2E59A260CBC5D0098F40C /* SingleCircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SingleCircleLinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -341,6 +344,8 @@
 				E90F0B142628400900FA120B /* BTNode.hpp */,
 				E96FD27E262EE35900C2A567 /* BinaryTree.cpp */,
 				E96FD27F262EE35900C2A567 /* BinaryTree.hpp */,
+				E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */,
+				E9F0D6DA2671ED0E004881E2 /* BBSTree.hpp */,
 			);
 			path = SearchTree;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 				0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */,
+				E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

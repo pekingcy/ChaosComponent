@@ -18,14 +18,14 @@ template <typename T>
 class BinarySearchTree:public BinaryTree<T>{
 
 public:
-
     BinarySearchTree<T>(): BinaryTree<T>(){
+        
     }
     //添加节点
     void add(T element){
         elementNotNullCheck(element);
         if (this->_root == nullptr) {
-            this->_root = new BTNode<T>(element,nullptr);
+            this->_root = this->createNode(element,nullptr);
             this->_size ++;
         }else{
             BTNode<T>* parent = this->root();
@@ -52,7 +52,7 @@ public:
             }
             this->_size ++;
             // 新添加节点之后的处理
-            afterAdd(newNode);
+            this->afterAdd(newNode);
         }
      
     }

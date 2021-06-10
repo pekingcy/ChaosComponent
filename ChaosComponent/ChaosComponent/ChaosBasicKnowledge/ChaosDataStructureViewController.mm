@@ -14,7 +14,7 @@
 #include "BinarySearchTree.hpp"
 #include "tools.hpp"
 #include "BTNode.hpp"
-
+#include "AVLBinaryTree.hpp"
 using  namespace std;
  
 
@@ -52,7 +52,7 @@ using  namespace std;
 //    }
 //    delete chasStack;chasStack = nullptr;
  //   test2();
-    test3();
+    test4();
 }
 
 //static void test2() {
@@ -75,19 +75,35 @@ using  namespace std;
 //    cout << queue->toString() <<endl;
 //}
 
-void test3(){
-    BinarySearchTree<int>* bTree = new BinarySearchTree<int>();
-    bTree->add(23);
-    bTree->add(15);
-    bTree->add(22);
-    bTree->add(20);
-    bTree->add(6);
-    bTree->add(17);
-    bTree->add(14);
-    BTNode<int>* root =  bTree->root();
+//二叉搜索树
+//void test3(){
+//    BinarySearchTree<int>* bTree = new BinarySearchTree<int>();
+//    bTree->add(23);
+//    bTree->add(15);
+//    bTree->add(22);
+//    bTree->add(20);
+//    bTree->add(6);
+//    bTree->add(17);
+//    bTree->add(14);
+//    BTNode<int>* root =  bTree->root();
+//    tools::printTree(root);
+//    delete bTree;
+//
+//}
+
+//二叉平衡树
+void test4(){
+    AVLBinaryTree<int>* AVLTree = new AVLBinaryTree<int>();
+    AVLTree->add(23);
+    AVLTree->add(15);
+    AVLTree->add(22);
+    AVLTree->add(20);
+    AVLTree->add(6);
+    AVLTree->add(17);
+    AVLTree->add(14);
+    AVLNode<int>* root = (AVLNode<int>*)AVLTree->root();
     tools::printTree(root);
-    delete bTree;
-    
+    delete AVLTree;
 }
 
 @end

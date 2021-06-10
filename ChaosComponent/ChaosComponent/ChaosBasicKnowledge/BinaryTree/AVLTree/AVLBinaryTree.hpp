@@ -10,12 +10,12 @@
 
 #include <stdio.h>
 #include "BinarySearchTree.hpp"
-#include "AVLNode.hpp"
-
+#include "AVLNode.cpp"
+#include "BBSTree.hpp"
 template<typename T>
-class AVLBinaryTree {
+class AVLBinaryTree :public BBSTree<T> {
 public:
-    AVLBinaryTree(){}
+    AVLBinaryTree<T>():BBSTree<T>(){}
     void afterAdd(BTNode<T>* node){
         while ((node = node->_parent) != nullptr) {
             if (isBalanced(node)){
@@ -27,12 +27,31 @@ public:
         }
     }
     
+    void afterRemove(BTNode<T>* node){
+        while ((node = node.parent) != NULL) {
+            if (isBalanced(node)) {
+                // 更新高度
+                updateHeight(node);
+            } else {
+                // 恢复平衡
+                rebalance(node);
+            }
+        }
+    }
+    
+    void afterRotate(BTNode<T> grand, BTNode<T> parent, BTNode<T> child) {
+        this->afterRotate(grand,parent,child);
+        // 更新高度
+        updateHeight(grand);
+        updateHeight(parent);
+    }
+    
     bool isBalanced(BTNode<T>* node){
-        return abs((AVLNode<T>)node->balanceFactor() <= 1);
+        return abs(((AVLNode<T>*)node)->balanceFactor()) <= 1;
     }
     
     void updateHeight(BTNode<T>* node){
-        ((AVLNode<T>)node)->updateHeight();
+        ((AVLNode<T>*)node)->updateHeight();
     }
     
     void reBalanced(BTNode<T>* grand){
@@ -55,42 +74,8 @@ public:
         }
     }
     
-    void rotateLeft(BTNode<T> grand){
-        BTNode<T> parent = grand->_right;
-        BTNode<T> child = parent->_left;
-        grand->_right = child;
-        parent->_left = grand;
-        afterRotate(grand, parent, child);
-    }
-    
-    void rotateRight(BTNode<T> grand){
-        BTNode<T> parent = grand->_left;
-        BTNode<T> child = parent->_right;
-        grand->_left = child;
-        parent->_right = grand;
-        afterRotate(grand, parent, child);
-    }
-    
-    void afterRotate(BTNode<T> grand, BTNode<T> parent, BTNode<T> child) {
-        // 让parent称为子树的根节点
-        parent->_parent = grand->_parent;
-        if (grand->isLeftChild()) {
-            grand->_parent->_left = parent;
-        } else if (grand->isRightChild()) {
-            grand->_parent->_right = parent;
-        } else { // grand是root节点
-          // _root = parent;
-        }
-        
-        // 更新child的parent
-        if (child != nullptr) {
-            child->_parent = grand;
-        }
-        // 更新grand的parent
-        grand->_parent = parent;
-        // 更新高度
-        updateHeight(grand);
-        updateHeight(parent);
+    AVLNode<T>* createNode(T element, AVLNode<T>* parent) {
+        return new AVLNode<T>(element, parent);
     }
 };
 

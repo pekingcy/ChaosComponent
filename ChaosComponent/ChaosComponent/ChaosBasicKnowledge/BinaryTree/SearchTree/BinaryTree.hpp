@@ -92,6 +92,11 @@ public:
         }
         return node->parent;
     }
+    
+    public:
+    BTNode<T>* createNode(T element, BTNode<T>* parent) {
+        return new BTNode<T>(element,parent);
+    }
 };
 
 
