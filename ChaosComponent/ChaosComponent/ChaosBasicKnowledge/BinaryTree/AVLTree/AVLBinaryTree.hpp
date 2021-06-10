@@ -16,7 +16,7 @@ template<typename T>
 class AVLBinaryTree :public BBSTree<T> {
 public:
     AVLBinaryTree<T>():BBSTree<T>(){}
-    void afterAdd(BTNode<T>* node){
+    virtual  void afterAdd(BTNode<T>* node){
         while ((node = node->_parent) != nullptr) {
             if (isBalanced(node)){
                 // 更新高度
@@ -27,19 +27,19 @@ public:
         }
     }
     
-    void afterRemove(BTNode<T>* node){
-        while ((node = node.parent) != NULL) {
+    virtual void afterRemove(BTNode<T>* node){
+        while ((node = node->_parent) != NULL) {
             if (isBalanced(node)) {
                 // 更新高度
                 updateHeight(node);
             } else {
                 // 恢复平衡
-                rebalance(node);
+                reBalanced(node);
             }
         }
     }
     
-    void afterRotate(BTNode<T> grand, BTNode<T> parent, BTNode<T> child) {
+    virtual void afterRotate(BTNode<T>* grand, BTNode<T>* parent, BTNode<T>* child) {
         this->afterRotate(grand,parent,child);
         // 更新高度
         updateHeight(grand);
@@ -55,26 +55,26 @@ public:
     }
     
     void reBalanced(BTNode<T>* grand){
-        BTNode<T> parent = ((AVLNode<T>)grand)->tallerChild();
-        BTNode<T> node = ((AVLNode<T>)parent)->tallerChild();
+        BTNode<T>* parent = ((AVLNode<T>*)grand)->tallerChild();
+        BTNode<T>* node = ((AVLNode<T>*)parent)->tallerChild();
         if (parent->isLeftChild()){//L
             if (node->isLeftChild()) {//LL 右旋
-                rotateRight(grand);
+                this->rotateRight(grand);
             }else{ //LR
-                rotateLeft(parent);
-                rotateRight(grand);
+                this->rotateLeft(parent);
+                this->rotateRight(grand);
             }
         }else{
             if (node->isLeftChild()) { //RL
-                rotateRight(parent);
-                rotateLeft(grand);
+                this->rotateRight(parent);
+                this->rotateLeft(grand);
             }else{  //RR 左旋
-                rotateLeft(grand);
+                this->rotateLeft(grand);
             }
         }
     }
     
-    AVLNode<T>* createNode(T element, AVLNode<T>* parent) {
+    virtual  AVLNode<T>* createNode(T element, AVLNode<T>* parent) {
         return new AVLNode<T>(element, parent);
     }
 };

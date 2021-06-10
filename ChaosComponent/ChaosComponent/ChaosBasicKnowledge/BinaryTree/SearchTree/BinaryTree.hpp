@@ -94,10 +94,9 @@ public:
     }
     
     public:
-    BTNode<T>* createNode(T element, BTNode<T>* parent) {
+    virtual BTNode<T>* createNode(T element, BTNode<T>* parent) {
         return new BTNode<T>(element,parent);
     }
 };
-
 
 #endif /* BinaryTree_hpp */

@@ -60,12 +60,12 @@ public:
      * 添加node之后的调整
      * @param node 新添加的节点
      */
-    void afterAdd(BTNode<T>* node) { }
+   virtual void afterAdd(BTNode<T>* node) { }
     /**
      * 删除node之后的调整
      * @param node 被删除的节点 或者 用以取代被删除节点的子节点（当被删除节点的度为1）
      */
-    void afterRemove(BTNode<T>* node) { }
+    virtual void afterRemove(BTNode<T>* node) { }
     
     void remove(T element){
         remove(node(element));
