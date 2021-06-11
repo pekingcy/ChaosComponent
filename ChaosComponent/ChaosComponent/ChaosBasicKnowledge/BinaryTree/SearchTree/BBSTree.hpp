@@ -20,7 +20,7 @@ public:
         BTNode<T>* child = parent->_left;
         grand->_right = child;
         parent->_left = grand;
-        afterRotate(grand, parent, child);
+        this->afterRotate(grand, parent, child);
     }
     
     void rotateRight(BTNode<T>* grand){
@@ -28,10 +28,10 @@ public:
         BTNode<T>* child = parent->_right;
         grand->_left = child;
         parent->_right = grand;
-        afterRotate(grand, parent, child);
+        this->afterRotate(grand, parent, child);
     }
     
-    void afterRotate(BTNode<T>* grand, BTNode<T>* parent, BTNode<T>* child) {
+    virtual  void afterRotate(BTNode<T>* grand, BTNode<T>* parent, BTNode<T>* child) {
         // 让parent称为子树的根节点
         parent->_parent = grand->_parent;
         if (grand->isLeftChild()) {
@@ -39,7 +39,7 @@ public:
         } else if (grand->isRightChild()) {
             grand->_parent->_right = parent;
         } else { // grand是root节点
-          // _root = parent;
+           this->_root = parent;
         }
         
         // 更新child的parent

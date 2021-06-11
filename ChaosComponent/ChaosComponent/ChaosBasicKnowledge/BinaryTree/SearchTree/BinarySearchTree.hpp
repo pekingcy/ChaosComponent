@@ -27,6 +27,7 @@ public:
         if (this->_root == nullptr) {
             this->_root = this->createNode(element,nullptr);
             this->_size ++;
+            this->afterAdd(this->_root);
         }else{
             BTNode<T>* parent = this->root();
             BTNode<T>* node  =  this->root();

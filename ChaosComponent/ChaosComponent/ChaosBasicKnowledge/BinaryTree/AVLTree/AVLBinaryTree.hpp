@@ -21,9 +21,10 @@ public:
             if (isBalanced(node)){
                 // 更新高度
                 updateHeight(node);
-                continue;
+            }else{
+                reBalanced(node);
+                break;
             }
-            reBalanced(node);
         }
     }
     
@@ -39,8 +40,9 @@ public:
         }
     }
     
-    virtual void afterRotate(BTNode<T>* grand, BTNode<T>* parent, BTNode<T>* child) {
-        this->afterRotate(grand,parent,child);
+    void afterRotate(BTNode<T>* grand, BTNode<T>* parent, BTNode<T>* child) {
+        
+        BBSTree<T>::afterRotate(grand, parent, child);
         // 更新高度
         updateHeight(grand);
         updateHeight(parent);
