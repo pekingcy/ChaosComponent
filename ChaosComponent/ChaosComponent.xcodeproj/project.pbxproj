@@ -35,6 +35,8 @@
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
+		E938D1CB2673567100E172FA /* RBTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E938D1C72673567100E172FA /* RBTree.cpp */; };
+		E938D1CC2673567100E172FA /* RBNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E938D1C82673567100E172FA /* RBNode.cpp */; };
 		E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96FD27E262EE35900C2A567 /* BinaryTree.cpp */; };
 		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
 		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
@@ -129,6 +131,10 @@
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
 		E92738B026047324002115D3 /* ChaosBasicModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosBasicModule.m; sourceTree = "<group>"; };
 		E92738B526047536002115D3 /* BasicServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicServiceProtocol.h; sourceTree = "<group>"; };
+		E938D1C72673567100E172FA /* RBTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RBTree.cpp; sourceTree = "<group>"; };
+		E938D1C82673567100E172FA /* RBNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RBNode.cpp; sourceTree = "<group>"; };
+		E938D1C92673567100E172FA /* RBNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RBNode.hpp; sourceTree = "<group>"; };
+		E938D1CA2673567100E172FA /* RBTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RBTree.hpp; sourceTree = "<group>"; };
 		E96FD27E262EE35900C2A567 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		E96FD27F262EE35900C2A567 /* BinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
 		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
@@ -328,6 +334,7 @@
 		E90F0B0E262836C300FA120B /* BinaryTree */ = {
 			isa = PBXGroup;
 			children = (
+				E938D1C62673567100E172FA /* RBTree */,
 				E90F0B192628407100FA120B /* AVLTree */,
 				E90F0B1226283FCE00FA120B /* SearchTree */,
 			);
@@ -359,6 +366,17 @@
 				E90F0B1B262840B200FA120B /* AVLNode.hpp */,
 			);
 			path = AVLTree;
+			sourceTree = "<group>";
+		};
+		E938D1C62673567100E172FA /* RBTree */ = {
+			isa = PBXGroup;
+			children = (
+				E938D1C72673567100E172FA /* RBTree.cpp */,
+				E938D1C82673567100E172FA /* RBNode.cpp */,
+				E938D1C92673567100E172FA /* RBNode.hpp */,
+				E938D1CA2673567100E172FA /* RBTree.hpp */,
+			);
+			path = RBTree;
 			sourceTree = "<group>";
 		};
 		E993E242262D792B00618FEA /*  LinearStructure */ = {
@@ -587,6 +605,7 @@
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */,
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
+				E938D1CB2673567100E172FA /* RBTree.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
 				E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */,
@@ -596,6 +615,7 @@
 				E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
 				E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */,
+				E938D1CC2673567100E172FA /* RBNode.cpp in Sources */,
 				0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.mm in Sources */,
 				E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
