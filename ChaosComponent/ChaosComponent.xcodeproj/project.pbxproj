@@ -371,9 +371,9 @@
 		E938D1C62673567100E172FA /* RBTree */ = {
 			isa = PBXGroup;
 			children = (
-				E938D1C72673567100E172FA /* RBTree.cpp */,
 				E938D1C82673567100E172FA /* RBNode.cpp */,
 				E938D1C92673567100E172FA /* RBNode.hpp */,
+				E938D1C72673567100E172FA /* RBTree.cpp */,
 				E938D1CA2673567100E172FA /* RBTree.hpp */,
 			);
 			path = RBTree;

@@ -9,21 +9,20 @@
 #define RBTree_hpp
 
 #include <stdio.h>
-#include "RBNode.hpp"
 #include "BBSTree.hpp"
+#include "RBNode.hpp"
 
-static bool RED = false;
-static bool BLACK = false;
+const bool RED = false;
+const bool BLACK = true;
 
 template<typename T>
 class RBTree :public BBSTree<T> {
     void afterAdd(BTNode<T>* node){
-        
     }
 private:
     BTNode<T> color(BTNode<T>* node, bool color) {
         if (node == nullptr) return node;
-        ((RBNode<T>*)node).color = color;
+        ((RBNode<T>*)node)->color = color;
         return node;
     }
     
@@ -34,8 +33,6 @@ private:
     BTNode<T> black(BTNode<T>* node) {
         return color(node, BLACK);
     }
-        
-    
 };
 
 #endif /* RBTree_hpp */
