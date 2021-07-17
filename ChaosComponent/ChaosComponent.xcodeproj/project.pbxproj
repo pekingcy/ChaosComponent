@@ -46,6 +46,7 @@
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
+		E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA9BD026A2AD6700E9736C /* NSObject+image.m */; };
 		E9E673492611AB0A00373880 /* Deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673472611AB0A00373880 /* Deque.cpp */; };
 		E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673CE2611E89700373880 /* CircleQueue.cpp */; };
 		E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */; };
@@ -151,6 +152,8 @@
 		E9B88B5F2608BDAD00085A63 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleDeque.hpp; sourceTree = "<group>"; };
 		E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleDeque.cpp; sourceTree = "<group>"; };
+		E9DA9BCF26A2AD6700E9736C /* NSObject+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+image.h"; sourceTree = "<group>"; };
+		E9DA9BD026A2AD6700E9736C /* NSObject+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+image.m"; sourceTree = "<group>"; };
 		E9E673472611AB0A00373880 /* Deque.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deque.cpp; sourceTree = "<group>"; };
 		E9E673482611AB0A00373880 /* Deque.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deque.hpp; sourceTree = "<group>"; };
 		E9E673CE2611E89700373880 /* CircleQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircleQueue.cpp; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E9DA9BCE26A2AD6700E9736C /* ChaosUtil */,
 				E9F2E595260CAEE00098F40C /* LeetCode */,
 				E90B26FB25F5E79200D25381 /* source */,
 				E90B26D825F5CA4400D25381 /* ChaosFrameKnowledge */,
@@ -411,6 +415,15 @@
 				E9E673CF2611E89700373880 /* CircleQueue.hpp */,
 			);
 			path = " LinearStructure";
+			sourceTree = "<group>";
+		};
+		E9DA9BCE26A2AD6700E9736C /* ChaosUtil */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA9BCF26A2AD6700E9736C /* NSObject+image.h */,
+				E9DA9BD026A2AD6700E9736C /* NSObject+image.m */,
+			);
+			path = ChaosUtil;
 			sourceTree = "<group>";
 		};
 		E9F2E595260CAEE00098F40C /* LeetCode */ = {
@@ -633,6 +646,7 @@
 				0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */,
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
+				E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 				0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */,
 				E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */,
