@@ -45,6 +45,18 @@
 		E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D9260C22F20083D6DB /* LinkedList.cpp */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
+		E9D4052C26A7EEBA00E7E33B /* BCSqliteType.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4050E26A7EEBA00E7E33B /* BCSqliteType.m */; };
+		E9D4052D26A7EEBA00E7E33B /* BCSqlInt.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4050F26A7EEBA00E7E33B /* BCSqlInt.m */; };
+		E9D4052E26A7EEBA00E7E33B /* BCSqlReal.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4051026A7EEBA00E7E33B /* BCSqlReal.m */; };
+		E9D4052F26A7EEBA00E7E33B /* BCSqlText.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4051126A7EEBA00E7E33B /* BCSqlText.m */; };
+		E9D4053026A7EEBA00E7E33B /* BCConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4051A26A7EEBA00E7E33B /* BCConstraints.m */; };
+		E9D4053126A7EEBA00E7E33B /* BCReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4051B26A7EEBA00E7E33B /* BCReferences.m */; };
+		E9D4053226A7EEBA00E7E33B /* BCORMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4051C26A7EEBA00E7E33B /* BCORMHelper.m */; };
+		E9D4053326A7EEBA00E7E33B /* BCSqlParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4051D26A7EEBA00E7E33B /* BCSqlParameter.m */; };
+		E9D4053426A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4052426A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.m */; };
+		E9D4053526A7EEBA00E7E33B /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4052626A7EEBA00E7E33B /* FMDatabase+FTS3.m */; };
+		E9D4053626A7EEBA00E7E33B /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4052826A7EEBA00E7E33B /* FMTokenizers.m */; };
+		E9D4053826A7EED200E7E33B /* class UML.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D4053726A7EED200E7E33B /* class UML.png */; };
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
 		E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA9BD026A2AD6700E9736C /* NSObject+image.m */; };
 		E9E673492611AB0A00373880 /* Deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673472611AB0A00373880 /* Deque.cpp */; };
@@ -150,6 +162,33 @@
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		E9B88B5F2608BDAD00085A63 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		E9D4050C26A7EEBA00E7E33B /* BCORMEntityProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCORMEntityProtocol.h; sourceTree = "<group>"; };
+		E9D4050E26A7EEBA00E7E33B /* BCSqliteType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqliteType.m; sourceTree = "<group>"; };
+		E9D4050F26A7EEBA00E7E33B /* BCSqlInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlInt.m; sourceTree = "<group>"; };
+		E9D4051026A7EEBA00E7E33B /* BCSqlReal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlReal.m; sourceTree = "<group>"; };
+		E9D4051126A7EEBA00E7E33B /* BCSqlText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlText.m; sourceTree = "<group>"; };
+		E9D4051226A7EEBA00E7E33B /* BCSqliteType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqliteType.h; sourceTree = "<group>"; };
+		E9D4051326A7EEBA00E7E33B /* BCSqlReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlReal.h; sourceTree = "<group>"; };
+		E9D4051426A7EEBA00E7E33B /* BCSqlInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlInt.h; sourceTree = "<group>"; };
+		E9D4051526A7EEBA00E7E33B /* BCSqlText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlText.h; sourceTree = "<group>"; };
+		E9D4051626A7EEBA00E7E33B /* BCSqlParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSqlParameter.h; sourceTree = "<group>"; };
+		E9D4051826A7EEBA00E7E33B /* BCConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConstraints.h; sourceTree = "<group>"; };
+		E9D4051926A7EEBA00E7E33B /* BCReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCReferences.h; sourceTree = "<group>"; };
+		E9D4051A26A7EEBA00E7E33B /* BCConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCConstraints.m; sourceTree = "<group>"; };
+		E9D4051B26A7EEBA00E7E33B /* BCReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCReferences.m; sourceTree = "<group>"; };
+		E9D4051C26A7EEBA00E7E33B /* BCORMHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCORMHelper.m; sourceTree = "<group>"; };
+		E9D4051D26A7EEBA00E7E33B /* BCSqlParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSqlParameter.m; sourceTree = "<group>"; };
+		E9D4051E26A7EEBA00E7E33B /* BCDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDB.h; sourceTree = "<group>"; };
+		E9D4051F26A7EEBA00E7E33B /* BCORMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCORMHeader.h; sourceTree = "<group>"; };
+		E9D4052026A7EEBA00E7E33B /* BCORMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCORMHelper.h; sourceTree = "<group>"; };
+		E9D4052326A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		E9D4052426A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		E9D4052626A7EEBA00E7E33B /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		E9D4052726A7EEBA00E7E33B /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		E9D4052826A7EEBA00E7E33B /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		E9D4052926A7EEBA00E7E33B /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		E9D4052A26A7EEBA00E7E33B /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		E9D4053726A7EED200E7E33B /* class UML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "class UML.png"; sourceTree = "<group>"; };
 		E9D40D312612DD3600C0EFA8 /* CircleDeque.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleDeque.hpp; sourceTree = "<group>"; };
 		E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleDeque.cpp; sourceTree = "<group>"; };
 		E9DA9BCF26A2AD6700E9736C /* NSObject+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+image.h"; sourceTree = "<group>"; };
@@ -215,6 +254,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E9D4050826A7EE8A00E7E33B /* Lib */,
 				E9DA9BCE26A2AD6700E9736C /* ChaosUtil */,
 				E9F2E595260CAEE00098F40C /* LeetCode */,
 				E90B26FB25F5E79200D25381 /* source */,
@@ -417,6 +457,96 @@
 			path = " LinearStructure";
 			sourceTree = "<group>";
 		};
+		E9D4050826A7EE8A00E7E33B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4050926A7EEBA00E7E33B /* ORM */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		E9D4050926A7EEBA00E7E33B /* ORM */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4053726A7EED200E7E33B /* class UML.png */,
+				E9D4050B26A7EEBA00E7E33B /* BCSqliteORM */,
+				E9D4052126A7EEBA00E7E33B /* FFDB-extra */,
+			);
+			path = ORM;
+			sourceTree = "<group>";
+		};
+		E9D4050B26A7EEBA00E7E33B /* BCSqliteORM */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4050C26A7EEBA00E7E33B /* BCORMEntityProtocol.h */,
+				E9D4050D26A7EEBA00E7E33B /* SqliteType */,
+				E9D4051626A7EEBA00E7E33B /* BCSqlParameter.h */,
+				E9D4051726A7EEBA00E7E33B /* SqliteConstraints */,
+				E9D4051C26A7EEBA00E7E33B /* BCORMHelper.m */,
+				E9D4051D26A7EEBA00E7E33B /* BCSqlParameter.m */,
+				E9D4051E26A7EEBA00E7E33B /* BCDB.h */,
+				E9D4051F26A7EEBA00E7E33B /* BCORMHeader.h */,
+				E9D4052026A7EEBA00E7E33B /* BCORMHelper.h */,
+			);
+			path = BCSqliteORM;
+			sourceTree = "<group>";
+		};
+		E9D4050D26A7EEBA00E7E33B /* SqliteType */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4050E26A7EEBA00E7E33B /* BCSqliteType.m */,
+				E9D4050F26A7EEBA00E7E33B /* BCSqlInt.m */,
+				E9D4051026A7EEBA00E7E33B /* BCSqlReal.m */,
+				E9D4051126A7EEBA00E7E33B /* BCSqlText.m */,
+				E9D4051226A7EEBA00E7E33B /* BCSqliteType.h */,
+				E9D4051326A7EEBA00E7E33B /* BCSqlReal.h */,
+				E9D4051426A7EEBA00E7E33B /* BCSqlInt.h */,
+				E9D4051526A7EEBA00E7E33B /* BCSqlText.h */,
+			);
+			path = SqliteType;
+			sourceTree = "<group>";
+		};
+		E9D4051726A7EEBA00E7E33B /* SqliteConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4051826A7EEBA00E7E33B /* BCConstraints.h */,
+				E9D4051926A7EEBA00E7E33B /* BCReferences.h */,
+				E9D4051A26A7EEBA00E7E33B /* BCConstraints.m */,
+				E9D4051B26A7EEBA00E7E33B /* BCReferences.m */,
+			);
+			path = SqliteConstraints;
+			sourceTree = "<group>";
+		};
+		E9D4052126A7EEBA00E7E33B /* FFDB-extra */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4052226A7EEBA00E7E33B /* InMemoryOnDiskIO */,
+				E9D4052526A7EEBA00E7E33B /* fts3 */,
+			);
+			path = "FFDB-extra";
+			sourceTree = "<group>";
+		};
+		E9D4052226A7EEBA00E7E33B /* InMemoryOnDiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4052326A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.h */,
+				E9D4052426A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = InMemoryOnDiskIO;
+			sourceTree = "<group>";
+		};
+		E9D4052526A7EEBA00E7E33B /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				E9D4052626A7EEBA00E7E33B /* FMDatabase+FTS3.m */,
+				E9D4052726A7EEBA00E7E33B /* FMTokenizers.h */,
+				E9D4052826A7EEBA00E7E33B /* FMTokenizers.m */,
+				E9D4052926A7EEBA00E7E33B /* FMDatabase+FTS3.h */,
+				E9D4052A26A7EEBA00E7E33B /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
 		E9DA9BCE26A2AD6700E9736C /* ChaosUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +672,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D4053826A7EED200E7E33B /* class UML.png in Resources */,
 				E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */,
 				E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */,
 				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
@@ -612,20 +743,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C82BEC42610128A0026D471 /* Stack.cpp in Sources */,
+				E9D4053326A7EEBA00E7E33B /* BCSqlParameter.m in Sources */,
 				E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */,
+				E9D4052D26A7EEBA00E7E33B /* BCSqlInt.m in Sources */,
 				E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */,
 				0C82BEE82610B7180026D471 /* Queue.cpp in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */,
+				E9D4053026A7EEBA00E7E33B /* BCConstraints.m in Sources */,
+				E9D4053126A7EEBA00E7E33B /* BCReferences.m in Sources */,
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
+				E9D4053426A7EEBA00E7E33B /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				E9D4053526A7EEBA00E7E33B /* FMDatabase+FTS3.m in Sources */,
 				E938D1CB2673567100E172FA /* RBTree.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
+				E9D4053226A7EEBA00E7E33B /* BCORMHelper.m in Sources */,
+				E9D4052E26A7EEBA00E7E33B /* BCSqlReal.m in Sources */,
+				E9D4052C26A7EEBA00E7E33B /* BCSqliteType.m in Sources */,
 				E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */,
 				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
 				E90F0B152628400900FA120B /* BTNode.cpp in Sources */,
 				E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */,
 				E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */,
+				E9D4053626A7EEBA00E7E33B /* FMTokenizers.m in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
 				E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */,
 				E938D1CC2673567100E172FA /* RBNode.cpp in Sources */,
@@ -647,6 +788,7 @@
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
 				E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */,
+				E9D4052F26A7EEBA00E7E33B /* BCSqlText.m in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
 				0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */,
 				E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */,
