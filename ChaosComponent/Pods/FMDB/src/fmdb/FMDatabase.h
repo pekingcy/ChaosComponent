@@ -77,7 +77,10 @@ typedef NS_ENUM(int, FMDBCheckpointMode) {
 #pragma clang diagnostic ignored "-Wobjc-interface-ivars"
 
 
-@interface FMDatabase : NSObject
+@interface FMDatabase : NSObject{
+    void*               _db;
+}
+
 
 ///-----------------
 /// @name Properties

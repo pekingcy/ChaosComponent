@@ -9,4 +9,6 @@ target 'ChaosComponent' do
    pod "BeeHive"
   # pod 'KJExtensionHandler'
    pod 'FMDB'
+   pod 'SDWebImage'
+
 end

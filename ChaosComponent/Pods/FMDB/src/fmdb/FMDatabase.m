@@ -9,7 +9,6 @@
 #endif
 
 @interface FMDatabase () {
-    void*               _db;
     BOOL                _isExecutingStatement;
     NSTimeInterval      _startBusyRetryTime;
     
