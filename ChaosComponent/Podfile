@@ -10,5 +10,5 @@ target 'ChaosComponent' do
   # pod 'KJExtensionHandler'
    pod 'FMDB'
    pod 'SDWebImage'
-
+   pod 'Alamofire'
 end
