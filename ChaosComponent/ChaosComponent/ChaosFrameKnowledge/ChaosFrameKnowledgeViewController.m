@@ -6,7 +6,7 @@
 //
 
 #import "ChaosFrameKnowledgeViewController.h"
-
+#import "ChaosComponent-Swift.h"
 @interface ChaosFrameKnowledgeViewController ()
 @property(copy,  nonatomic)NSArray* resource;
 @end
@@ -25,7 +25,7 @@
 
 - (NSArray *)resource{
     if (_resource == nil) {
-        _resource = @[ @"数组"];
+        _resource = @[ @"数组",@"swift"];
     }
     return _resource;
 }
@@ -37,7 +37,11 @@
         case 0:
              
             break;
-            
+        case 1:{
+            ChaosBaseViewController * vc =  [[ChaosBaseViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }

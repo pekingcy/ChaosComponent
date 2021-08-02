@@ -7,4 +7,5 @@
     #import <sqlite3.h>
     #import "FMDB.h"
     #import <CoreFoundation/CoreFoundation.h>
+    #import "JHConstants_API.h"
 #endif

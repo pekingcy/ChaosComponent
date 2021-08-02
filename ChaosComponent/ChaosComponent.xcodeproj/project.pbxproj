@@ -43,6 +43,8 @@
 		E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */; };
 		E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D6260C22F20083D6DB /* SingleLinkedList.cpp */; };
 		E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2D9260C22F20083D6DB /* LinkedList.cpp */; };
+		E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E991146226B7DCB300E16F72 /* JHLiveAdaptUI.m */; };
+		E991146D26B7DD9A00E16F72 /* ChaosBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
@@ -145,6 +147,11 @@
 		E990F2D7260C22F20083D6DB /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		E990F2D8260C22F20083D6DB /* SingleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SingleLinkedList.hpp; sourceTree = "<group>"; };
 		E990F2D9260C22F20083D6DB /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		E991146126B7DC6800E16F72 /* JHConstants_API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHConstants_API.h; sourceTree = "<group>"; };
+		E991146226B7DCB300E16F72 /* JHLiveAdaptUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLiveAdaptUI.m; sourceTree = "<group>"; };
+		E991146326B7DCB300E16F72 /* JHLiveAdaptUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLiveAdaptUI.h; sourceTree = "<group>"; };
+		E991146B26B7DD9900E16F72 /* ChaosComponent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChaosComponent-Bridging-Header.h"; sourceTree = "<group>"; };
+		E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosBaseViewController.swift; sourceTree = "<group>"; };
 		E993E236262D68DF00618FEA /* tools.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools.hpp; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
@@ -218,6 +225,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E991146A26B7DD0E00E16F72 /* SwiftCore */,
 				E9D4055C26A8095600E7E33B /* chaos_Prefix.pch */,
 				E9D4050826A7EE8A00E7E33B /* Lib */,
 				E9DA9BCE26A2AD6700E9736C /* ChaosUtil */,
@@ -390,6 +398,15 @@
 			path = RBTree;
 			sourceTree = "<group>";
 		};
+		E991146A26B7DD0E00E16F72 /* SwiftCore */ = {
+			isa = PBXGroup;
+			children = (
+				E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */,
+				E991146B26B7DD9900E16F72 /* ChaosComponent-Bridging-Header.h */,
+			);
+			path = SwiftCore;
+			sourceTree = "<group>";
+		};
 		E993E242262D792B00618FEA /*  LinearStructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +451,9 @@
 		E9DA9BCE26A2AD6700E9736C /* ChaosUtil */ = {
 			isa = PBXGroup;
 			children = (
+				E991146326B7DCB300E16F72 /* JHLiveAdaptUI.h */,
+				E991146226B7DCB300E16F72 /* JHLiveAdaptUI.m */,
+				E991146126B7DC6800E16F72 /* JHConstants_API.h */,
 				E9DA9BCF26A2AD6700E9736C /* NSObject+image.h */,
 				E9DA9BD026A2AD6700E9736C /* NSObject+image.m */,
 			);
@@ -520,6 +540,7 @@
 				TargetAttributes = {
 					0C6BD00125F4F0EF002E387A = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1230;
 					};
 					0C6BD01725F4F0F2002E387A = {
 						CreatedOnToolsVersion = 12.4;
@@ -629,6 +650,7 @@
 				E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */,
 				E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */,
 				0C82BEE82610B7180026D471 /* Queue.cpp in Sources */,
+				E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */,
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
@@ -651,6 +673,7 @@
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,
+				E991146D26B7DD9A00E16F72 /* ChaosBaseViewController.swift in Sources */,
 				E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */,
 				E927388D26045164002115D3 /* MArray.hpp in Sources */,
 				E927388926045085002115D3 /* MArray.cpp in Sources */,
@@ -818,6 +841,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ChaosComponent/ChaosComponent.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -835,6 +859,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = jingquezhili;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChaosComponent/SwiftCore/ChaosComponent-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -847,6 +874,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ChaosComponent/ChaosComponent.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -864,6 +892,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = jingquezhili;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChaosComponent/SwiftCore/ChaosComponent-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -871,6 +901,7 @@
 		0C6BD03025F4F0F2002E387A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -890,6 +921,7 @@
 		0C6BD03125F4F0F2002E387A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -909,6 +941,7 @@
 		0C6BD03325F4F0F2002E387A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChaosComponentUITests/Info.plist;
@@ -926,6 +959,7 @@
 		0C6BD03425F4F0F2002E387A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChaosComponentUITests/Info.plist;
