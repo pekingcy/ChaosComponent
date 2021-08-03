@@ -1,0 +1,6 @@
+module Pods_ChaosComponent {
+  umbrella header "Pods-ChaosComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}
