@@ -19,16 +19,25 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (4.2.0)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - AFNetworking (> 3.0)
   - Alamofire
   - BeeHive
   - FMDB
+  - Moya
+  - ObjectMapper
   - SDWebImage
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -36,15 +45,21 @@ SPEC REPOS:
     - Alamofire
     - BeeHive
     - FMDB
+    - Moya
+    - ObjectMapper
     - SDWebImage
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 49a63b4fdeb4f69e6b9be3d3a2630421295fad06
+PODFILE CHECKSUM: 62689cd742f0235301a622867c5298aafb9a63a3
 
 COCOAPODS: 1.9.1

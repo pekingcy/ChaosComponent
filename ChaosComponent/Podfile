@@ -11,4 +11,7 @@ target 'ChaosComponent' do
    pod 'FMDB'
    pod 'SDWebImage'
    pod 'Alamofire'
+   pod 'ObjectMapper'
+   pod 'SwiftyJSON'
+   pod 'Moya'
 end
