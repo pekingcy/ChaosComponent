@@ -21,7 +21,7 @@
 		0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEEC2610BB600026D471 /* 232_用栈实现队列.cpp */; };
 		E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F20261ED3920033D908 /* BinarySearchTree.cpp */; };
 		E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */; };
-		E9059D4226E8A7F400870235 /* storeLiveList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9059D4126E8A7F400870235 /* storeLiveList.swift */; };
+		E9059D4226E8A7F400870235 /* StoreLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9059D4126E8A7F400870235 /* StoreLiveModel.swift */; };
 		E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26BC25F5C56300D25381 /* ChaosViewController.m */; };
 		E90B26C625F5C59200D25381 /* ChaosHomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B26C525F5C59200D25381 /* ChaosHomeModule.m */; };
 		E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */; };
@@ -38,6 +38,9 @@
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
 		E938D1CB2673567100E172FA /* RBTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E938D1C72673567100E172FA /* RBTree.cpp */; };
 		E938D1CC2673567100E172FA /* RBNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E938D1C82673567100E172FA /* RBNode.cpp */; };
+		E93A5AEB26EB25AD00796CF1 /* ChaosNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEA26EB25AD00796CF1 /* ChaosNetworkManager.swift */; };
+		E93A5AED26EB25D900796CF1 /* ChaosNetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEC26EB25D900796CF1 /* ChaosNetworkResult.swift */; };
+		E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */; };
 		E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96FD27E262EE35900C2A567 /* BinaryTree.cpp */; };
 		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
 		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
@@ -107,7 +110,7 @@
 		E9028F20261ED3920033D908 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
 		E9028F21261ED3920033D908 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeInfo.cpp; sourceTree = "<group>"; };
-		E9059D4126E8A7F400870235 /* storeLiveList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeLiveList.swift; sourceTree = "<group>"; };
+		E9059D4126E8A7F400870235 /* StoreLiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLiveModel.swift; sourceTree = "<group>"; };
 		E90B26B625F5C4B900D25381 /* HomeServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeServiceProtocol.h; sourceTree = "<group>"; };
 		E90B26BB25F5C56300D25381 /* ChaosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosViewController.h; sourceTree = "<group>"; };
 		E90B26BC25F5C56300D25381 /* ChaosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosViewController.m; sourceTree = "<group>"; };
@@ -140,6 +143,9 @@
 		E938D1C82673567100E172FA /* RBNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RBNode.cpp; sourceTree = "<group>"; };
 		E938D1C92673567100E172FA /* RBNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RBNode.hpp; sourceTree = "<group>"; };
 		E938D1CA2673567100E172FA /* RBTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RBTree.hpp; sourceTree = "<group>"; };
+		E93A5AEA26EB25AD00796CF1 /* ChaosNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosNetworkManager.swift; sourceTree = "<group>"; };
+		E93A5AEC26EB25D900796CF1 /* ChaosNetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosNetworkResult.swift; sourceTree = "<group>"; };
+		E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosStoreApi.swift; sourceTree = "<group>"; };
 		E96FD27E262EE35900C2A567 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		E96FD27F262EE35900C2A567 /* BinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
 		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
@@ -405,7 +411,10 @@
 			children = (
 				E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */,
 				E991146B26B7DD9900E16F72 /* ChaosComponent-Bridging-Header.h */,
-				E9059D4126E8A7F400870235 /* storeLiveList.swift */,
+				E9059D4126E8A7F400870235 /* StoreLiveModel.swift */,
+				E93A5AEA26EB25AD00796CF1 /* ChaosNetworkManager.swift */,
+				E93A5AEC26EB25D900796CF1 /* ChaosNetworkResult.swift */,
+				E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */,
 			);
 			path = SwiftCore;
 			sourceTree = "<group>";
@@ -660,7 +669,7 @@
 				E938D1CB2673567100E172FA /* RBTree.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
 				E90B26BD25F5C56300D25381 /* ChaosViewController.m in Sources */,
-				E9059D4226E8A7F400870235 /* storeLiveList.swift in Sources */,
+				E9059D4226E8A7F400870235 /* StoreLiveModel.swift in Sources */,
 				E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */,
 				E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */,
 				E90F0B152628400900FA120B /* BTNode.cpp in Sources */,
@@ -668,12 +677,15 @@
 				E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
 				E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */,
+				E93A5AEB26EB25AD00796CF1 /* ChaosNetworkManager.swift in Sources */,
 				E938D1CC2673567100E172FA /* RBNode.cpp in Sources */,
 				0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.mm in Sources */,
 				E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
+				E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */,
 				0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */,
+				E93A5AED26EB25D900796CF1 /* ChaosNetworkResult.swift in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
 				0C6BD00725F4F0EF002E387A /* AppDelegate.m in Sources */,

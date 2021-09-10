@@ -55,6 +55,15 @@ class ChaosBaseViewController: UIViewController {
 //            let threeDescription = convertedRank.simpleDescription()
 //            print(threeDescription)  // [3,4,5,6]
 //        }
+        ChaosNetworkManager<StoreLiveModel>().request(target: SimpleApi.GetFssStoreList) { (result) in
+            guard let data = result.data  else {
+                /// error
+                print(result.message ?? "")
+                return
+            }
+            /// success
+            print(data)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
