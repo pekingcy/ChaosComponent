@@ -29,7 +29,7 @@ extension ChaosNetworkResultType {
             data = dataObj
             return
         }
-        guard let model = try? Mapper<T>().map(JSONObject:obj) else { return }
+        guard let model = Mapper<T>().map(JSONObject:obj) else { return }
         data = model
     }
 }

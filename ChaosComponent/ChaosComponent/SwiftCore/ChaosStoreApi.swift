@@ -13,8 +13,18 @@ enum SimpleApi {
 }
 
 extension SimpleApi: TargetType {
+    
+    func chaosEnvironment() -> String{
+        let plistPath = Bundle.main.path(forResource: "ip", ofType: "plst")
+        if plistPath != nil {
+             return ""
+        }
+        return ""
+    }
+    
     var baseURL: URL {
-        return URL(string: "https://imv.iuoooo.com")!
+        let url = "https://" + chaosEnvironment() + "imv.iuoooo.com"
+        return URL(string: url)!
     }
     
     var headers: [String : String]? {

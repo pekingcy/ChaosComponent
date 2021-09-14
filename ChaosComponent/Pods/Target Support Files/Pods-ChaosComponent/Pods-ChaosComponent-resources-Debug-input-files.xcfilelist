@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent-resources.sh
 ${PODS_ROOT}/BeeHive/BeeHive/BeeHive.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/JKSwiftExtension/JKSwiftExtension.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle

@@ -14,4 +14,7 @@ target 'ChaosComponent' do
    pod 'ObjectMapper'
    pod 'SwiftyJSON'
    pod 'Moya'
+   pod 'SnapKit'  #相当于
+   pod 'MJRefresh'
+   pod 'JKSwiftExtension'
 end
