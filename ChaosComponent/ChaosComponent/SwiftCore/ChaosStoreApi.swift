@@ -23,7 +23,7 @@ extension SimpleApi: TargetType {
     }
     
     var baseURL: URL {
-        let url = "https://" + chaosEnvironment() + "imv.iuoooo.com"
+        let url = "https://" + chaosEnvironment() + "iustore.iuoooo.com"
         return URL(string: url)!
     }
     
@@ -42,14 +42,15 @@ extension SimpleApi: TargetType {
     var path: String {
         switch self {
         case .GetFssStoreList:
-            return "/api/Store/GetStoreLiveList"
+            return "/Jinher.AMP.Store.SV.StoreQuerySV.svc/GetFssStoreList"
         }
     }
     var task: Task {
         var parmeters: [String : Any] = [:]
         switch self {
         case .GetFssStoreList:
-            parmeters =  ["userId":"7e771d4f-b90f-4d31-870b-03c2348f3de1","pageSize":20,"PageIndex":1,"LocationLat":40.05397244454516,"LocationLon":116.29715203940199,"OrgId":"7035c461-c80e-49ce-a7c8-5584f0453646","AppId":"9be42759-9686-4541-b5a4-2be15a5c7d73","clientInfo":["version":"v1.8.0","versionNum":"180","device":"ios"]] as [String : Any]
+            let filter: [String : Any] =  ["storescore":"","businessstatusvalue":"","marketCode":"","labelIds":[],"operateType":"","filterAreaCode":"","newlableid":"","govGrade":"","restaurantType":"","distance":"","tradeAreaCode":"","areaCode":""]
+            parmeters = ["storeListSearchDTO":["userId":"1290ca39-f598-4861-a7b6-9b0516022a07","pageSize":20,"pageIndex":1,"lat":40.05397244454516,"lng":116.29715203940199,"areaCode":"2-110100","appId":"9be42759-9686-4541-b5a4-2be15a5c7d73","storescorecode":"1","searchContent":"","filter":filter, "clientInfo":["version":"v1.8.0","versionNum":"180","device":"ios"]] as [String : Any]]
             return .requestParameters(parameters: parmeters, encoding: JSONEncoding.default)
         }
     }

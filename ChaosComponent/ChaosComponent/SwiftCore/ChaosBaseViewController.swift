@@ -21,10 +21,10 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
+        tableView.register(JHStoreListTableViewCell.self, forCellReuseIdentifier: "cellID")
         return tableView;
-    }();
-    
+    }()
+
     // 顶部刷新
     let header = MJRefreshNormalHeader()
         // 底部刷新
@@ -72,13 +72,13 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
                 print(result.message ?? "")
                 return
             }
-            self.dataList = result.data?.Data;
+            self.dataList = result.data?.storeList;
             self.listTableView.reloadData()
             /// success
             print(data)
             self.header.endRefreshing();
             self.footer.endRefreshing();
-            let count:Int! = result.data?.Data?.count
+            let count:Int! = result.data?.storeList?.count
             if  count >= 0 {
                 self.footer.endRefreshingWithNoMoreData()
             }
@@ -111,7 +111,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
         if let model:StoreLiveItem = self.dataList?[indexPath.row]{
-            cell.textLabel?.text = model.StoreName;
+            cell.textLabel?.text = model.storeName;
         }
         return cell
     }
