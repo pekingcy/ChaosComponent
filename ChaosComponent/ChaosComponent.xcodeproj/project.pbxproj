@@ -33,6 +33,7 @@
 		E90F0B152628400900FA120B /* BTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B132628400900FA120B /* BTNode.cpp */; };
 		E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B1A262840B200FA120B /* AVLNode.cpp */; };
 		E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */; };
+		E922D451270010E700EB54AC /* store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D450270010E700EB54AC /* store@2x.png */; };
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
@@ -135,6 +136,7 @@
 		E90F0B1B262840B200FA120B /* AVLNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLNode.hpp; sourceTree = "<group>"; };
 		E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleLinkedList.hpp; sourceTree = "<group>"; };
 		E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleLinkedList.cpp; sourceTree = "<group>"; };
+		E922D450270010E700EB54AC /* store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store@2x.png"; sourceTree = "<group>"; };
 		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
 		E927377C2601C502002115D3 /* MArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MArray.hpp; sourceTree = "<group>"; };
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		E991146A26B7DD0E00E16F72 /* SwiftCore */ = {
 			isa = PBXGroup;
 			children = (
+				E922D450270010E700EB54AC /* store@2x.png */,
 				E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */,
 				E991146B26B7DD9900E16F72 /* ChaosComponent-Bridging-Header.h */,
 				E9059D4126E8A7F400870235 /* StoreLiveModel.swift */,
@@ -594,6 +597,7 @@
 			files = (
 				E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */,
 				E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */,
+				E922D451270010E700EB54AC /* store@2x.png in Resources */,
 				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

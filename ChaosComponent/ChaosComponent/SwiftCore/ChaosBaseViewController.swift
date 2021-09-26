@@ -109,16 +109,17 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
+        let cell:JHStoreListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as!JHStoreListTableViewCell
         if let model:StoreLiveItem = self.dataList?[indexPath.row]{
-            cell.textLabel?.text = model.storeName;
+  
+            cell.updateSubView(model);
         }
         return cell
     }
 
     //MARK: - 行高
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 140
     }
     
     //MARK: - 点击cell
