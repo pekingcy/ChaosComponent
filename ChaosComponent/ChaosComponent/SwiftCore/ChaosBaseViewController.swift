@@ -122,8 +122,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:JHStoreListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as!JHStoreListTableViewCell
         if let model:StoreLiveItem = self.dataList?[indexPath.row]{
-  
-            cell.updateSubView(model);
+            cell.updateSubView(model,self.typeList!);
         }
         return cell
     }

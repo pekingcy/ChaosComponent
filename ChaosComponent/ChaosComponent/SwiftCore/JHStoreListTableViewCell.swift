@@ -180,7 +180,7 @@ class JHStoreListTableViewCell: UITableViewCell {
         self.layoutIfNeeded()
     }
     
-    func updateSubView(_ itemModel:StoreLiveItem) {
+    func updateSubView(_ itemModel:StoreLiveItem,_ itemTypes:[JHStoreShowTypeModel]) {
         let iconUrl = URL(string: itemModel.storePicUrl!)
         let image = UIImage(named: "store")
         iconImageView.kf.setImage(with: iconUrl,placeholder: image) { result in
