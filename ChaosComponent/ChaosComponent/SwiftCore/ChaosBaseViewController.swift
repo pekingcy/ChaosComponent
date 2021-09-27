@@ -11,16 +11,17 @@ import ObjectMapper
 import SnapKit
 
 //https://github.com/Lafree317/Swift-MJrefresh/blob/master/README.md
-
 class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     //数据
     var dataList:[StoreLiveItem]? = [];
+    var typeList:[JHStoreShowTypeModel]? = [];
     lazy var listTableView:UITableView = {
         let tableViewFrame = CGRect(x:0,y:0,width:view.bounds.width,height:view.bounds.height)
         let tableView = UITableView(frame:tableViewFrame,style:.plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
+        tableView.separatorStyle = .none
         tableView.register(JHStoreListTableViewCell.self, forCellReuseIdentifier: "cellID")
         return tableView;
     }()
@@ -46,7 +47,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
         // 上拉刷新
         footer.setRefreshingTarget(self, refreshingAction: #selector(self.footerRefresh))
         self.listTableView.mj_footer = footer
-        requestResource()
+        requestStoreModel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,7 +66,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
         super.viewDidDisappear(animated)
     }
     
-    func requestResource() {
+    func requestResource(){
         ChaosNetworkManager<StoreLiveModel>().request(target: SimpleApi.GetFssStoreList) { (result) in
             guard let data = result.data  else {
                 /// error
@@ -85,6 +86,17 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
         }
     }
     
+    func requestStoreModel() {
+        ChaosNetworkManager<JHStoreShowModel>().request(target: SimpleApi.GetBookExhibitByAppId) { (result) in
+            guard let data = result.data  else {
+                /// error
+                print(result.message ?? "")
+                return
+            }
+            self.typeList = result.data?.Data;
+            self.requestResource()
+        }
+    }
     // 顶部刷新
     @objc func headerRefresh(){
            print("下拉刷新")
@@ -101,8 +113,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
            if index > 2 {
                footer.endRefreshingWithNoMoreData()
            }
-       }
-    
+    }
     //MARK: - 返回多少行
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataList!.count

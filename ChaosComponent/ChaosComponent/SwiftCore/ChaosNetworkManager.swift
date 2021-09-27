@@ -56,5 +56,4 @@ struct ChaosNetworkManager<Model: Mappable> {
             }
         }
     }
-    
 }

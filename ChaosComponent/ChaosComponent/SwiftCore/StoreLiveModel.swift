@@ -31,6 +31,7 @@ class StoreLiveItem:Mappable {
     var watchNum:String?
     var restaurantType:String?
     var area:String?
+    var distance:String?
     var isHasEquipment:Bool?
     var shopAppId:String?
     var liveType:String?
@@ -60,6 +61,7 @@ class StoreLiveItem:Mappable {
         watchNum <- map["watchNum"]
         restaurantType <- map["restaurantType"]
         area <- map["area"]
+        distance <- map["distance"]
         isHasEquipment <- map["isHasEquipment"]
         shopAppId <- map["shopAppId"]
         liveType <- map["liveType"]
