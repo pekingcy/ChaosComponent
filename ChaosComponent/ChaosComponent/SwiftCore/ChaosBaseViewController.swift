@@ -15,6 +15,14 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     //数据
     var dataList:[StoreLiveItem]? = [];
     var typeList:[JHStoreShowTypeModel]? = [];
+
+    lazy var searchView:JHNavigateAreaSearchView = {
+        let tempSearchView:JHNavigateAreaSearchView =  JHNavigateAreaSearchView();
+        tempSearchView.backgroundColor = UIColor.hexStringColor(hexString: "#FEF4F1")
+        return tempSearchView
+    }()
+    
+    
     lazy var listTableView:UITableView = {
         let tableViewFrame = CGRect(x:0,y:0,width:view.bounds.width,height:view.bounds.height)
         let tableView = UITableView(frame:tableViewFrame,style:.plain)
@@ -34,9 +42,15 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         //创建tableView
+        view.addSubview(searchView)
+        searchView.snp.makeConstraints({(make) in
+            make.top.equalTo(88)
+            make.left.right.equalTo(0)
+            make.height.equalTo(44)
+        })
         view.addSubview(listTableView)
         listTableView.snp.makeConstraints({(make) in
-            make.top.equalTo(0)
+            make.top.equalTo(searchView.snp.bottom).offset(0)
             make.left.right.equalTo(0)
             make.bottom.equalTo(0)
         })

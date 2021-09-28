@@ -72,6 +72,9 @@
 		E922D4B32702D26A00EB54AC /* sddd_C|3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D4902702D26A00EB54AC /* sddd_C|3@2x.png */; };
 		E922D4B42702D26A00EB54AC /* sddd_E|1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D4912702D26A00EB54AC /* sddd_E|1@2x.png */; };
 		E922D4B52702D26A00EB54AC /* sddd_A|B@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D4922702D26A00EB54AC /* sddd_A|B@2x.png */; };
+		E922D4B727030C4B00EB54AC /* JHNavigateSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E922D4B627030C4B00EB54AC /* JHNavigateSearchView.swift */; };
+		E922D4B9270310A600EB54AC /* JHNavigateAreaSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */; };
+		E922D4BB2703163000EB54AC /* NavBarIconSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D4BA2703163000EB54AC /* NavBarIconSearch@2x.png */; };
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
@@ -213,6 +216,9 @@
 		E922D4902702D26A00EB54AC /* sddd_C|3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sddd_C|3@2x.png"; sourceTree = "<group>"; };
 		E922D4912702D26A00EB54AC /* sddd_E|1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sddd_E|1@2x.png"; sourceTree = "<group>"; };
 		E922D4922702D26A00EB54AC /* sddd_A|B@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sddd_A|B@2x.png"; sourceTree = "<group>"; };
+		E922D4B627030C4B00EB54AC /* JHNavigateSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHNavigateSearchView.swift; sourceTree = "<group>"; };
+		E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHNavigateAreaSearchView.swift; sourceTree = "<group>"; };
+		E922D4BA2703163000EB54AC /* NavBarIconSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearch@2x.png"; sourceTree = "<group>"; };
 		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
 		E927377C2601C502002115D3 /* MArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MArray.hpp; sourceTree = "<group>"; };
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
@@ -478,6 +484,7 @@
 		E922D46F2702D24000EB54AC /* image */ = {
 			isa = PBXGroup;
 			children = (
+				E922D4BA2703163000EB54AC /* NavBarIconSearch@2x.png */,
 				E922D4862702D26A00EB54AC /* sddd_1@2x.png */,
 				E922D48A2702D26A00EB54AC /* sddd_2@2x.png */,
 				E922D4852702D26900EB54AC /* sddd_3@2x.png */,
@@ -543,6 +550,8 @@
 				E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */,
 				E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */,
 				E922D46D2701CB4300EB54AC /* JHStoreShowTypeModel.swift */,
+				E922D4B627030C4B00EB54AC /* JHNavigateSearchView.swift */,
+				E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */,
 			);
 			path = SwiftCore;
 			sourceTree = "<group>";
@@ -730,6 +739,7 @@
 				E922D4B02702D26A00EB54AC /* sddd_B|B@2x.png in Resources */,
 				E922D4A72702D26A00EB54AC /* sddd_B|C@2x.png in Resources */,
 				E922D49E2702D26A00EB54AC /* sddd_B|1@2x.png in Resources */,
+				E922D4BB2703163000EB54AC /* NavBarIconSearch@2x.png in Resources */,
 				E922D4B22702D26A00EB54AC /* sddd_D|A@2x.png in Resources */,
 				E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */,
 				E922D4A02702D26A00EB54AC /* sddd_A|3@2x.png in Resources */,
@@ -831,6 +841,7 @@
 				E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
 				E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */,
+				E922D4B9270310A600EB54AC /* JHNavigateAreaSearchView.swift in Sources */,
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
 				E938D1CB2673567100E172FA /* RBTree.cpp in Sources */,
 				E90B26DB25F5CA5C00D25381 /* ChaosFrameKnowledgeViewController.m in Sources */,
@@ -847,6 +858,7 @@
 				E938D1CC2673567100E172FA /* RBNode.cpp in Sources */,
 				0C82BED326101D8E0026D471 /* ChaosDataStructureViewController.mm in Sources */,
 				E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */,
+				E922D4B727030C4B00EB54AC /* JHNavigateSearchView.swift in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */,
