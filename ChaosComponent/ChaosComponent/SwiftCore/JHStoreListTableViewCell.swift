@@ -96,7 +96,7 @@ class JHStoreListTableViewCell: UITableViewCell {
     }()
     
     lazy var likeButton:UIButton = {
-        let tempLikeButton = UIButton.jk.normal()
+        let tempLikeButton = UIButton()
         tempLikeButton.backgroundColor = UIColor.hexStringColor(hexString: "#FEF4F1")
         tempLikeButton.layer.corner(2)
         tempLikeButton.layer.masksToBounds = true
@@ -138,8 +138,8 @@ class JHStoreListTableViewCell: UITableViewCell {
         storeBackgroundView.addSubview(exponentLabel)
         storeBackgroundView.addSubview(addressLabel)
         storeBackgroundView.addSubview(distanceLabel)
-        //storeBackgroundView.addSubview(likeButton)
         storeBackgroundView.addSubview(watchButton)
+        storeBackgroundView.addSubview(likeButton)
     }
     /// 添加控件和设置约束
     private func makeSubViewConstraints() {
@@ -192,12 +192,12 @@ class JHStoreListTableViewCell: UITableViewCell {
             make.height.equalTo(17)
         }
         
-//        likeButton.snp.makeConstraints { make in
-//            make.top.equalTo(addressLabel.snp.bottom).offset(10)
-//            make.right.equalTo(0)
-//            make.width.equalTo(70)
-//            make.height.equalTo(13)
-//        }
+        likeButton.snp.makeConstraints { make in
+            make.left.equalTo(watchButton.snp.right).offset(20)
+            make.top.equalTo(addressLabel.snp.bottom).offset(10)
+            make.width.equalTo(60)
+            make.height.equalTo(17)
+        }
         self.layoutIfNeeded()
     }
     
@@ -303,6 +303,35 @@ class JHStoreListTableViewCell: UITableViewCell {
                         watchNumStr = watchNumTempStr
                     }
                     watchButton.title(watchNumStr, UIControl.State.normal)
+                }
+            }else if item.ExValue == "ZanCount"{
+                if let praiseNumTempStr = itemModel.praiseNum { //可选绑定
+                    likeButton.isHidden(false)
+                    likeButton.snp.removeConstraints()
+                    if watchButton.isHidden {
+                        likeButton.snp.makeConstraints { make in
+                            make.left.equalTo(iconImageView.snp.right).offset(20)
+                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
+                            make.width.equalTo(60)
+                            make.height.equalTo(17)
+                        }
+                    }else{
+                        likeButton.snp.makeConstraints { make in
+                            make.left.equalTo(watchButton.snp.right).offset(20)
+                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
+                            make.width.equalTo(60)
+                            make.height.equalTo(13)
+                        }
+                    }
+                    
+                    var praiseNumStr:String = ""
+                    let praiseNum:Float = Float(praiseNumTempStr)!
+                    if praiseNum > 9999 {
+                        praiseNumStr = String(format: "%.1fw", Int(praiseNum/10000))
+                    }else{
+                        praiseNumStr = praiseNumTempStr
+                    }
+                    likeButton.title(praiseNumStr, UIControl.State.normal)
                 }
             }
         }
