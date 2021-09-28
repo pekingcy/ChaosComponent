@@ -101,6 +101,7 @@ class JHStoreListTableViewCell: UITableViewCell {
         let image = UIImage(named: "like")
         tempLikeButton.image(image, UIControl.State.normal)
         tempLikeButton.jk.setImageTitleLayout(.imgLeft, spacing: 5)
+        
         tempLikeButton.setTitleColor(UIColor.hexStringColor(hexString: "#FF6B34"), for: UIControl.State.normal)
         tempLikeButton.font(UIFont.jk.textF(11))
         tempLikeButton.isHidden(true)
@@ -202,25 +203,8 @@ class JHStoreListTableViewCell: UITableViewCell {
             let tempStorePicUrl = storePicUrl.replacingOccurrences(of:"http:", with: "https:")
             let iconUrl = URL(string: tempStorePicUrl)
             let image = UIImage(named: "store")
-            iconImageView.kf.setImage(with: iconUrl,placeholder: image) { result in
-                    // `result` is either a `.success(RetrieveImageResult)` or a `.failure(KingfisherError)`
-                    switch result {
-                    case .success(let value):
-                        // The image was set to image view:
-                        print(value.image)
-                        // From where the image was retrieved:
-                        // - .none - Just downloaded.
-                        // - .memory - Got from memory cache.
-                        // - .disk - Got from disk cache.
-                        print(value.cacheType)
-                        // The source object which contains information like `url`.
-                        print(value.source)
-                    case .failure(let error):
-                        print(error) // The error happens
-                    }
-                }
+            iconImageView.kf.setImage(with: iconUrl,placeholder: image)
         }
-       
         titleLabel.isHidden(true)
         exponentLabel.isHidden(true)
         distanceLabel.isHidden(true)
