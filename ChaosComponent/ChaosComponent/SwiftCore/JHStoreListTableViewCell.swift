@@ -40,7 +40,7 @@ class JHStoreListTableViewCell: UITableViewCell {
         let tempIconImageViewFrame = CGRect(x:12, y: 12, width:83, height: 83)
         let tempIconImageView = UIImageView(frame: tempIconImageViewFrame)
         tempIconImageView.backgroundColor = UIColor.white
-        tempIconImageView.layer.corner(2)
+        tempIconImageView.layer.corner(4)
         tempIconImageView.layer.masksToBounds = true
         return tempIconImageView
     }()
@@ -48,18 +48,16 @@ class JHStoreListTableViewCell: UITableViewCell {
     lazy var titleLabel:UILabel = {
         let tempTitleLabel = UILabel()
         tempTitleLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: NSLayoutConstraint.Axis.horizontal)
-        tempTitleLabel.backgroundColor = UIColor.clear
+        tempTitleLabel.backgroundColor = UIColor.white
         tempTitleLabel.font = UIFont.jk.textB(16)
         tempTitleLabel.isHidden(true)
         return tempTitleLabel
     }()
     
     lazy var gradeImageView:UIImageView = {   //食品安全等级
-        let tempGradeImageViewFrame = CGRect(x:12, y: 12, width:83, height: 83)
-        let tempGradeImageView = UIImageView(frame: tempGradeImageViewFrame)
+        let tempGradeImageView = UIImageView()
         tempGradeImageView.backgroundColor = UIColor.white
-        tempGradeImageView.layer.corner(2)
-        tempGradeImageView.layer.masksToBounds = true
+        tempGradeImageView.contentMode(UIView.ContentMode.left)
         tempGradeImageView.isHidden(true)
         return tempGradeImageView
     }()
@@ -152,7 +150,6 @@ class JHStoreListTableViewCell: UITableViewCell {
             make.left.top.equalTo(12)
             make.size.equalTo(CGSize(width: 83, height: 83))
         }
-        
         titleLabel.snp.makeConstraints { make in
             make.left.equalTo(iconImageView.snp.right).offset(10)
             make.top.equalTo(12)
@@ -161,25 +158,24 @@ class JHStoreListTableViewCell: UITableViewCell {
         }
         gradeImageView.snp.makeConstraints { make in
             make.leading.equalTo(titleLabel.snp.leading)
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
             make.width.lessThanOrEqualTo(54)
             make.height.equalTo(13)
         }
         exponentLabel.snp.makeConstraints { make in
             make.left.equalTo(gradeImageView.snp.right).offset(10)
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
             make.right.equalTo(0)
             make.height.equalTo(13)
         }
         addressLabel.snp.makeConstraints { make in
             make.left.equalTo(iconImageView.snp.right).offset(10)
-            make.top.equalTo(exponentLabel.snp.bottom).offset(10)
+            make.top.equalTo(exponentLabel.snp.bottom).offset(8)
             make.right.equalTo(-70)
             make.height.equalTo(13)
         }
-        
         distanceLabel.snp.makeConstraints { make in
-            make.top.equalTo(exponentLabel.snp.bottom).offset(10)
+            make.top.equalTo(exponentLabel.snp.bottom).offset(8)
             make.right.equalTo(-10)
             make.width.equalTo(70)
             make.height.equalTo(13)
@@ -187,14 +183,13 @@ class JHStoreListTableViewCell: UITableViewCell {
         
         watchButton.snp.makeConstraints { make in
             make.left.equalTo(iconImageView.snp.right).offset(10)
-            make.top.equalTo(addressLabel.snp.bottom).offset(10)
-          //  make.width.greaterThanOrEqualTo(40)
+            make.top.equalTo(addressLabel.snp.bottom).offset(8)
             make.height.equalTo(17)
         }
         
         likeButton.snp.makeConstraints { make in
             make.left.equalTo(watchButton.snp.right).offset(20)
-            make.top.equalTo(addressLabel.snp.bottom).offset(10)
+            make.top.equalTo(addressLabel.snp.bottom).offset(8)
           //  make.width.greaterThanOrEqualTo(40)
             make.height.equalTo(17)
         }
@@ -202,25 +197,30 @@ class JHStoreListTableViewCell: UITableViewCell {
     }
     
     func updateSubView(_ itemModel:StoreLiveItem,_ itemTypes:[JHStoreShowTypeModel]) {
-        let iconUrl = URL(string: itemModel.storePicUrl!)
-        let image = UIImage(named: "store")
-        iconImageView.kf.setImage(with: iconUrl,placeholder: image) { result in
-                // `result` is either a `.success(RetrieveImageResult)` or a `.failure(KingfisherError)`
-                switch result {
-                case .success(let value):
-                    // The image was set to image view:
-                    print(value.image)
-                    // From where the image was retrieved:
-                    // - .none - Just downloaded.
-                    // - .memory - Got from memory cache.
-                    // - .disk - Got from disk cache.
-                    print(value.cacheType)
-                    // The source object which contains information like `url`.
-                    print(value.source)
-                case .failure(let error):
-                    print(error) // The error happens
+        
+        if let storePicUrl = itemModel.storePicUrl{
+            let tempStorePicUrl = storePicUrl.replacingOccurrences(of:"http:", with: "https:")
+            let iconUrl = URL(string: tempStorePicUrl)
+            let image = UIImage(named: "store")
+            iconImageView.kf.setImage(with: iconUrl,placeholder: image) { result in
+                    // `result` is either a `.success(RetrieveImageResult)` or a `.failure(KingfisherError)`
+                    switch result {
+                    case .success(let value):
+                        // The image was set to image view:
+                        print(value.image)
+                        // From where the image was retrieved:
+                        // - .none - Just downloaded.
+                        // - .memory - Got from memory cache.
+                        // - .disk - Got from disk cache.
+                        print(value.cacheType)
+                        // The source object which contains information like `url`.
+                        print(value.source)
+                    case .failure(let error):
+                        print(error) // The error happens
+                    }
                 }
-            }
+        }
+       
         titleLabel.isHidden(true)
         exponentLabel.isHidden(true)
         distanceLabel.isHidden(true)
@@ -249,7 +249,7 @@ class JHStoreListTableViewCell: UITableViewCell {
                     exponentLabel.snp.removeConstraints()
                     exponentLabel.snp.makeConstraints { make in
                         make.left.equalTo(iconImageView.snp.right).offset(10)
-                        make.top.equalTo(titleLabel.snp.bottom).offset(10)
+                        make.top.equalTo(titleLabel.snp.bottom).offset(8)
                         make.right.equalTo(0)
                         make.height.equalTo(13)
                     }
@@ -257,7 +257,7 @@ class JHStoreListTableViewCell: UITableViewCell {
                     exponentLabel.snp.removeConstraints()
                     exponentLabel.snp.makeConstraints { make in
                         make.left.equalTo(gradeImageView.snp.right).offset(10)
-                        make.top.equalTo(titleLabel.snp.bottom).offset(10)
+                        make.top.equalTo(titleLabel.snp.bottom).offset(8)
                         make.right.equalTo(0)
                         make.height.equalTo(13)
                     }
@@ -320,15 +320,13 @@ class JHStoreListTableViewCell: UITableViewCell {
                     if watchButton.isHidden {
                         likeButton.snp.makeConstraints { make in
                             make.left.equalTo(iconImageView.snp.right).offset(10)
-                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
-                           // make.width.greaterThanOrEqualTo(40)
+                            make.top.equalTo(addressLabel.snp.bottom).offset(8)
                             make.height.equalTo(17)
                         }
                     }else{
                         likeButton.snp.makeConstraints { make in
                             make.left.equalTo(watchButton.snp.right).offset(20)
-                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
-                          //  make.width.greaterThanOrEqualTo(40)
+                            make.top.equalTo(addressLabel.snp.bottom).offset(8)
                             make.height.equalTo(13)
                         }
                     }
