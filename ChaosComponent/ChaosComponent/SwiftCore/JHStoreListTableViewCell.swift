@@ -162,7 +162,7 @@ class JHStoreListTableViewCell: UITableViewCell {
         gradeImageView.snp.makeConstraints { make in
             make.leading.equalTo(titleLabel.snp.leading)
             make.top.equalTo(titleLabel.snp.bottom).offset(10)
-            make.width.equalTo(54)
+            make.width.lessThanOrEqualTo(54)
             make.height.equalTo(13)
         }
         exponentLabel.snp.makeConstraints { make in
@@ -188,14 +188,14 @@ class JHStoreListTableViewCell: UITableViewCell {
         watchButton.snp.makeConstraints { make in
             make.left.equalTo(iconImageView.snp.right).offset(10)
             make.top.equalTo(addressLabel.snp.bottom).offset(10)
-            make.width.equalTo(60)
+          //  make.width.greaterThanOrEqualTo(40)
             make.height.equalTo(17)
         }
         
         likeButton.snp.makeConstraints { make in
             make.left.equalTo(watchButton.snp.right).offset(20)
             make.top.equalTo(addressLabel.snp.bottom).offset(10)
-            make.width.equalTo(60)
+          //  make.width.greaterThanOrEqualTo(40)
             make.height.equalTo(17)
         }
         self.layoutIfNeeded()
@@ -294,6 +294,7 @@ class JHStoreListTableViewCell: UITableViewCell {
             }
             else if item.ExValue == "OpenCount"{
                 if let watchNumTempStr = itemModel.watchNum { //可选绑定
+                    watchButton.setContentHuggingPriority(UILayoutPriority(rawValue: 1000), for: .horizontal)
                     watchButton.isHidden(false)
                     var watchNumStr:String = ""
                     let watchNum:Float = Float(watchNumTempStr)!
@@ -308,22 +309,6 @@ class JHStoreListTableViewCell: UITableViewCell {
                 if let praiseNumTempStr = itemModel.praiseNum { //可选绑定
                     likeButton.isHidden(false)
                     likeButton.snp.removeConstraints()
-                    if watchButton.isHidden {
-                        likeButton.snp.makeConstraints { make in
-                            make.left.equalTo(iconImageView.snp.right).offset(20)
-                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
-                            make.width.equalTo(60)
-                            make.height.equalTo(17)
-                        }
-                    }else{
-                        likeButton.snp.makeConstraints { make in
-                            make.left.equalTo(watchButton.snp.right).offset(20)
-                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
-                            make.width.equalTo(60)
-                            make.height.equalTo(13)
-                        }
-                    }
-                    
                     var praiseNumStr:String = ""
                     let praiseNum:Float = Float(praiseNumTempStr)!
                     if praiseNum > 9999 {
@@ -332,6 +317,21 @@ class JHStoreListTableViewCell: UITableViewCell {
                         praiseNumStr = praiseNumTempStr
                     }
                     likeButton.title(praiseNumStr, UIControl.State.normal)
+                    if watchButton.isHidden {
+                        likeButton.snp.makeConstraints { make in
+                            make.left.equalTo(iconImageView.snp.right).offset(10)
+                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
+                           // make.width.greaterThanOrEqualTo(40)
+                            make.height.equalTo(17)
+                        }
+                    }else{
+                        likeButton.snp.makeConstraints { make in
+                            make.left.equalTo(watchButton.snp.right).offset(20)
+                            make.top.equalTo(addressLabel.snp.bottom).offset(10)
+                          //  make.width.greaterThanOrEqualTo(40)
+                            make.height.equalTo(13)
+                        }
+                    }
                 }
             }
         }
