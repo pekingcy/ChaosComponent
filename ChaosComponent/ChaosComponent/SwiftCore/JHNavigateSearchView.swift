@@ -9,7 +9,13 @@ import UIKit
 import SnapKit
 import JKSwiftExtension
 
+
+
+
 class JHNavigateSearchView: UIView, UITextFieldDelegate {
+    
+    typealias searchBarTextChangeBlock = (_ text: String) -> ()
+    var searchBarTextChange:searchBarTextChangeBlock?
     
     let JHSearchImageInset: CGFloat = 11.0
     let JHSearchBarImageSize: CGFloat = 22.0
@@ -29,6 +35,7 @@ class JHNavigateSearchView: UIView, UITextFieldDelegate {
         tempSearchField.placeholder = "输入商家名、品类或者商圈"
         tempSearchField.font(UIFont.jk.textF(14))
         tempSearchField.keyboardType = .webSearch
+        tempSearchField.delegate = self
         return tempSearchField
     }()
     
@@ -75,4 +82,12 @@ class JHNavigateSearchView: UIView, UITextFieldDelegate {
         }
         self.layoutIfNeeded()
     }
+    //UITextFieldDelegate
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if let block = searchBarTextChange {
+            block(textField.text!)
+        }
+        return true
+    }
 }
+

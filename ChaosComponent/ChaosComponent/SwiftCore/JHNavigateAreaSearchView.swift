@@ -17,6 +17,11 @@ class JHNavigateAreaSearchView: UIView {
         // Drawing code
     }
     */
+    
+    typealias searchBarTextChangeBlock = (_ text: String) -> ()
+    
+    var searchBarTextChange:searchBarTextChangeBlock?
+    
     lazy var areaButton:UIButton = {
         let tempAreaButton:UIButton =  UIButton();
         tempAreaButton.backgroundColor = .white
@@ -32,6 +37,11 @@ class JHNavigateAreaSearchView: UIView {
     lazy var searchView:JHNavigateSearchView = {
         let tempView:JHNavigateSearchView =  JHNavigateSearchView();
         tempView.backgroundColor = UIColor.white
+        tempView.searchBarTextChange = {(text) in
+            if let block = self.searchBarTextChange{
+                block(text)
+            }
+        }
         return tempView
     }()
     

@@ -19,6 +19,9 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     lazy var searchView:JHNavigateAreaSearchView = {
         let tempSearchView:JHNavigateAreaSearchView =  JHNavigateAreaSearchView();
         tempSearchView.backgroundColor = UIColor.white
+        tempSearchView.searchBarTextChange = {(text) in
+            print(text)
+        }
         return tempSearchView
     }()
     
