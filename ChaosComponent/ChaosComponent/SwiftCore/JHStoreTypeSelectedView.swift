@@ -16,7 +16,8 @@ class JHStoreTypeSelectedView: UIView,UICollectionViewDelegate,UICollectionViewD
         // Drawing code
     }
     */
-    
+    var seletedRow:Int = 0
+        
     lazy var listCollectionView:UICollectionView = {
         
         let layout = UICollectionViewFlowLayout.init()
@@ -55,7 +56,8 @@ class JHStoreTypeSelectedView: UIView,UICollectionViewDelegate,UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-         
+        seletedRow = indexPath.row
+        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +66,11 @@ class JHStoreTypeSelectedView: UIView,UICollectionViewDelegate,UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)->UICollectionViewCell{
         let cell:JHStoreTypeSelectedCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID", for: indexPath) as!JHStoreTypeSelectedCollectionViewCell
+        if seletedRow == indexPath.row{
+            cell.didSeleted(true)
+        }else{
+            cell.didSeleted(false)
+        }
         return cell
     }
     

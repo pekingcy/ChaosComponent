@@ -18,6 +18,7 @@ class JHStoreTypeSelectedCollectionViewCell: UICollectionViewCell {
         tempItemButton.title("北京", UIControl.State.normal)
         tempItemButton.font(UIFont.jk.textB(14))
         tempItemButton.textColor(UIColor.hexStringColor(hexString: "#353638"), UIControl.State.normal)
+        tempItemButton.isUserInteractionEnabled = false
         return tempItemButton
     }()
     
@@ -46,5 +47,13 @@ class JHStoreTypeSelectedCollectionViewCell: UICollectionViewCell {
   //  updateSubView
     func updateSubView(_ text : String){
         itemButton.title(text, UIControl.State.normal)
+    }
+    
+    func didSeleted(_ status : Bool){
+        if status {
+            itemButton.textColor(UIColor.hexStringColor(hexString: "#04A174"), UIControl.State.normal)
+        }else{
+            itemButton.textColor(UIColor.hexStringColor(hexString: "#353638"), UIControl.State.normal)
+        }
     }
 }
