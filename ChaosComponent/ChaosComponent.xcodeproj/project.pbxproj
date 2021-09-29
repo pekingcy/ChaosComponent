@@ -74,7 +74,6 @@
 		E922D4B52702D26A00EB54AC /* sddd_A|B@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D4922702D26A00EB54AC /* sddd_A|B@2x.png */; };
 		E922D4B727030C4B00EB54AC /* JHNavigateSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E922D4B627030C4B00EB54AC /* JHNavigateSearchView.swift */; };
 		E922D4B9270310A600EB54AC /* JHNavigateAreaSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */; };
-		E922D4BB2703163000EB54AC /* NavBarIconSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D4BA2703163000EB54AC /* NavBarIconSearch@2x.png */; };
 		E927388926045085002115D3 /* MArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377B2601C502002115D3 /* MArray.cpp */; };
 		E927388D26045164002115D3 /* MArray.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E927377C2601C502002115D3 /* MArray.hpp */; };
 		E92738B126047324002115D3 /* ChaosBasicModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E92738B026047324002115D3 /* ChaosBasicModule.m */; };
@@ -98,6 +97,8 @@
 		E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA9BD026A2AD6700E9736C /* NSObject+image.m */; };
 		E9E673492611AB0A00373880 /* Deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673472611AB0A00373880 /* Deque.cpp */; };
 		E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673CE2611E89700373880 /* CircleQueue.cpp */; };
+		E9E9684B27040A560013B35F /* shop_list_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E9684A27040A560013B35F /* shop_list_arrow@2x.png */; };
+		E9E9684D2704124C0013B35F /* shop_list_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E9684C2704124C0013B35F /* shop_list_search@2x.png */; };
 		E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */; };
 		E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
@@ -218,7 +219,6 @@
 		E922D4922702D26A00EB54AC /* sddd_A|B@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sddd_A|B@2x.png"; sourceTree = "<group>"; };
 		E922D4B627030C4B00EB54AC /* JHNavigateSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHNavigateSearchView.swift; sourceTree = "<group>"; };
 		E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHNavigateAreaSearchView.swift; sourceTree = "<group>"; };
-		E922D4BA2703163000EB54AC /* NavBarIconSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconSearch@2x.png"; sourceTree = "<group>"; };
 		E927377B2601C502002115D3 /* MArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MArray.cpp; sourceTree = "<group>"; };
 		E927377C2601C502002115D3 /* MArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MArray.hpp; sourceTree = "<group>"; };
 		E92738AF26047324002115D3 /* ChaosBasicModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosBasicModule.h; sourceTree = "<group>"; };
@@ -262,6 +262,8 @@
 		E9E673482611AB0A00373880 /* Deque.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deque.hpp; sourceTree = "<group>"; };
 		E9E673CE2611E89700373880 /* CircleQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircleQueue.cpp; sourceTree = "<group>"; };
 		E9E673CF2611E89700373880 /* CircleQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircleQueue.hpp; sourceTree = "<group>"; };
+		E9E9684A27040A560013B35F /* shop_list_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_list_arrow@2x.png"; sourceTree = "<group>"; };
+		E9E9684C2704124C0013B35F /* shop_list_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_list_search@2x.png"; sourceTree = "<group>"; };
 		E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BBSTree.cpp; sourceTree = "<group>"; };
 		E9F0D6DA2671ED0E004881E2 /* BBSTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BBSTree.hpp; sourceTree = "<group>"; };
 		E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleCircleLinkedList.cpp; sourceTree = "<group>"; };
@@ -484,7 +486,8 @@
 		E922D46F2702D24000EB54AC /* image */ = {
 			isa = PBXGroup;
 			children = (
-				E922D4BA2703163000EB54AC /* NavBarIconSearch@2x.png */,
+				E9E9684C2704124C0013B35F /* shop_list_search@2x.png */,
+				E9E9684A27040A560013B35F /* shop_list_arrow@2x.png */,
 				E922D4862702D26A00EB54AC /* sddd_1@2x.png */,
 				E922D48A2702D26A00EB54AC /* sddd_2@2x.png */,
 				E922D4852702D26900EB54AC /* sddd_3@2x.png */,
@@ -739,7 +742,6 @@
 				E922D4B02702D26A00EB54AC /* sddd_B|B@2x.png in Resources */,
 				E922D4A72702D26A00EB54AC /* sddd_B|C@2x.png in Resources */,
 				E922D49E2702D26A00EB54AC /* sddd_B|1@2x.png in Resources */,
-				E922D4BB2703163000EB54AC /* NavBarIconSearch@2x.png in Resources */,
 				E922D4B22702D26A00EB54AC /* sddd_D|A@2x.png in Resources */,
 				E90B273225F5F8AB00D25381 /* Default-896h@2x.png in Resources */,
 				E922D4A02702D26A00EB54AC /* sddd_A|3@2x.png in Resources */,
@@ -755,6 +757,8 @@
 				E90B271025F5EBF500D25381 /* Default-667h@2x.png in Resources */,
 				E922D451270010E700EB54AC /* store@2x.png in Resources */,
 				E922D4B12702D26A00EB54AC /* sddd_D|3@2x.png in Resources */,
+				E9E9684B27040A560013B35F /* shop_list_arrow@2x.png in Resources */,
+				E9E9684D2704124C0013B35F /* shop_list_search@2x.png in Resources */,
 				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
 				E922D49B2702D26A00EB54AC /* sddd_C|A@2x.png in Resources */,
 				E922D4982702D26A00EB54AC /* sddd_D|C@2x.png in Resources */,

@@ -17,19 +17,21 @@ class JHNavigateAreaSearchView: UIView {
         // Drawing code
     }
     */
-
     lazy var areaButton:UIButton = {
         let tempAreaButton:UIButton =  UIButton();
         tempAreaButton.backgroundColor = .white
-        let image = UIImage(named: "like")
+        let image = UIImage(named: "shop_list_arrow")
         tempAreaButton.image(image, UIControl.State.normal)
-        tempAreaButton.jk.setImageTitleLayout(.imgLeft, spacing: 5)
+        tempAreaButton.jk.setImageTitleLayout(.imgRight, spacing: 5)
+        tempAreaButton.title("北京市", UIControl.State.normal)
+        tempAreaButton.font(UIFont.jk.textB(14))
+        tempAreaButton.textColor(UIColor.hexStringColor(hexString: "#353638"), UIControl.State.normal)
         return tempAreaButton
     }()
     
     lazy var searchView:JHNavigateSearchView = {
         let tempView:JHNavigateSearchView =  JHNavigateSearchView();
-        tempView.backgroundColor = UIColor.hexStringColor(hexString: "#FEF4F1")
+        tempView.backgroundColor = UIColor.white
         return tempView
     }()
     
@@ -53,15 +55,15 @@ class JHNavigateAreaSearchView: UIView {
     private func makeSubViewConstraints() {
  
         areaButton.snp.makeConstraints { make in
-            make.left.equalTo(30)
+            make.left.equalTo(10)
             make.top.equalTo(8)
             make.height.equalTo(30)
-            make.width.equalTo(80)
+            make.width.equalTo(68)
         }
         searchView.snp.makeConstraints { make in
-            make.left.equalTo(areaButton.snp.right).offset(12)
+            make.left.equalTo(areaButton.snp.right).offset(6)
             make.top.equalTo(8)
-            make.right.equalTo(30)
+            make.right.equalTo(-10)
             make.height.equalTo(30)
         }
         self.layoutIfNeeded()

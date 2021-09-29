@@ -15,9 +15,9 @@ class JHNavigateSearchView: UIView, UITextFieldDelegate {
     let JHSearchBarImageSize: CGFloat = 22.0
 
     lazy var storeBackgroundView:UIView = {
-        let backgroundViewFrame = CGRect(x: 0, y: 0, width:UIScreen.jk.width, height: 70)
+        let backgroundViewFrame = CGRect(x: 0, y: 0, width:UIScreen.jk.width, height: 30)
         let backgroundView = UIView(frame: backgroundViewFrame)
-        backgroundView.backgroundColor = UIColor.white
+        backgroundView.backgroundColor = UIColor.hexStringColor(hexString: "#F4F4F4")
         backgroundView.layer.corner(15)
         backgroundView.layer.masksToBounds = true
         return backgroundView
@@ -25,16 +25,16 @@ class JHNavigateSearchView: UIView, UITextFieldDelegate {
     
     lazy var searchField:UITextField = {
         let tempSearchField:UITextField =  UITextField();
-        tempSearchField.backgroundColor = UIColor.hexStringColor(hexString: "#FEF4F1")
-        tempSearchField.placeholder = "请输入商品名"
+        tempSearchField.backgroundColor = UIColor.hexStringColor(hexString: "#F4F4F4")
+        tempSearchField.placeholder = "输入商家名、品类或者商圈"
+        tempSearchField.font(UIFont.jk.textF(14))
         tempSearchField.keyboardType = .webSearch
-        tempSearchField.backgroundColor = UIColor.white
         return tempSearchField
     }()
     
     lazy var searchImage:UIImageView = {
         let tempSearchImage:UIImageView =  UIImageView();
-        tempSearchImage.image = UIImage(named: "NavBarIconSearch")
+        tempSearchImage.image = UIImage(named: "shop_list_search")
         return tempSearchImage
     }()
     
@@ -58,20 +58,20 @@ class JHNavigateSearchView: UIView, UITextFieldDelegate {
     /// 添加控件和设置约束
     private func makeSubViewConstraints() {
         storeBackgroundView.snp.makeConstraints { make in
-            make.left.top.right.equalTo(0)
+            make.left.top.equalTo(0)
+            make.right.equalTo(0)
             make.height.equalTo(30)
         }
-        
         searchField.snp.makeConstraints { make in
-            make.left.right.equalTo(0)
+            make.left.equalTo(30)
+            make.right.equalTo(-10)
             make.centerY.equalTo(storeBackgroundView.snp.centerY)
             make.height.equalTo(30)
         }
-        
         searchImage.snp.makeConstraints { make in
             make.left.equalTo(6)
             make.centerY.equalTo(storeBackgroundView.snp.centerY)
-            make.width.height.equalTo(30)
+            make.width.height.equalTo(16)
         }
         self.layoutIfNeeded()
     }
