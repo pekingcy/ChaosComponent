@@ -99,6 +99,8 @@
 		E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673CE2611E89700373880 /* CircleQueue.cpp */; };
 		E9E9684B27040A560013B35F /* shop_list_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E9684A27040A560013B35F /* shop_list_arrow@2x.png */; };
 		E9E9684D2704124C0013B35F /* shop_list_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E9684C2704124C0013B35F /* shop_list_search@2x.png */; };
+		E9E9684F27043C480013B35F /* JHStoreTypeSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9684E27043C480013B35F /* JHStoreTypeSelectedView.swift */; };
+		E9E968512704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E968502704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift */; };
 		E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */; };
 		E9F2E59B260CBC5D0098F40C /* SingleCircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */; };
 		FF02554493F8F7B5C5571683 /* libPods-ChaosComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */; };
@@ -264,6 +266,8 @@
 		E9E673CF2611E89700373880 /* CircleQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircleQueue.hpp; sourceTree = "<group>"; };
 		E9E9684A27040A560013B35F /* shop_list_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_list_arrow@2x.png"; sourceTree = "<group>"; };
 		E9E9684C2704124C0013B35F /* shop_list_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_list_search@2x.png"; sourceTree = "<group>"; };
+		E9E9684E27043C480013B35F /* JHStoreTypeSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHStoreTypeSelectedView.swift; sourceTree = "<group>"; };
+		E9E968502704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHStoreTypeSelectedCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9F0D6D92671ED0E004881E2 /* BBSTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BBSTree.cpp; sourceTree = "<group>"; };
 		E9F0D6DA2671ED0E004881E2 /* BBSTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BBSTree.hpp; sourceTree = "<group>"; };
 		E9F2E599260CBC5D0098F40C /* SingleCircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingleCircleLinkedList.cpp; sourceTree = "<group>"; };
@@ -555,6 +559,8 @@
 				E922D46D2701CB4300EB54AC /* JHStoreShowTypeModel.swift */,
 				E922D4B627030C4B00EB54AC /* JHNavigateSearchView.swift */,
 				E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */,
+				E9E9684E27043C480013B35F /* JHStoreTypeSelectedView.swift */,
+				E9E968502704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift */,
 			);
 			path = SwiftCore;
 			sourceTree = "<group>";
@@ -874,9 +880,11 @@
 				E991146D26B7DD9A00E16F72 /* ChaosBaseViewController.swift in Sources */,
 				E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */,
 				E927388D26045164002115D3 /* MArray.hpp in Sources */,
+				E9E968512704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift in Sources */,
 				E927388926045085002115D3 /* MArray.cpp in Sources */,
 				E922D46E2701CB4300EB54AC /* JHStoreShowTypeModel.swift in Sources */,
 				E990F2DB260C22F20083D6DB /* LinkedList.cpp in Sources */,
+				E9E9684F27043C480013B35F /* JHStoreTypeSelectedView.swift in Sources */,
 				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
 				E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */,
 				0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */,

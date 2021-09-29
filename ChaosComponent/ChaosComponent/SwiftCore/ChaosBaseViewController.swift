@@ -24,6 +24,14 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
         }
         return tempSearchView
     }()
+    lazy var storeTypeSelectedView: JHStoreTypeSelectedView = {
+        let tempStoreTypeSelectedView: JHStoreTypeSelectedView =  JHStoreTypeSelectedView();
+        tempStoreTypeSelectedView.backgroundColor = UIColor.white
+//        tempSearchView.searchBarTextChange = {(text) in
+//            print(text)
+//        }
+        return tempStoreTypeSelectedView
+    }()
     
     lazy var listTableView:UITableView = {
         let tableViewFrame = CGRect(x:0,y:0,width:view.bounds.width,height:view.bounds.height)
@@ -50,9 +58,17 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
             make.left.right.equalTo(0)
             make.height.equalTo(44)
         })
+        
+        view.addSubview(storeTypeSelectedView)
+        storeTypeSelectedView.snp.makeConstraints({(make) in
+            make.top.equalTo(searchView.snp.bottom).offset(0)
+            make.left.right.equalTo(0)
+            make.height.equalTo(44)
+        })
+        
         view.addSubview(listTableView)
         listTableView.snp.makeConstraints({(make) in
-            make.top.equalTo(searchView.snp.bottom).offset(0)
+            make.top.equalTo(storeTypeSelectedView.snp.bottom).offset(0)
             make.left.right.equalTo(0)
             make.bottom.equalTo(0)
         })
