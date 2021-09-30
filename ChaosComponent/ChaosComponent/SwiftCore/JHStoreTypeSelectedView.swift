@@ -9,13 +9,10 @@ import UIKit
 
 class JHStoreTypeSelectedView: UIView,UICollectionViewDelegate,UICollectionViewDataSource {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    typealias JHStoreTypeSelectedIndexBlock = (_ index: Int) -> ()
+    
+    var selectedIndexBlock:JHStoreTypeSelectedIndexBlock?
+    
     var seletedRow:Int = 0
         
     lazy var listCollectionView:UICollectionView = {

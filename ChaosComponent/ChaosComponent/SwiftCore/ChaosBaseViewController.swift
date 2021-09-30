@@ -27,9 +27,9 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     lazy var storeTypeSelectedView: JHStoreTypeSelectedView = {
         let tempStoreTypeSelectedView: JHStoreTypeSelectedView =  JHStoreTypeSelectedView();
         tempStoreTypeSelectedView.backgroundColor = UIColor.white
-//        tempSearchView.searchBarTextChange = {(text) in
-//            print(text)
-//        }
+        tempStoreTypeSelectedView.selectedIndexBlock = {(index) in
+            print(index)
+        }
         return tempStoreTypeSelectedView
     }()
     
@@ -43,7 +43,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
         tableView.register(JHStoreListTableViewCell.self, forCellReuseIdentifier: "cellID")
         return tableView;
     }()
-
+    
     // 顶部刷新
     let header = MJRefreshNormalHeader()
         // 底部刷新
