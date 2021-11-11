@@ -17,4 +17,5 @@ target 'ChaosComponent' do
    pod 'SnapKit'  #相当于
    pod 'MJRefresh'
    pod 'JKSwiftExtension'
+   pod 'KRProgressHUD'
 end

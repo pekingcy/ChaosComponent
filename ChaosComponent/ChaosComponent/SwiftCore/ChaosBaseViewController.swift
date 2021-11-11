@@ -119,6 +119,7 @@ class ChaosBaseViewController: UIViewController,UITableViewDelegate, UITableView
     }
     
     func requestStoreModel() {
+        
         ChaosNetworkManager<JHStoreShowModel>().request(target: SimpleApi.GetBookExhibitByAppId) { (result) in
             guard let data = result.data  else {
                 /// error

@@ -22,6 +22,9 @@ PODS:
   - JKSwiftExtension (1.8.5):
     - Kingfisher
   - Kingfisher (6.3.1)
+  - KRActivityIndicatorView (3.0.7)
+  - KRProgressHUD (3.4.7):
+    - KRActivityIndicatorView (= 3.0.7)
   - MJRefresh (3.7.2)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
@@ -40,6 +43,7 @@ DEPENDENCIES:
   - BeeHive
   - FMDB
   - JKSwiftExtension
+  - KRProgressHUD
   - MJRefresh
   - Moya
   - ObjectMapper
@@ -55,6 +59,8 @@ SPEC REPOS:
     - FMDB
     - JKSwiftExtension
     - Kingfisher
+    - KRActivityIndicatorView
+    - KRProgressHUD
     - MJRefresh
     - Moya
     - ObjectMapper
@@ -69,6 +75,8 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   JKSwiftExtension: f1a4ce741481e6b9ef14b31f1fe333cdbbb53d02
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
+  KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
@@ -76,6 +84,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 0aa612024310511f25e62a6c61c5e3a4a7d31cc6
+PODFILE CHECKSUM: e98774f373033845dc175d9147c319df46b8457e
 
 COCOAPODS: 1.9.1
