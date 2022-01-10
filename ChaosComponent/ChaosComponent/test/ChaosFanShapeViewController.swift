@@ -7,15 +7,6 @@
 
 import UIKit
 
-class ChaosFanShapeViewController: UIViewController {
-
-// 1、泛型函数
-    func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
-        let temporaryA = a
-        a = b
-        b = temporaryA
-    }
-    
 // 2、泛型类型
     struct Stack<Element> {
         var items = [Element]()
@@ -26,6 +17,23 @@ class ChaosFanShapeViewController: UIViewController {
             return items.removeLast()
         }
     }
+    
+    extension Stack {
+        var topItem: Element? {
+            return items.isEmpty ? nil : items[items.count - 1]
+        }
+    }
+
+class ChaosFanShapeViewController: UIViewController {
+
+// 1、泛型函数
+    func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
+        let temporaryA = a
+        a = b
+        b = temporaryA
+    }
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //泛型函数
@@ -39,5 +47,8 @@ class ChaosFanShapeViewController: UIViewController {
         stackOfStrings.push("dos")
         stackOfStrings.push("tres")
         stackOfStrings.push("cuatro")
+        if let topItem = stackOfStrings.topItem {
+            print("The top item on the stack is \(topItem).")
+        }
     }
 }
