@@ -92,6 +92,7 @@
 		E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E991146226B7DCB300E16F72 /* JHLiveAdaptUI.m */; };
 		E991146D26B7DD9A00E16F72 /* ChaosBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */; };
 		E9A2168926FD6B8300EC1C2C /* JHStoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */; };
+		E9A2BC13278C24FB000F402A /* ChaosFanShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
@@ -251,6 +252,7 @@
 		E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosBaseViewController.swift; sourceTree = "<group>"; };
 		E993E236262D68DF00618FEA /* tools.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools.hpp; sourceTree = "<group>"; };
 		E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHStoreListTableViewCell.swift; sourceTree = "<group>"; };
+		E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosFanShapeViewController.swift; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E9A2BC11278C2474000F402A /* test */,
 				E991146A26B7DD0E00E16F72 /* SwiftCore */,
 				E9D4055C26A8095600E7E33B /* chaos_Prefix.pch */,
 				E9D4050826A7EE8A00E7E33B /* Lib */,
@@ -602,6 +605,14 @@
 			path = " LinearStructure";
 			sourceTree = "<group>";
 		};
+		E9A2BC11278C2474000F402A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		E9D4050826A7EE8A00E7E33B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,6 +877,7 @@
 				E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */,
 				E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
+				E9A2BC13278C24FB000F402A /* ChaosFanShapeViewController.swift in Sources */,
 				E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */,
 				E93A5AEB26EB25AD00796CF1 /* ChaosNetworkManager.swift in Sources */,
 				E938D1CC2673567100E172FA /* RBNode.cpp in Sources */,

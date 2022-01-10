@@ -25,7 +25,7 @@
 
 - (NSArray *)resource{
     if (_resource == nil) {
-        _resource = @[ @"数组",@"swift"];
+        _resource = @[ @"数组",@"swift",@"swift 范形"];
     }
     return _resource;
 }
@@ -44,6 +44,10 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 2:{
+            ChaosFanShapeViewController * vc =  [[ChaosFanShapeViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
         default:
             break;
     }
