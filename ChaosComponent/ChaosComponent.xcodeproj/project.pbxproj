@@ -32,6 +32,7 @@
 		E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0AF62627D9BB00FA120B /* AVLBinaryTree.cpp */; };
 		E90F0B152628400900FA120B /* BTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B132628400900FA120B /* BTNode.cpp */; };
 		E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B1A262840B200FA120B /* AVLNode.cpp */; };
+		E9105731277EF5D600DA1CD5 /* ChaosErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9105730277EF5D600DA1CD5 /* ChaosErrorViewController.swift */; };
 		E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */; };
 		E922D451270010E700EB54AC /* store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D450270010E700EB54AC /* store@2x.png */; };
 		E922D46227019D8800EB54AC /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D46127019D8800EB54AC /* like@2x.png */; };
@@ -178,6 +179,7 @@
 		E90F0B142628400900FA120B /* BTNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BTNode.hpp; sourceTree = "<group>"; };
 		E90F0B1A262840B200FA120B /* AVLNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLNode.cpp; sourceTree = "<group>"; };
 		E90F0B1B262840B200FA120B /* AVLNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLNode.hpp; sourceTree = "<group>"; };
+		E9105730277EF5D600DA1CD5 /* ChaosErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosErrorViewController.swift; sourceTree = "<group>"; };
 		E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleLinkedList.hpp; sourceTree = "<group>"; };
 		E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleLinkedList.cpp; sourceTree = "<group>"; };
 		E922D450270010E700EB54AC /* store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store@2x.png"; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 				E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */,
 				E9E9684E27043C480013B35F /* JHStoreTypeSelectedView.swift */,
 				E9E968502704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift */,
+				E9105730277EF5D600DA1CD5 /* ChaosErrorViewController.swift */,
 			);
 			path = SwiftCore;
 			sourceTree = "<group>";
@@ -888,6 +891,7 @@
 				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
 				E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */,
 				0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */,
+				E9105731277EF5D600DA1CD5 /* ChaosErrorViewController.swift in Sources */,
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
 				E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */,

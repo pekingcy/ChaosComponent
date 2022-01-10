@@ -34,8 +34,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
-        case 0:
-             
+        case 0:{
+            ChaosErrorViewController * vc =  [[ChaosErrorViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 1:{
             ChaosBaseViewController * vc =  [[ChaosBaseViewController alloc]init];
