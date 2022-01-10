@@ -33,6 +33,9 @@ class ChaosFanShapeViewController: UIViewController {
         b = temporaryA
     }
  
+//    func someFunction<T: SomeClass, U: SomeProtocol>(someT: T, someU: U) {
+//         
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
