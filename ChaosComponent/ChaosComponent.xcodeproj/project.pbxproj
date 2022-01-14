@@ -19,6 +19,7 @@
 		0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE1261060410026D471 /* 20_有效的括号.cpp */; };
 		0C82BEE82610B7180026D471 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE62610B7180026D471 /* Queue.cpp */; };
 		0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEEC2610BB600026D471 /* 232_用栈实现队列.cpp */; };
+		0CC7BA76278959090034B096 /* InterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7BA75278959090034B096 /* InterView.md */; };
 		E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F20261ED3920033D908 /* BinarySearchTree.cpp */; };
 		E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */; };
 		E9059D4226E8A7F400870235 /* StoreLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9059D4126E8A7F400870235 /* StoreLiveModel.swift */; };
@@ -150,6 +151,7 @@
 		0C82BEE62610B7180026D471 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		0C82BEE72610B7180026D471 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		0C82BEEC2610BB600026D471 /* 232_用栈实现队列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232_用栈实现队列.cpp"; sourceTree = "<group>"; };
+		0CC7BA75278959090034B096 /* InterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = InterView.md; sourceTree = "<group>"; };
 		2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.debug.xcconfig"; sourceTree = "<group>"; };
 		3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.release.xcconfig"; sourceTree = "<group>"; };
 		4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -325,6 +327,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
+				0CC7BA74278958900034B096 /* InterView */,
 				E991146A26B7DD0E00E16F72 /* SwiftCore */,
 				E9D4055C26A8095600E7E33B /* chaos_Prefix.pch */,
 				E9D4050826A7EE8A00E7E33B /* Lib */,
@@ -360,6 +363,22 @@
 				0C6BD02925F4F0F2002E387A /* Info.plist */,
 			);
 			path = ChaosComponentUITests;
+			sourceTree = "<group>";
+		};
+		0CC7BA74278958900034B096 /* InterView */ = {
+			isa = PBXGroup;
+			children = (
+				0CC7BA77278959600034B096 /* InterView-Category */,
+				0CC7BA75278959090034B096 /* InterView.md */,
+			);
+			path = InterView;
+			sourceTree = "<group>";
+		};
+		0CC7BA77278959600034B096 /* InterView-Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "InterView-Category";
 			sourceTree = "<group>";
 		};
 		A40A4894C144F60C64F3CAA0 /* Pods */ = {
@@ -767,6 +786,7 @@
 				E9E9684D2704124C0013B35F /* shop_list_search@2x.png in Resources */,
 				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
 				E922D49B2702D26A00EB54AC /* sddd_C|A@2x.png in Resources */,
+				0CC7BA76278959090034B096 /* InterView.md in Resources */,
 				E922D4982702D26A00EB54AC /* sddd_D|C@2x.png in Resources */,
 				E922D4A22702D26A00EB54AC /* sddd_D|1@2x.png in Resources */,
 				E922D49A2702D26A00EB54AC /* sddd_C|B@2x.png in Resources */,
