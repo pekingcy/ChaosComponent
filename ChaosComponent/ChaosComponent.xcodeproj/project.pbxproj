@@ -93,6 +93,11 @@
 		E991146D26B7DD9A00E16F72 /* ChaosBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */; };
 		E9A2168926FD6B8300EC1C2C /* JHStoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */; };
 		E9A2BC13278C24FB000F402A /* ChaosFanShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */; };
+		E9A2BD25278EA5A2000F402A /* ChaosFanShape1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD24278EA5A2000F402A /* ChaosFanShape1.swift */; };
+		E9A2BD27278EA665000F402A /* ChaosFanShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD26278EA664000F402A /* ChaosFanShape2.swift */; };
+		E9A2BD29278EA771000F402A /* ChaosFanShape3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD28278EA771000F402A /* ChaosFanShape3.swift */; };
+		E9A2BD2B278EA933000F402A /* ChaosFanShape4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD2A278EA933000F402A /* ChaosFanShape4.swift */; };
+		E9A2BD30278EAFB3000F402A /* ChaosFanShape5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD2F278EAFB3000F402A /* ChaosFanShape5.swift */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
@@ -253,6 +258,11 @@
 		E993E236262D68DF00618FEA /* tools.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools.hpp; sourceTree = "<group>"; };
 		E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHStoreListTableViewCell.swift; sourceTree = "<group>"; };
 		E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosFanShapeViewController.swift; sourceTree = "<group>"; };
+		E9A2BD24278EA5A2000F402A /* ChaosFanShape1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosFanShape1.swift; sourceTree = "<group>"; };
+		E9A2BD26278EA664000F402A /* ChaosFanShape2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape2.swift; sourceTree = "<group>"; };
+		E9A2BD28278EA771000F402A /* ChaosFanShape3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape3.swift; sourceTree = "<group>"; };
+		E9A2BD2A278EA933000F402A /* ChaosFanShape4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape4.swift; sourceTree = "<group>"; };
+		E9A2BD2F278EAFB3000F402A /* ChaosFanShape5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape5.swift; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
@@ -329,7 +339,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
-				E9A2BC11278C2474000F402A /* test */,
+				E9A2BC11278C2474000F402A /* FanShape */,
 				E991146A26B7DD0E00E16F72 /* SwiftCore */,
 				E9D4055C26A8095600E7E33B /* chaos_Prefix.pch */,
 				E9D4050826A7EE8A00E7E33B /* Lib */,
@@ -605,12 +615,17 @@
 			path = " LinearStructure";
 			sourceTree = "<group>";
 		};
-		E9A2BC11278C2474000F402A /* test */ = {
+		E9A2BC11278C2474000F402A /* FanShape */ = {
 			isa = PBXGroup;
 			children = (
+				E9A2BD2F278EAFB3000F402A /* ChaosFanShape5.swift */,
+				E9A2BD2A278EA933000F402A /* ChaosFanShape4.swift */,
+				E9A2BD28278EA771000F402A /* ChaosFanShape3.swift */,
+				E9A2BD26278EA664000F402A /* ChaosFanShape2.swift */,
 				E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */,
+				E9A2BD24278EA5A2000F402A /* ChaosFanShape1.swift */,
 			);
-			path = test;
+			path = FanShape;
 			sourceTree = "<group>";
 		};
 		E9D4050826A7EE8A00E7E33B /* Lib */ = {
@@ -864,6 +879,7 @@
 				0C82BEE82610B7180026D471 /* Queue.cpp in Sources */,
 				E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
+				E9A2BD29278EA771000F402A /* ChaosFanShape3.swift in Sources */,
 				E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */,
 				E922D4B9270310A600EB54AC /* JHNavigateAreaSearchView.swift in Sources */,
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
@@ -888,6 +904,8 @@
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */,
 				0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */,
+				E9A2BD25278EA5A2000F402A /* ChaosFanShape1.swift in Sources */,
+				E9A2BD2B278EA933000F402A /* ChaosFanShape4.swift in Sources */,
 				E93A5AED26EB25D900796CF1 /* ChaosNetworkResult.swift in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
@@ -906,8 +924,10 @@
 				E9105731277EF5D600DA1CD5 /* ChaosErrorViewController.swift in Sources */,
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
+				E9A2BD27278EA665000F402A /* ChaosFanShape2.swift in Sources */,
 				E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
+				E9A2BD30278EAFB3000F402A /* ChaosFanShape5.swift in Sources */,
 				E9A2168926FD6B8300EC1C2C /* JHStoreListTableViewCell.swift in Sources */,
 				0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */,
 				E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */,

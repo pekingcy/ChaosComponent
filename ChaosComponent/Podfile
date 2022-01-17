@@ -7,7 +7,7 @@ inhibit_all_warnings!
 target 'ChaosComponent' do
    pod 'AFNetworking', '>3.0'
    pod "BeeHive"
-  # pod 'KJExtensionHandler'
+   pod 'KJExtensionHandler'
    pod 'FMDB'
    pod 'SDWebImage'
    pod 'Alamofire'
@@ -18,4 +18,5 @@ target 'ChaosComponent' do
    pod 'MJRefresh'
    pod 'JKSwiftExtension'
    pod 'KRProgressHUD'
+   pod 'lottie-ios'
 end
