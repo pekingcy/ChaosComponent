@@ -30,7 +30,9 @@ PODS:
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
+  - Nimble (5.0.0)
   - ObjectMapper (4.2.0)
+  - Quick (1.0.0)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
@@ -46,7 +48,9 @@ DEPENDENCIES:
   - KRProgressHUD
   - MJRefresh
   - Moya
+  - Nimble (~> 5.0.0)
   - ObjectMapper
+  - Quick (~> 1.0.0)
   - SDWebImage
   - SnapKit
   - SwiftyJSON
@@ -63,7 +67,9 @@ SPEC REPOS:
     - KRProgressHUD
     - MJRefresh
     - Moya
+    - Nimble
     - ObjectMapper
+    - Quick
     - SDWebImage
     - SnapKit
     - SwiftyJSON
@@ -79,11 +85,13 @@ SPEC CHECKSUMS:
   KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: e98774f373033845dc175d9147c319df46b8457e
+PODFILE CHECKSUM: 76deb70c103274a99a05096e04f91189fd0d1393
 
 COCOAPODS: 1.9.1

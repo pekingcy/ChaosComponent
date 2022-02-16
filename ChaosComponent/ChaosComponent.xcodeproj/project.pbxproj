@@ -19,6 +19,7 @@
 		0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE1261060410026D471 /* 20_有效的括号.cpp */; };
 		0C82BEE82610B7180026D471 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE62610B7180026D471 /* Queue.cpp */; };
 		0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEEC2610BB600026D471 /* 232_用栈实现队列.cpp */; };
+		66BFBE813A2E1A7381308B6D /* libPods-ChaosComponentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 958043F3F723C17B23512A5D /* libPods-ChaosComponentTests.a */; };
 		E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F20261ED3920033D908 /* BinarySearchTree.cpp */; };
 		E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */; };
 		E9059D4226E8A7F400870235 /* StoreLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9059D4126E8A7F400870235 /* StoreLiveModel.swift */; };
@@ -84,6 +85,7 @@
 		E93A5AED26EB25D900796CF1 /* ChaosNetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEC26EB25D900796CF1 /* ChaosNetworkResult.swift */; };
 		E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */; };
 		E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96FD27E262EE35900C2A567 /* BinaryTree.cpp */; };
+		E986C49427BD1C1200122D03 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986C49327BD1C1200122D03 /* test.swift */; };
 		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
 		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
 		E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */; };
@@ -160,6 +162,9 @@
 		2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.debug.xcconfig"; sourceTree = "<group>"; };
 		3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.release.xcconfig"; sourceTree = "<group>"; };
 		4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		958043F3F723C17B23512A5D /* libPods-ChaosComponentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		989907CBB7E3A13B6746CF02 /* Pods-ChaosComponentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponentTests.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponentTests/Pods-ChaosComponentTests.release.xcconfig"; sourceTree = "<group>"; };
+		D40C5309132281AA7323F877 /* Pods-ChaosComponentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponentTests.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponentTests/Pods-ChaosComponentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9028F20261ED3920033D908 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
 		E9028F21261ED3920033D908 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeInfo.cpp; sourceTree = "<group>"; };
@@ -243,6 +248,8 @@
 		E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosStoreApi.swift; sourceTree = "<group>"; };
 		E96FD27E262EE35900C2A567 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		E96FD27F262EE35900C2A567 /* BinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
+		E986C49227BD1C1200122D03 /* ChaosComponentTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChaosComponentTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E986C49327BD1C1200122D03 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
 		E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "141_环型链表.cpp"; sourceTree = "<group>"; };
 		E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "237_删除链表节点.cpp"; sourceTree = "<group>"; };
@@ -301,6 +308,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BFBE813A2E1A7381308B6D /* libPods-ChaosComponentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +372,8 @@
 			children = (
 				0C6BD01C25F4F0F2002E387A /* ChaosComponentTests.m */,
 				0C6BD01E25F4F0F2002E387A /* Info.plist */,
+				E986C49327BD1C1200122D03 /* test.swift */,
+				E986C49227BD1C1200122D03 /* ChaosComponentTests-Bridging-Header.h */,
 			);
 			path = ChaosComponentTests;
 			sourceTree = "<group>";
@@ -382,6 +392,8 @@
 			children = (
 				2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */,
 				3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */,
+				D40C5309132281AA7323F877 /* Pods-ChaosComponentTests.debug.xcconfig */,
+				989907CBB7E3A13B6746CF02 /* Pods-ChaosComponentTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -392,6 +404,7 @@
 				E9D4055826A8060200E7E33B /* libsqlite3.0.tbd */,
 				E9D4055926A8060200E7E33B /* libsqlite3.tbd */,
 				4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */,
+				958043F3F723C17B23512A5D /* libPods-ChaosComponentTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -685,6 +698,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C6BD02F25F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponentTests" */;
 			buildPhases = (
+				AA050CE292F8642A4562E561 /* [CP] Check Pods Manifest.lock */,
 				0C6BD01425F4F0F2002E387A /* Sources */,
 				0C6BD01525F4F0F2002E387A /* Frameworks */,
 				0C6BD01625F4F0F2002E387A /* Resources */,
@@ -731,6 +745,7 @@
 					};
 					0C6BD01725F4F0F2002E387A = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1320;
 						TestTargetID = 0C6BD00125F4F0EF002E387A;
 					};
 					0C6BD02225F4F0F2002E387A = {
@@ -866,6 +881,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AA050CE292F8642A4562E561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaosComponentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -939,6 +976,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6BD01D25F4F0F2002E387A /* ChaosComponentTests.m in Sources */,
+				E986C49427BD1C1200122D03 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1039,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1060,6 +1099,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1144,9 +1184,12 @@
 		};
 		0C6BD03025F4F0F2002E387A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C5309132281AA7323F877 /* Pods-ChaosComponentTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChaosComponentTests/Info.plist;
@@ -1158,15 +1201,22 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChaosComponentTests/ChaosComponentTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaosComponent.app/Contents/MacOS/ChaosComponent";
 			};
 			name = Debug;
 		};
 		0C6BD03125F4F0F2002E387A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 989907CBB7E3A13B6746CF02 /* Pods-ChaosComponentTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChaosComponentTests/Info.plist;
@@ -1178,6 +1228,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChaosComponentTests/ChaosComponentTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaosComponent.app/Contents/MacOS/ChaosComponent";
 			};
 			name = Release;
