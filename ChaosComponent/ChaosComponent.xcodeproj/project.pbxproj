@@ -19,7 +19,7 @@
 		0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE1261060410026D471 /* 20_有效的括号.cpp */; };
 		0C82BEE82610B7180026D471 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEE62610B7180026D471 /* Queue.cpp */; };
 		0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C82BEEC2610BB600026D471 /* 232_用栈实现队列.cpp */; };
-		0CC7BA76278959090034B096 /* InterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7BA75278959090034B096 /* InterView.md */; };
+		66BFBE813A2E1A7381308B6D /* libPods-ChaosComponentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 958043F3F723C17B23512A5D /* libPods-ChaosComponentTests.a */; };
 		E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F20261ED3920033D908 /* BinarySearchTree.cpp */; };
 		E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */; };
 		E9059D4226E8A7F400870235 /* StoreLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9059D4126E8A7F400870235 /* StoreLiveModel.swift */; };
@@ -33,6 +33,7 @@
 		E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0AF62627D9BB00FA120B /* AVLBinaryTree.cpp */; };
 		E90F0B152628400900FA120B /* BTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B132628400900FA120B /* BTNode.cpp */; };
 		E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F0B1A262840B200FA120B /* AVLNode.cpp */; };
+		E9105731277EF5D600DA1CD5 /* ChaosErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9105730277EF5D600DA1CD5 /* ChaosErrorViewController.swift */; };
 		E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */; };
 		E922D451270010E700EB54AC /* store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D450270010E700EB54AC /* store@2x.png */; };
 		E922D46227019D8800EB54AC /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E922D46127019D8800EB54AC /* like@2x.png */; };
@@ -84,6 +85,7 @@
 		E93A5AED26EB25D900796CF1 /* ChaosNetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEC26EB25D900796CF1 /* ChaosNetworkResult.swift */; };
 		E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */; };
 		E96FD280262EE35900C2A567 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E96FD27E262EE35900C2A567 /* BinaryTree.cpp */; };
+		E986C49427BD1C1200122D03 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986C49327BD1C1200122D03 /* test.swift */; };
 		E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F202260ACC020083D6DB /* 206_反转链表.cpp */; };
 		E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */; };
 		E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */; };
@@ -92,8 +94,17 @@
 		E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E991146226B7DCB300E16F72 /* JHLiveAdaptUI.m */; };
 		E991146D26B7DD9A00E16F72 /* ChaosBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */; };
 		E9A2168926FD6B8300EC1C2C /* JHStoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */; };
+		E9A2BC13278C24FB000F402A /* ChaosFanShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */; };
+		E9A2BD25278EA5A2000F402A /* ChaosFanShape1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD24278EA5A2000F402A /* ChaosFanShape1.swift */; };
+		E9A2BD27278EA665000F402A /* ChaosFanShape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD26278EA664000F402A /* ChaosFanShape2.swift */; };
+		E9A2BD29278EA771000F402A /* ChaosFanShape3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD28278EA771000F402A /* ChaosFanShape3.swift */; };
+		E9A2BD2B278EA933000F402A /* ChaosFanShape4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD2A278EA933000F402A /* ChaosFanShape4.swift */; };
+		E9A2BD30278EAFB3000F402A /* ChaosFanShape5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2BD2F278EAFB3000F402A /* ChaosFanShape5.swift */; };
 		E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B582608BBB000085A63 /* AbstractList.cpp */; };
 		E9B88B602608BDAD00085A63 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9B88B5E2608BDAD00085A63 /* List.cpp */; };
+		E9B9C4F227D8409100092BA8 /* ChaosIOPthread.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9C4F127D8409100092BA8 /* ChaosIOPthread.m */; };
+		E9B9C4F827D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9C4F727D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.m */; };
+		E9B9C4FB27D8546000092BA8 /* ChaosOCBaseKnowledgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9C4FA27D8546000092BA8 /* ChaosOCBaseKnowledgeModule.m */; };
 		E9D40D332612DD3700C0EFA8 /* CircleDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9D40D322612DD3700C0EFA8 /* CircleDeque.cpp */; };
 		E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA9BD026A2AD6700E9736C /* NSObject+image.m */; };
 		E9E673492611AB0A00373880 /* Deque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9E673472611AB0A00373880 /* Deque.cpp */; };
@@ -151,10 +162,12 @@
 		0C82BEE62610B7180026D471 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		0C82BEE72610B7180026D471 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		0C82BEEC2610BB600026D471 /* 232_用栈实现队列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232_用栈实现队列.cpp"; sourceTree = "<group>"; };
-		0CC7BA75278959090034B096 /* InterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = InterView.md; sourceTree = "<group>"; };
 		2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.debug.xcconfig"; sourceTree = "<group>"; };
 		3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponent.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent.release.xcconfig"; sourceTree = "<group>"; };
 		4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		958043F3F723C17B23512A5D /* libPods-ChaosComponentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChaosComponentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		989907CBB7E3A13B6746CF02 /* Pods-ChaosComponentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponentTests.release.xcconfig"; path = "Target Support Files/Pods-ChaosComponentTests/Pods-ChaosComponentTests.release.xcconfig"; sourceTree = "<group>"; };
+		D40C5309132281AA7323F877 /* Pods-ChaosComponentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaosComponentTests.debug.xcconfig"; path = "Target Support Files/Pods-ChaosComponentTests/Pods-ChaosComponentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9028F20261ED3920033D908 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
 		E9028F21261ED3920033D908 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		E9028F29261EDB400033D908 /* BinaryTreeInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeInfo.cpp; sourceTree = "<group>"; };
@@ -180,6 +193,7 @@
 		E90F0B142628400900FA120B /* BTNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BTNode.hpp; sourceTree = "<group>"; };
 		E90F0B1A262840B200FA120B /* AVLNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AVLNode.cpp; sourceTree = "<group>"; };
 		E90F0B1B262840B200FA120B /* AVLNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLNode.hpp; sourceTree = "<group>"; };
+		E9105730277EF5D600DA1CD5 /* ChaosErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosErrorViewController.swift; sourceTree = "<group>"; };
 		E91B1F96260D87C000044C88 /* CircleLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircleLinkedList.hpp; sourceTree = "<group>"; };
 		E91B1F97260D87C100044C88 /* CircleLinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircleLinkedList.cpp; sourceTree = "<group>"; };
 		E922D450270010E700EB54AC /* store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store@2x.png"; sourceTree = "<group>"; };
@@ -237,6 +251,8 @@
 		E93A5AEE26EB279600796CF1 /* ChaosStoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosStoreApi.swift; sourceTree = "<group>"; };
 		E96FD27E262EE35900C2A567 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		E96FD27F262EE35900C2A567 /* BinaryTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
+		E986C49227BD1C1200122D03 /* ChaosComponentTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChaosComponentTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E986C49327BD1C1200122D03 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		E990F202260ACC020083D6DB /* 206_反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "206_反转链表.cpp"; sourceTree = "<group>"; };
 		E990F218260AF3CD0083D6DB /* 141_环型链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "141_环型链表.cpp"; sourceTree = "<group>"; };
 		E990F2CB260B592D0083D6DB /* 237_删除链表节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "237_删除链表节点.cpp"; sourceTree = "<group>"; };
@@ -251,10 +267,23 @@
 		E991146C26B7DD9A00E16F72 /* ChaosBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosBaseViewController.swift; sourceTree = "<group>"; };
 		E993E236262D68DF00618FEA /* tools.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools.hpp; sourceTree = "<group>"; };
 		E9A2168826FD6B8300EC1C2C /* JHStoreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHStoreListTableViewCell.swift; sourceTree = "<group>"; };
+		E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosFanShapeViewController.swift; sourceTree = "<group>"; };
+		E9A2BD24278EA5A2000F402A /* ChaosFanShape1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosFanShape1.swift; sourceTree = "<group>"; };
+		E9A2BD26278EA664000F402A /* ChaosFanShape2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape2.swift; sourceTree = "<group>"; };
+		E9A2BD28278EA771000F402A /* ChaosFanShape3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape3.swift; sourceTree = "<group>"; };
+		E9A2BD2A278EA933000F402A /* ChaosFanShape4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape4.swift; sourceTree = "<group>"; };
+		E9A2BD2F278EAFB3000F402A /* ChaosFanShape5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaosFanShape5.swift; sourceTree = "<group>"; };
 		E9B88B582608BBB000085A63 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
 		E9B88B592608BBB000085A63 /* AbstractList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 		E9B88B5E2608BDAD00085A63 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		E9B88B5F2608BDAD00085A63 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		E9B9C4F027D8409100092BA8 /* ChaosIOPthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosIOPthread.h; sourceTree = "<group>"; };
+		E9B9C4F127D8409100092BA8 /* ChaosIOPthread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosIOPthread.m; sourceTree = "<group>"; };
+		E9B9C4F527D84C1400092BA8 /* ChaosOCServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosOCServiceProtocol.h; sourceTree = "<group>"; };
+		E9B9C4F627D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosOCBaseKnowledgeViewController.h; sourceTree = "<group>"; };
+		E9B9C4F727D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosOCBaseKnowledgeViewController.m; sourceTree = "<group>"; };
+		E9B9C4F927D8546000092BA8 /* ChaosOCBaseKnowledgeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChaosOCBaseKnowledgeModule.h; sourceTree = "<group>"; };
+		E9B9C4FA27D8546000092BA8 /* ChaosOCBaseKnowledgeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChaosOCBaseKnowledgeModule.m; sourceTree = "<group>"; };
 		E9D4055826A8060200E7E33B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
 		E9D4055926A8060200E7E33B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		E9D4055C26A8095600E7E33B /* chaos_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chaos_Prefix.pch; sourceTree = "<group>"; };
@@ -289,6 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BFBE813A2E1A7381308B6D /* libPods-ChaosComponentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +357,7 @@
 		0C6BD00425F4F0EF002E387A /* ChaosComponent */ = {
 			isa = PBXGroup;
 			children = (
-				0CC7BA74278958900034B096 /* InterView */,
+				E9A2BC11278C2474000F402A /* FanShape */,
 				E991146A26B7DD0E00E16F72 /* SwiftCore */,
 				E9D4055C26A8095600E7E33B /* chaos_Prefix.pch */,
 				E9D4050826A7EE8A00E7E33B /* Lib */,
@@ -352,6 +382,8 @@
 			children = (
 				0C6BD01C25F4F0F2002E387A /* ChaosComponentTests.m */,
 				0C6BD01E25F4F0F2002E387A /* Info.plist */,
+				E986C49327BD1C1200122D03 /* test.swift */,
+				E986C49227BD1C1200122D03 /* ChaosComponentTests-Bridging-Header.h */,
 			);
 			path = ChaosComponentTests;
 			sourceTree = "<group>";
@@ -365,27 +397,13 @@
 			path = ChaosComponentUITests;
 			sourceTree = "<group>";
 		};
-		0CC7BA74278958900034B096 /* InterView */ = {
-			isa = PBXGroup;
-			children = (
-				0CC7BA77278959600034B096 /* InterView-Category */,
-				0CC7BA75278959090034B096 /* InterView.md */,
-			);
-			path = InterView;
-			sourceTree = "<group>";
-		};
-		0CC7BA77278959600034B096 /* InterView-Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "InterView-Category";
-			sourceTree = "<group>";
-		};
 		A40A4894C144F60C64F3CAA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2A492053DFE57439742ECB63 /* Pods-ChaosComponent.debug.xcconfig */,
 				3285AC0067AB51D2A9469CDF /* Pods-ChaosComponent.release.xcconfig */,
+				D40C5309132281AA7323F877 /* Pods-ChaosComponentTests.debug.xcconfig */,
+				989907CBB7E3A13B6746CF02 /* Pods-ChaosComponentTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -396,6 +414,7 @@
 				E9D4055826A8060200E7E33B /* libsqlite3.0.tbd */,
 				E9D4055926A8060200E7E33B /* libsqlite3.tbd */,
 				4420094E54B0E213F0240C47 /* libPods-ChaosComponent.a */,
+				958043F3F723C17B23512A5D /* libPods-ChaosComponentTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -408,6 +427,7 @@
 				E90B26CA25F5C69600D25381 /* BHService.h */,
 				E90B26DF25F5CAB200D25381 /* FrameServiceProtocol.h */,
 				E92738B526047536002115D3 /* BasicServiceProtocol.h */,
+				E9B9C4F527D84C1400092BA8 /* ChaosOCServiceProtocol.h */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -426,15 +446,20 @@
 		E90B26CE25F5C87A00D25381 /* ChaosBasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				E9B9C4F927D8546000092BA8 /* ChaosOCBaseKnowledgeModule.h */,
+				E9B9C4FA27D8546000092BA8 /* ChaosOCBaseKnowledgeModule.m */,
+				E9B9C4F627D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.h */,
+				E9B9C4F727D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.m */,
+				E9B9C4EE27D83A6000092BA8 /* multi-thread */,
 				0C82BED826101DDF0026D471 /* ChaosDataStructureModule.h */,
 				0C82BED726101DDF0026D471 /* ChaosDataStructureModule.m */,
+				0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */,
+				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */,
 				E92738AF26047324002115D3 /* ChaosBasicModule.h */,
 				E92738B026047324002115D3 /* ChaosBasicModule.m */,
 				E90B26CF25F5C97E00D25381 /* ChaosBasicKnowledgeViewController.h */,
 				E90B26D025F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm */,
 				E90B26BA25F5C53400D25381 /* Home */,
-				0C82BED126101D8E0026D471 /* ChaosDataStructureViewController.h */,
-				0C82BED226101D8E0026D471 /* ChaosDataStructureViewController.mm */,
 				E993E242262D792B00618FEA /*  LinearStructure */,
 				E90F0B0E262836C300FA120B /* BinaryTree */,
 			);
@@ -580,6 +605,7 @@
 				E922D4B8270310A600EB54AC /* JHNavigateAreaSearchView.swift */,
 				E9E9684E27043C480013B35F /* JHStoreTypeSelectedView.swift */,
 				E9E968502704468A0013B35F /* JHStoreTypeSelectedCollectionViewCell.swift */,
+				E9105730277EF5D600DA1CD5 /* ChaosErrorViewController.swift */,
 			);
 			path = SwiftCore;
 			sourceTree = "<group>";
@@ -616,6 +642,36 @@
 				E9E673CF2611E89700373880 /* CircleQueue.hpp */,
 			);
 			path = " LinearStructure";
+			sourceTree = "<group>";
+		};
+		E9A2BC11278C2474000F402A /* FanShape */ = {
+			isa = PBXGroup;
+			children = (
+				E9A2BD2F278EAFB3000F402A /* ChaosFanShape5.swift */,
+				E9A2BD2A278EA933000F402A /* ChaosFanShape4.swift */,
+				E9A2BD28278EA771000F402A /* ChaosFanShape3.swift */,
+				E9A2BD26278EA664000F402A /* ChaosFanShape2.swift */,
+				E9A2BC12278C24FB000F402A /* ChaosFanShapeViewController.swift */,
+				E9A2BD24278EA5A2000F402A /* ChaosFanShape1.swift */,
+			);
+			path = FanShape;
+			sourceTree = "<group>";
+		};
+		E9B9C4EE27D83A6000092BA8 /* multi-thread */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9C4EF27D83ADB00092BA8 /* io-rw */,
+			);
+			path = "multi-thread";
+			sourceTree = "<group>";
+		};
+		E9B9C4EF27D83ADB00092BA8 /* io-rw */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9C4F027D8409100092BA8 /* ChaosIOPthread.h */,
+				E9B9C4F127D8409100092BA8 /* ChaosIOPthread.m */,
+			);
+			path = "io-rw";
 			sourceTree = "<group>";
 		};
 		E9D4050826A7EE8A00E7E33B /* Lib */ = {
@@ -675,6 +731,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C6BD02F25F4F0F2002E387A /* Build configuration list for PBXNativeTarget "ChaosComponentTests" */;
 			buildPhases = (
+				AA050CE292F8642A4562E561 /* [CP] Check Pods Manifest.lock */,
 				0C6BD01425F4F0F2002E387A /* Sources */,
 				0C6BD01525F4F0F2002E387A /* Frameworks */,
 				0C6BD01625F4F0F2002E387A /* Resources */,
@@ -721,6 +778,7 @@
 					};
 					0C6BD01725F4F0F2002E387A = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1320;
 						TestTargetID = 0C6BD00125F4F0EF002E387A;
 					};
 					0C6BD02225F4F0F2002E387A = {
@@ -786,7 +844,6 @@
 				E9E9684D2704124C0013B35F /* shop_list_search@2x.png in Resources */,
 				0C6BD00C25F4F0F2002E387A /* Assets.xcassets in Resources */,
 				E922D49B2702D26A00EB54AC /* sddd_C|A@2x.png in Resources */,
-				0CC7BA76278959090034B096 /* InterView.md in Resources */,
 				E922D4982702D26A00EB54AC /* sddd_D|C@2x.png in Resources */,
 				E922D4A22702D26A00EB54AC /* sddd_D|1@2x.png in Resources */,
 				E922D49A2702D26A00EB54AC /* sddd_C|B@2x.png in Resources */,
@@ -857,6 +914,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaosComponent/Pods-ChaosComponent-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AA050CE292F8642A4562E561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaosComponentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -870,6 +949,8 @@
 				0C82BEE82610B7180026D471 /* Queue.cpp in Sources */,
 				E991146426B7DCB300E16F72 /* JHLiveAdaptUI.m in Sources */,
 				E9B88B602608BDAD00085A63 /* List.cpp in Sources */,
+				E9A2BD29278EA771000F402A /* ChaosFanShape3.swift in Sources */,
+				E9B9C4FB27D8546000092BA8 /* ChaosOCBaseKnowledgeModule.m in Sources */,
 				E9028F2A261EDB400033D908 /* BinaryTreeInfo.cpp in Sources */,
 				E922D4B9270310A600EB54AC /* JHNavigateAreaSearchView.swift in Sources */,
 				E9E673492611AB0A00373880 /* Deque.cpp in Sources */,
@@ -883,6 +964,7 @@
 				E990F219260AF3CD0083D6DB /* 141_环型链表.cpp in Sources */,
 				E90F0B1C262840B200FA120B /* AVLNode.cpp in Sources */,
 				E9B88B5A2608BBB000085A63 /* AbstractList.cpp in Sources */,
+				E9A2BC13278C24FB000F402A /* ChaosFanShapeViewController.swift in Sources */,
 				E9E673D02611E89700373880 /* CircleQueue.cpp in Sources */,
 				E93A5AEB26EB25AD00796CF1 /* ChaosNetworkManager.swift in Sources */,
 				E938D1CC2673567100E172FA /* RBNode.cpp in Sources */,
@@ -890,9 +972,12 @@
 				E9028F22261ED3920033D908 /* BinarySearchTree.cpp in Sources */,
 				E922D4B727030C4B00EB54AC /* JHNavigateSearchView.swift in Sources */,
 				E90B26E225F5CB4300D25381 /* ChaosFrameModule.m in Sources */,
+				E9B9C4F227D8409100092BA8 /* ChaosIOPthread.m in Sources */,
 				E90B26D125F5C97E00D25381 /* ChaosBasicKnowledgeViewController.mm in Sources */,
 				E93A5AEF26EB279600796CF1 /* ChaosStoreApi.swift in Sources */,
 				0C82BED926101DDF0026D471 /* ChaosDataStructureModule.m in Sources */,
+				E9A2BD25278EA5A2000F402A /* ChaosFanShape1.swift in Sources */,
+				E9A2BD2B278EA933000F402A /* ChaosFanShape4.swift in Sources */,
 				E93A5AED26EB25D900796CF1 /* ChaosNetworkResult.swift in Sources */,
 				0C6BD01225F4F0F2002E387A /* main.m in Sources */,
 				E990F2DA260C22F20083D6DB /* SingleLinkedList.cpp in Sources */,
@@ -908,10 +993,14 @@
 				E990F203260ACC020083D6DB /* 206_反转链表.cpp in Sources */,
 				E90F0AF82627D9BB00FA120B /* AVLBinaryTree.cpp in Sources */,
 				0C82BECA261014B30026D471 /* ArrayList.cpp in Sources */,
+				E9B9C4F827D84CD300092BA8 /* ChaosOCBaseKnowledgeViewController.m in Sources */,
+				E9105731277EF5D600DA1CD5 /* ChaosErrorViewController.swift in Sources */,
 				E91B1F98260D87C100044C88 /* CircleLinkedList.cpp in Sources */,
 				0C82BEE2261060410026D471 /* 20_有效的括号.cpp in Sources */,
+				E9A2BD27278EA665000F402A /* ChaosFanShape2.swift in Sources */,
 				E9DA9BD126A2AD6800E9736C /* NSObject+image.m in Sources */,
 				E990F2CC260B592D0083D6DB /* 237_删除链表节点.cpp in Sources */,
+				E9A2BD30278EAFB3000F402A /* ChaosFanShape5.swift in Sources */,
 				E9A2168926FD6B8300EC1C2C /* JHStoreListTableViewCell.swift in Sources */,
 				0C82BEED2610BB600026D471 /* 232_用栈实现队列.cpp in Sources */,
 				E9F0D6DB2671ED0E004881E2 /* BBSTree.cpp in Sources */,
@@ -923,6 +1012,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6BD01D25F4F0F2002E387A /* ChaosComponentTests.m in Sources */,
+				E986C49427BD1C1200122D03 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,6 +1075,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1044,6 +1135,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1128,9 +1220,12 @@
 		};
 		0C6BD03025F4F0F2002E387A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C5309132281AA7323F877 /* Pods-ChaosComponentTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChaosComponentTests/Info.plist;
@@ -1142,15 +1237,22 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChaosComponentTests/ChaosComponentTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaosComponent.app/Contents/MacOS/ChaosComponent";
 			};
 			name = Debug;
 		};
 		0C6BD03125F4F0F2002E387A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 989907CBB7E3A13B6746CF02 /* Pods-ChaosComponentTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ChaosComponentTests/Info.plist;
@@ -1162,6 +1264,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.testOB.ChaosComponentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChaosComponentTests/ChaosComponentTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChaosComponent.app/Contents/MacOS/ChaosComponent";
 			};
 			name = Release;

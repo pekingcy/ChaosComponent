@@ -37,7 +37,7 @@ using namespace std;
 
 - (NSArray *)resource{
     if (_resource == nil) {
-        _resource = @[ @"数组", @"字典"];
+        _resource = @[ @"数据结构", @"OC基础"];
     }
     return _resource;
 }
@@ -57,6 +57,13 @@ using namespace std;
         {
             id<BasicServiceProtocol> service = [[BeeHive shareInstance] createService:@protocol(DataStructureServiceProtocol)];
             service.naviTitle = @"数据结构";
+            [self.navigationController pushViewController:(UIViewController*)service animated:YES];
+        }
+            break;
+        case 1:
+        {
+            id<BasicServiceProtocol> service = [[BeeHive shareInstance] createService:@protocol(ChaosOCServiceProtocol)];
+            service.naviTitle = @"OC基础知识";
             [self.navigationController pushViewController:(UIViewController*)service animated:YES];
         }
             break;

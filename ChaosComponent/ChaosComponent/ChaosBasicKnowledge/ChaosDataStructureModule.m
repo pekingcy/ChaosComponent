@@ -30,14 +30,11 @@
 }
 
 
-
 -(void)modInit:(BHContext *)context
 {
     NSLog(@"模块初始化中");
     NSLog(@"%@",context.moduleConfigName);
-    
 }
-
 
 - (void)modSetUp:(BHContext *)context
 {

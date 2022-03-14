@@ -1,0 +1,6 @@
+module Pods_ChaosComponentTests {
+  umbrella header "Pods-ChaosComponentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

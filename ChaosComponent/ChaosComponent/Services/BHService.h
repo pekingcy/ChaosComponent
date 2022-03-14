@@ -13,5 +13,5 @@
 #import "FrameServiceProtocol.h"
 #import "BasicServiceProtocol.h"
 #import "DataStructureServiceProtocol.h"
-
+#import "ChaosOCServiceProtocol.h"
 #endif /* BHService_h */
