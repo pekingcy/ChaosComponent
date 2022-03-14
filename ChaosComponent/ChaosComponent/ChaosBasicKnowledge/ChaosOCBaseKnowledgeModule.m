@@ -1,20 +1,19 @@
 //
-//  ChaosBasicModule.m
+//  ChaosOCBaseKnowledgeModule.m
 //  ChaosComponent
 //
-//  Created by jh on 2021/3/19.
+//  Created by jh on 2022/3/9.
 //
 
-#import "ChaosDataStructureModule.h"
+#import "ChaosOCBaseKnowledgeModule.h"
 #import "BeeHive.h"
-#import "ChaosDataStructureViewController.h"
+#import "ChaosOCBaseKnowledgeViewController.h"
 
-@interface ChaosDataStructureModule()<BHModuleProtocol>
+@interface ChaosOCBaseKnowledgeModule()<BHModuleProtocol>
 
 @end
 
-@implementation ChaosDataStructureModule
-
+@implementation ChaosOCBaseKnowledgeModule
 + (void)load
 {
     [BeeHive registerDynamicModule:[self class]];
@@ -29,7 +28,6 @@
     return self;
 }
 
-
 -(void)modInit:(BHContext *)context
 {
     NSLog(@"模块初始化中");
@@ -38,15 +36,13 @@
 
 - (void)modSetUp:(BHContext *)context
 {
-    [[BeeHive shareInstance]  registerService:@protocol(DataStructureServiceProtocol) service:[ChaosDataStructureViewController class]];
+    [[BeeHive shareInstance]  registerService:@protocol(ChaosOCServiceProtocol) service:[ChaosOCBaseKnowledgeViewController class]];
     NSLog(@"TradeModule setup");
-    
 }
 
 - (void)basicModuleLevel
 {
-    
+     
 }
-
 
 @end
