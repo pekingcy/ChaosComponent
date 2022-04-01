@@ -17,27 +17,27 @@ extension WKWebView {
 // MARK:- 一、基本的扩展
 public extension JKPOP where Base: WKWebView {
     
-    // MARK: 1.1、WKWebViewConfiguration默认配置
-    /// WKWebViewConfiguration默认配置
-    static var confiDefault: WKWebViewConfiguration {
-        get {
-            if let obj = objc_getAssociatedObject(self, &Base.WKWebViewAssociateKeys.confiDefault) as? WKWebViewConfiguration {
-                return obj
-            }
-            let sender = WKWebViewConfiguration()
-            sender.allowsInlineMediaPlayback = true
-            sender.selectionGranularity = .dynamic
-            sender.preferences = WKPreferences()
-            sender.preferences.javaScriptCanOpenWindowsAutomatically = false
-            sender.preferences.javaScriptEnabled = true
-            
-            objc_setAssociatedObject(self, &Base.WKWebViewAssociateKeys.confiDefault, sender, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return sender
-        }
-        set {
-            objc_setAssociatedObject(self, &Base.WKWebViewAssociateKeys.confiDefault, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
+//    // MARK: 1.1、WKWebViewConfiguration默认配置
+//    /// WKWebViewConfiguration默认配置
+//    static var confiDefault: WKWebViewConfiguration {
+//        get {
+//            if let obj = objc_getAssociatedObject(self, &Base.WKWebViewAssociateKeys.confiDefault) as? WKWebViewConfiguration {
+//                return obj
+//            }
+//            let sender = WKWebViewConfiguration()
+//            sender.allowsInlineMediaPlayback = true
+//            sender.selectionGranularity = .dynamic
+//            sender.preferences = WKPreferences()
+//            sender.preferences.javaScriptCanOpenWindowsAutomatically = false
+//            sender.preferences.javaScriptEnabled = true
+//
+//            objc_setAssociatedObject(self, &Base.WKWebViewAssociateKeys.confiDefault, sender, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+//            return sender
+//        }
+//        set {
+//            objc_setAssociatedObject(self, &Base.WKWebViewAssociateKeys.confiDefault, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+//        }
+//    }
     
     // MARK: 1.2、js注入
     /// js注入

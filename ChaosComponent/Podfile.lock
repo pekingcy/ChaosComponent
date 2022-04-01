@@ -19,16 +19,16 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - JKSwiftExtension (1.8.5):
+  - JKSwiftExtension (1.7.7):
     - Kingfisher
-  - Kingfisher (6.3.1)
+  - Kingfisher (6.3.0)
   - KRActivityIndicatorView (3.0.7)
   - KRProgressHUD (3.4.7):
     - KRActivityIndicatorView (= 3.0.7)
   - MJRefresh (3.7.2)
-  - Moya (15.0.0):
-    - Moya/Core (= 15.0.0)
-  - Moya/Core (15.0.0):
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - Nimble (5.0.0)
   - ObjectMapper (4.2.0)
@@ -79,12 +79,12 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  JKSwiftExtension: f1a4ce741481e6b9ef14b31f1fe333cdbbb53d02
-  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  JKSwiftExtension: 100cf58224e42b470e38258bd640339a6b602a29
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
   KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
-  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
@@ -94,4 +94,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 76deb70c103274a99a05096e04f91189fd0d1393
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.11.3

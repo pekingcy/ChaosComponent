@@ -32,10 +32,7 @@ public extension JKPOP where Base == Float {
     
     // MARK: 1.6、转 String
     /// 转 String
-    var string: String {
-        return String(self.base)
-        
-    }
+    var string: String { return String(self.base) }
     
     // MARK: 1.7、转 NSNumber
     /// 转 NSNumber

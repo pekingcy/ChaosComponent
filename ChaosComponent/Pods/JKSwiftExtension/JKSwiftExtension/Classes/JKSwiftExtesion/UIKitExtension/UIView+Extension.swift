@@ -9,13 +9,6 @@
 import UIKit
 import Foundation
 import CoreFoundation
-import WebKit
-
-public enum JKDashLineDirection: Int {
-    case vertical = 0
-    case horizontal = 1
-}
-
 extension UIView: JKPOPCompatible {}
 // MARK:- 一、机型的判断
 /*
@@ -419,7 +412,7 @@ extension JKPOP where Base: UIView {
     }
 }
 
-// MARK:- 五、关于UIView的 圆角、阴影、边框、虚线 的设置
+// MARK:- 五、关于UIView的 圆角、阴影、边框 的设置
 public extension JKPOP where Base: UIView {
     
     // MARK: 5.1、添加圆角
@@ -455,16 +448,13 @@ public extension JKPOP where Base: UIView {
     
     // MARK: 5.3、添加阴影和圆角并存
     /// 添加阴影和圆角并存
-    ///
-    /// - Parameter superview: 父视图
-    /// - Parameter conrners: 具体哪个圆角
-    /// - Parameter radius: 圆角大小
-    /// - Parameter shadowColor: 阴影的颜色
-    /// - Parameter shadowOffset: 阴影的偏移度：CGSizeMake(X[正的右偏移,负的左偏移], Y[正的下偏移,负的上偏移])
-    /// - Parameter shadowOpacity: 阴影的透明度
-    /// - Parameter shadowRadius: 阴影半径，默认 3
-    ///
-    /// - Note: 提示：如果在异步布局(如：SnapKit布局)中使用，要在布局后先调用 layoutIfNeeded，再使用该方法
+    /// - Parameters:
+    ///   - conrners: 具体哪个圆角
+    ///   - radius: 圆角大小
+    ///   - shadowColor: 阴影的颜色
+    ///   - shadowOffset: 阴影的偏移度：CGSizeMake(X[正的右偏移,负的左偏移], Y[正的下偏移,负的上偏移])
+    ///   - shadowOpacity: 阴影的透明度
+    ///   - shadowRadius: 阴影半径，默认 3
     func addCornerAndShadow(superview: UIView, conrners: UIRectCorner , radius: CGFloat = 3, shadowColor: UIColor, shadowOffset: CGSize, shadowOpacity: Float, shadowRadius: CGFloat = 3) {
         
         let maskPath = UIBezierPath(roundedRect: self.base.bounds, byRoundingCorners: conrners, cornerRadii: CGSize(width: radius, height: radius))
@@ -562,78 +552,6 @@ public extension JKPOP where Base: UIView {
         shapeLayer.strokeColor = strokeColor.cgColor
         shapeLayer.lineWidth = strokeWidth
         self.base.layer.addSublayer(shapeLayer)
-    }
-    
-    // MARK: 5.11、绘制虚线
-    /// 绘制虚线
-    /// - Parameters:
-    ///   - strokeColor: 虚线颜色
-    ///   - lineLength: 每段虚线的长度
-    ///   - lineSpacing: 每段虚线的间隔
-    ///   - direction: 虚线的方向
-    func drawDashLine(strokeColor: UIColor,
-                       lineLength: Int = 4,
-                      lineSpacing: Int = 4,
-                        direction: JKDashLineDirection = .horizontal) {
-        // 线粗
-        let lineWidth = direction == .horizontal ? self.base.jk.height : self.base.jk.width
-        
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.bounds = self.base.bounds
-        shapeLayer.anchorPoint = CGPoint(x: 0, y: 0)
-        shapeLayer.fillColor = UIColor.blue.cgColor
-        shapeLayer.strokeColor = strokeColor.cgColor
-        
-        shapeLayer.lineWidth = lineWidth
-        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
-        shapeLayer.lineDashPhase = 0
-        // 每一段虚线长度 和 每两段虚线之间的间隔
-        shapeLayer.lineDashPattern = [NSNumber(value: lineLength), NSNumber(value: lineSpacing)]
-        // 起点
-        let path = CGMutablePath()
-        if direction == .horizontal {
-            path.move(to: CGPoint(x: 0, y: lineWidth / 2))
-            // 终点
-            // 横向 y = lineWidth / 2
-            path.addLine(to: CGPoint(x: self.base.jk.width, y: lineWidth / 2))
-        } else {
-            path.move(to: CGPoint(x: lineWidth / 2, y: 0))
-            // 终点
-            // 纵向 Y = view 的height
-            path.addLine(to: CGPoint(x: lineWidth / 2, y: self.base.jk.height))
-        }
-        shapeLayer.path = path
-        self.base.layer.addSublayer(shapeLayer)
-    }
-    
-    // MARK: 5.12、添加内阴影
-    /// 添加内阴影
-    /// - Parameters:
-    ///   - shadowColor: 阴影的颜色
-    ///   - shadowOffset: 阴影的偏移度：CGSizeMake(X[正的右偏移,负的左偏移], Y[正的下偏移,负的上偏移])
-    ///   - shadowOpacity: 阴影的透明度
-    ///   - shadowRadius: 阴影半径，默认 3
-    ///   - insetBySize: 内阴影偏移大小
-    func addInnerShadowLayer(shadowColor: UIColor, shadowOffset: CGSize = CGSize(width: 0, height: 0), shadowOpacity: Float = 0.5, shadowRadius: CGFloat = 3, insetBySize: CGSize = CGSize(width: -42, height: -42)) {
-        let shadowLayer = CAShapeLayer()
-        shadowLayer.frame = self.base.bounds
-        shadowLayer.shadowColor = shadowColor.cgColor
-        shadowLayer.shadowOffset = shadowOffset
-        shadowLayer.shadowOpacity = shadowOpacity
-        shadowLayer.shadowRadius = shadowRadius
-        shadowLayer.fillRule = .evenOdd
-        let path = CGMutablePath()
-        path.addRect(self.base.bounds.insetBy(dx: insetBySize.width, dy: insetBySize.height))
-      
-        // let someInnerPath = UIBezierPath(roundedRect: self.base.bounds, cornerRadius: innerPathRadius).cgPath
-        let someInnerPath = UIBezierPath(roundedRect: self.base.bounds, cornerRadius: shadowRadius).cgPath
-        path.addPath(someInnerPath)
-        path.closeSubpath()
-        shadowLayer.path = path
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = someInnerPath
-        shadowLayer.mask = maskLayer
-        self.base.layer.addSublayer(shadowLayer)
     }
 }
 
@@ -875,21 +793,6 @@ public extension JKPOP where Base: UIView {
             }
         }
     }
-    
-    // MARK: 7.7、是否包含WKWebView
-    /// 是否包含WKWebView
-    /// - Returns: 结果
-    func isContainsWKWebView() -> Bool {
-        if base.isKind(of: WKWebView.self) {
-            return true
-        }
-        for subView in base.subviews {
-            if (subView.jk.isContainsWKWebView()) {
-                return true
-            }
-        }
-        return false
-    }
 }
 
 // MARK:- private method
@@ -959,16 +862,6 @@ public extension JKPOP where Base: UIView {
         for subView in self.base.subviews {
             subView.removeFromSuperview()
         }
-    }
-    
-    // MARK: 8.4、移除layer
-    /// 移除layer
-    /// - Returns: 返回自身
-    @discardableResult
-    func removeLayer() -> JKPOP {
-        base.layer.mask = nil
-        base.layer.borderWidth = 0
-        return self
     }
 }
 
